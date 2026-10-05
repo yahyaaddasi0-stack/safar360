@@ -1,0 +1,12 @@
+.git
+.github
+node_modules
+*.zip
+.env
+.env.*
+**/__pycache__/
+**/*.pyc
+backend/*.db
+backend/*.sqlite*
+backend/*.log
+screenshots/
