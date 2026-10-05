@@ -83,7 +83,9 @@ let speechRecognitionInstance = null;
 // =============================================================================
 // 3. Initialization on DOMContentLoaded
 // =============================================================================
-document.addEventListener('DOMContentLoaded', async () => {
+// Guard browser-only bootstrap so server-side inspection cannot access DOM globals.
+if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', async () => {
   // 1. Setup Canvas Particle Background
   initParticleBackground();
 
@@ -178,7 +180,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (urlParams.get('mode') === 'chat' || window.location.hash === '#chat') {
     startDirectChat(0);
   }
-});
+  });
+}
 
 // =============================================================================
 // 4. Hero Carousel Logic
@@ -459,9 +462,12 @@ function renderCanvasPreview(character) {
   }
 }
 
-window.startDirectChat = startDirectChat;
-window.backToCarousel = backToCarousel;
-window.renderCanvasPreview = renderCanvasPreview;
+// Expose handlers only in a real browser context.
+if (typeof window !== 'undefined') {
+  window.startDirectChat = startDirectChat;
+  window.backToCarousel = backToCarousel;
+  window.renderCanvasPreview = renderCanvasPreview;
+}
 
 // =============================================================================
 // 6. Category Filter Bar Logic
