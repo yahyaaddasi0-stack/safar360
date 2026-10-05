@@ -53,6 +53,13 @@ class CharacterCatalogueTests(unittest.TestCase):
 
 
 class StreamingSafetyTests(unittest.TestCase):
+    def test_default_token_budget_allows_complete_gemini_stream(self):
+        request = ChatCompletionRequest(
+            character_id="salah-al-din",
+            messages=[ChatMessage(role="user", content="حدثني عن القدس")],
+        )
+        self.assertEqual(request.max_tokens, 8192)
+
     def test_filters_actions_and_patronizing_terms_across_chunk_boundaries(self):
         stream = SafeStreamFilter()
         chunks = ["أهلاً يا ب", "ني بك (ين", "ظر إلى الخريطة) ماذا", " ترغب في معرفة؟"]

@@ -23,7 +23,8 @@ class ChatCompletionRequest(BaseModel):
         default=0.7, ge=0.0, le=2.0, description="Sampling temperature for Vertex AI"
     )
     max_tokens: Optional[int] = Field(
-        default=1024, description="Maximum tokens to generate"
+        default=8192, ge=256, le=16384,
+        description="Output budget including Gemini 2.5 thinking tokens; 8192 avoids truncated SSE",
     )
 
     model_config = {

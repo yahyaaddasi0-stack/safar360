@@ -122,7 +122,7 @@ class VertexAIService(BaseAIService):
         chat = model.start_chat(history=self._history(request.messages))
         config = GenerationConfig(
             temperature=request.temperature if request.temperature is not None else 0.7,
-            max_output_tokens=request.max_tokens or 1024,
+            max_output_tokens=request.max_tokens or 8192,
         )
         return chat, config
 
