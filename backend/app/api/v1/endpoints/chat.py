@@ -51,7 +51,6 @@ async def create_chat_completion(
                 "Connection": "keep-alive",
                 "Content-Type": "text/event-stream; charset=utf-8",
                 "X-Accel-Buffering": "no",
-                "Access-Control-Allow-Origin": "*",
             }
         )
 
