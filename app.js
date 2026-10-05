@@ -92,7 +92,11 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
   // Fetch Characters
   try {
     const res = await fetch('/api/v1/characters');
+    if (!res.ok) throw new Error(`Characters API HTTP ${res.status}`);
     const data = await res.json();
+    if (!Array.isArray(data?.data) || data.data.length === 0) {
+      throw new Error('Characters API returned no characters');
+    }
     if (data && data.data) {
       CHARACTERS_DATA = data.data.map(char => ({
         ...char,
@@ -115,7 +119,29 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       }));
     }
   } catch (err) {
-    console.error("Failed to load characters", err);
+    console.warn('Characters API unavailable; loading local public catalogue:', err);
+    try {
+      const localResponse = await fetch('/characters-public.json');
+      if (!localResponse.ok) throw new Error(`Catalogue HTTP ${localResponse.status}`);
+      const local = await localResponse.json();
+      if (!Array.isArray(local.data) || local.data.length === 0) {
+        throw new Error('Local catalogue is empty');
+      }
+      CHARACTERS_DATA = local.data.map(char => ({
+        ...char,
+        arabicName: char.arabic_name,
+        latinName: char.latin_name,
+        roleTag: char.role_tag,
+        categoryAr: char.category_ar,
+        eraTag: char.era_tag,
+        avatarSvg: AVATARS[char.id] || AVATARS['al-mutanabbi'],
+        mapLocations: char.map_locations || [],
+        quickPrompts: char.quick_prompts || [],
+        dialogueResponses: {default: char.quote || 'مرحباً بك! ماذا تود أن تسألني؟', prompts: {}}
+      }));
+    } catch (fallbackError) {
+      console.error('Unable to load either characters catalogue:', fallbackError);
+    }
   }
 
   // 2. Render Hero Carousel AFTER fetching

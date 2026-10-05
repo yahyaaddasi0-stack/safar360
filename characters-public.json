@@ -1,0 +1,270 @@
+{
+  "status": "success",
+  "count": 3,
+  "data": [
+    {
+      "id": "salah-al-din",
+      "name": "صلاح الدين الأيوبي",
+      "arabic_name": "صلاح الدين الأيوبي",
+      "latin_name": "Salah ad-Din",
+      "title": "محرر القدس وموحد الأمة",
+      "role_tag": "قائد ومحرر",
+      "category": "commanders",
+      "category_ar": "قادة وفاتحون",
+      "era": "٥٣٢ - ٥٨٩ هـ / ١١٣٨ - ١١٩٣ م",
+      "era_tag": "القرن السادس الهجري",
+      "origin": "تكريت / دمشق",
+      "achievement": "معركة حطين وتحرير بيت المقدس (١١٨٧ م)",
+      "quote": "كيف أبتسم والمسجد الأقصى أسير؟",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2257%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2275%22%20fill%3D%22%23d4af37%22%20text-anchor%3D%22middle%22%20font-size%3D%2224%22%3E%D8%AD%D8%B7%D9%8A%D9%86%3C/text%3E%3C/svg%3E",
+      "featured": true,
+      "canvas_type": "interactive_map",
+      "canvas_data": {
+        "type": "interactive_map",
+        "data": {
+          "center": [
+            31.771959,
+            35.217018
+          ],
+          "zoom": 6,
+          "markers": [
+            {
+              "name": "حطين",
+              "coords": [
+                32.8021,
+                35.4452
+              ],
+              "desc": "معركة حطين الحاسمة"
+            },
+            {
+              "name": "القدس",
+              "coords": [
+                31.7766,
+                35.2345
+              ],
+              "desc": "تحرير بيت المقدس"
+            }
+          ]
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-B",
+      "death_boundary": "1193 ap. J.-C.",
+      "quick_prompts": [
+        "كيف خططت لمعركة حطين؟",
+        "ما هي مبادئك في التعامل مع الأسرى؟"
+      ],
+      "timeline": [
+        {
+          "year": "١١٣٨ م",
+          "title": "المولد",
+          "desc": "ولد في تكريت"
+        },
+        {
+          "year": "١١٨٧ م",
+          "title": "معركة حطين",
+          "desc": "الانتصار على الصليبيين"
+        },
+        {
+          "year": "١١٩٣ م",
+          "title": "الوفاة",
+          "desc": "توفي في دمشق ولم يترك في خزانته سوى بضعة دراهم"
+        }
+      ],
+      "artifacts": [
+        {
+          "name": "سيف صلاح الدين",
+          "type": "سلاح",
+          "icon": "⚔️",
+          "desc": "السيف الذي خاض به المعارك"
+        }
+      ],
+      "map_locations": [
+        {
+          "name": "تكريت",
+          "coords": [
+            34.6114,
+            43.6823
+          ],
+          "desc": "مكان المولد"
+        },
+        {
+          "name": "القدس",
+          "coords": [
+            31.7766,
+            35.2345
+          ],
+          "desc": "المدينة المحررة"
+        }
+      ]
+    },
+    {
+      "id": "al-mutanabbi",
+      "name": "أبو الطيب المتنبي",
+      "arabic_name": "أبو الطيب المتنبي",
+      "latin_name": "Al-Mutanabbi",
+      "title": "شاعر العرب الأكبر",
+      "role_tag": "مالك البيان",
+      "category": "writers",
+      "category_ar": "كُتّاب وشعراء",
+      "era": "٣٠٣ - ٣٥٤ هـ / ٩١٥ - ٩٦٥ م",
+      "era_tag": "القرن الرابع الهجري",
+      "origin": "الكوفة / حلب",
+      "achievement": "أعظم شعراء العربية",
+      "quote": "الخَيلُ وَاللَيلُ وَالبَيداءُ تَعرِفُني ... وَالسَيفُ وَالرُمحُ وَالقِرطاسُ وَالقَلَمُ",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2257%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2275%22%20fill%3D%22%23d4af37%22%20text-anchor%3D%22middle%22%20font-size%3D%2224%22%3E%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%3C/text%3E%3C/svg%3E",
+      "featured": true,
+      "canvas_type": "manuscript_viewer",
+      "canvas_data": {
+        "type": "manuscript_viewer",
+        "data": {
+          "manuscript_url": "/assets/manuscripts/mutanabbi_diwan.jpg",
+          "highlights": [
+            {
+              "x": 100,
+              "y": 200,
+              "text": "واحر قلباه"
+            }
+          ]
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-C",
+      "death_boundary": "965 ap. J.-C.",
+      "quick_prompts": [
+        "ما قصتك مع سيف الدولة؟",
+        "لماذا هجوت كافور؟"
+      ],
+      "timeline": [
+        {
+          "year": "٩١٥ م",
+          "title": "المولد",
+          "desc": "ولد بالكوفة"
+        },
+        {
+          "year": "٩٤٨ م",
+          "title": "الالتحاق بسيف الدولة",
+          "desc": "أزهى فترات حياته بحلب"
+        },
+        {
+          "year": "٩٦٥ م",
+          "title": "الوفاة",
+          "desc": "مقتل المتنبي"
+        }
+      ],
+      "artifacts": [
+        {
+          "name": "ديوان المتنبي",
+          "type": "مخطوط",
+          "icon": "📜",
+          "desc": "نسخة نادرة من ديوانه"
+        }
+      ],
+      "map_locations": [
+        {
+          "name": "الكوفة",
+          "coords": [
+            32.0298,
+            44.401
+          ],
+          "desc": "المولد"
+        },
+        {
+          "name": "حلب",
+          "coords": [
+            36.2021,
+            37.1343
+          ],
+          "desc": "بلاط سيف الدولة"
+        }
+      ]
+    },
+    {
+      "id": "zenobia",
+      "name": "زنوبيا (الزباء)",
+      "arabic_name": "زنوبيا (الزباء)",
+      "latin_name": "Zenobia",
+      "title": "ملكة تدمر",
+      "role_tag": "ملكة الشرق",
+      "category": "queens",
+      "category_ar": "ملكات ورائدات",
+      "era": "القرن الثالث الميلادي / ٢٤٠ - ٢٧٤ م",
+      "era_tag": "القرن الثالث الميلادي",
+      "origin": "تدمر (سوريا)",
+      "achievement": "توسيع مملكة تدمر ومواجهة الإمبراطورية الرومانية",
+      "quote": "أنا ملكة الشرق، ولن أنحني لروما.",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2257%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2275%22%20fill%3D%22%23d4af37%22%20text-anchor%3D%22middle%22%20font-size%3D%2224%22%3E%D8%AA%D8%AF%D9%85%D8%B1%3C/text%3E%3C/svg%3E",
+      "featured": true,
+      "canvas_type": "timeline",
+      "canvas_data": {
+        "type": "timeline",
+        "data": {
+          "events": [
+            {
+              "date": "267",
+              "title": "اغتيال أذينة",
+              "desc": "تولت الحكم كوصية على ابنها"
+            },
+            {
+              "date": "270",
+              "title": "غزو مصر",
+              "desc": "ضمت مصر لمملكتها"
+            },
+            {
+              "date": "272",
+              "title": "السقوط",
+              "desc": "هزيمتها أمام أوريليان"
+            }
+          ]
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-A",
+      "death_boundary": "274 ap. J.-C. بحسب حدّ المخطط",
+      "quick_prompts": [
+        "كيف بنيت إمبراطوريتك؟",
+        "ما سبب صراعك مع روما؟"
+      ],
+      "timeline": [
+        {
+          "year": "٢٤٠ م",
+          "title": "المولد",
+          "desc": "ولدت في تدمر"
+        },
+        {
+          "year": "٢٦٧ م",
+          "title": "تولي العرش",
+          "desc": "حكمت تدمر بعد وفاة زوجها أذينة"
+        },
+        {
+          "year": "٢٧٢ م",
+          "title": "السقوط",
+          "desc": "أسرها الرومان"
+        }
+      ],
+      "artifacts": [
+        {
+          "name": "عملة تدمرية",
+          "type": "عملة",
+          "icon": "🪙",
+          "desc": "عملة تحمل صورة زنوبيا"
+        }
+      ],
+      "map_locations": [
+        {
+          "name": "تدمر",
+          "coords": [
+            34.5504,
+            38.2672
+          ],
+          "desc": "عاصمة المملكة"
+        },
+        {
+          "name": "الإسكندرية",
+          "coords": [
+            31.2001,
+            29.9187
+          ],
+          "desc": "أقصى اتساع للمملكة"
+        }
+      ]
+    }
+  ]
+}

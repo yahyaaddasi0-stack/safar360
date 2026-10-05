@@ -1,9 +1,10 @@
-const CACHE_NAME = 'safar360-v1';
+const CACHE_NAME = 'safar360-v2';
 const ASSETS = [
   '/',
   '/index.html',
   '/styles.css',
   '/app.js',
+  '/characters-public.json',
   '/manifest.json'
 ];
 
@@ -47,7 +48,7 @@ self.addEventListener('fetch', (e) => {
       });
     }).catch(() => {
       // Offline fallback
-      if (e.request.headers.get('accept').includes('text/html')) {
+      if ((e.request.headers.get('accept') || '').includes('text/html')) {
         return caches.match('/index.html');
       }
     })
