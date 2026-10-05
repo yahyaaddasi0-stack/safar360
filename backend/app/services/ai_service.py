@@ -76,9 +76,7 @@ class BaseAIService(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    async def stream_completion(self, request: ChatCompletionRequest) -> AsyncGenerator[str, None]:
-        if False:
-            yield ""
+    def stream_completion(self, request: ChatCompletionRequest) -> AsyncGenerator[str, None]:
         raise NotImplementedError
 
 
@@ -124,6 +122,11 @@ class VertexAIService(BaseAIService):
             temperature=request.temperature if request.temperature is not None else 0.7,
             max_output_tokens=request.max_tokens or 8192,
         )
+        # Minimize thinking budget on Gemini 2.5 Flash to ensure low TTFB
+        try:
+            config._raw_generation_config.thinking_config.thinking_budget = 0
+        except Exception:
+            pass
         return chat, config
 
     @staticmethod

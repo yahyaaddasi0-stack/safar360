@@ -606,6 +606,38 @@ function sendDirectMessage(userText) {
 }
 
 async function streamChatMessageFromBackend(userText, character) {
+  let botMessageCreated = false;
+  let streamingControls = null;
+  let accumulatedText = '';
+  let typewriterQueue = '';
+  let isTypewriterRunning = false;
+
+  function processTypewriter() {
+    if (!streamingControls || !typewriterQueue.length) {
+      isTypewriterRunning = false;
+      return;
+    }
+    isTypewriterRunning = true;
+    // Take a small slice (1 to 2 characters) for smooth, natural human-like cadence
+    const stepSize = typewriterQueue.length > 30 ? 4 : (typewriterQueue.length > 10 ? 2 : 1);
+    const slice = typewriterQueue.slice(0, stepSize);
+    typewriterQueue = typewriterQueue.slice(stepSize);
+    accumulatedText += slice;
+
+    let displayHtml = escapeHtml(accumulatedText).replace(/\n/g, '<br>');
+    if (displayHtml.includes('[GENERATE_IMAGE:')) {
+       const imageFinished = accumulatedText.includes('![Generated Image](') || accumulatedText.includes('تعذّر إنشاء الصورة');
+       displayHtml = displayHtml.replace(/\[GENERATE_IMAGE:.*?(?:\]|$)/g, imageFinished ? '' : '<div class="image-skeleton" style="width:100%; height:200px; background:rgba(212,175,55,0.1); border:1px dashed var(--accent-gold); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--accent-gold); animation: pulse 1.5s infinite;">جاري رسم المشهد...</div>');
+    }
+    displayHtml = displayHtml.replace(/!\[.*?\]\((.*?)\)/g, '<img src="$1" alt="Generated Scene" style="max-width:100%; border-radius:8px; margin-top:8px; border:1px solid var(--accent-gold);">');
+    streamingControls.bodyElem.innerHTML = displayHtml;
+
+    const container = document.getElementById('chat-messages-container');
+    if (container) container.scrollTop = container.scrollHeight;
+
+    setTimeout(processTypewriter, 18);
+  }
+
   try {
     const response = await fetch('/api/v1/chat/completions', {
       method: 'POST',
@@ -626,13 +658,8 @@ async function streamChatMessageFromBackend(userText, character) {
       throw new Error(`Backend API error: ${response.status}`);
     }
 
-    hideTypingIndicator();
-
-    // Create streaming bot message bubble
-    const { bodyElem, finalize } = createStreamingBotMessage(character.arabicName);
     const reader = response.body.getReader();
     const decoder = new TextDecoder('utf-8');
-    let accumulatedText = '';
     let buffer = '';
 
     while (true) {
@@ -653,21 +680,15 @@ async function streamChatMessageFromBackend(userText, character) {
           const parsed = JSON.parse(dataStr);
           const token = parsed.choices?.[0]?.delta?.content || '';
           if (token) {
-            accumulatedText += token;
-            
-            // Check for [GENERATE_IMAGE: ...] tag being streamed and replace with skeleton
-            let displayHtml = escapeHtml(accumulatedText).replace(/\n/g, '<br>');
-            if (displayHtml.includes('[GENERATE_IMAGE:')) {
-               const imageFinished = accumulatedText.includes('![Generated Image](') || accumulatedText.includes('تعذّر إنشاء الصورة');
-               displayHtml = displayHtml.replace(/\[GENERATE_IMAGE:.*?(?:\]|$)/g, imageFinished ? '' : '<div class="image-skeleton" style="width:100%; height:200px; background:rgba(212,175,55,0.1); border:1px dashed var(--accent-gold); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--accent-gold); animation: pulse 1.5s infinite;">جاري رسم المشهد...</div>');
+            if (!botMessageCreated) {
+              hideTypingIndicator();
+              streamingControls = createStreamingBotMessage(character.arabicName);
+              botMessageCreated = true;
             }
-            
-            // Parse Markdown images from backend ![Generated Image](url)
-            displayHtml = displayHtml.replace(/!\[.*?\]\((.*?)\)/g, '<img src="$1" alt="Generated Scene" style="max-width:100%; border-radius:8px; margin-top:8px; border:1px solid var(--accent-gold);">');
-            
-            bodyElem.innerHTML = displayHtml;
-            const container = document.getElementById('chat-messages-container');
-            if (container) container.scrollTop = container.scrollHeight;
+            typewriterQueue += token;
+            if (!isTypewriterRunning) {
+              processTypewriter();
+            }
           }
         } catch (e) {
           // skip malformed JSON chunks
@@ -675,7 +696,23 @@ async function streamChatMessageFromBackend(userText, character) {
       }
     }
 
-    finalize(accumulatedText);
+    // Wait for typewriter queue to drain before finalizing
+    const waitForDrain = () => {
+      if (typewriterQueue.length > 0) {
+        setTimeout(waitForDrain, 50);
+      } else {
+        if (streamingControls) {
+          streamingControls.finalize(accumulatedText);
+        } else {
+          hideTypingIndicator();
+        }
+        // TTS Speak if active
+        if (isSpeechSynthesisActive && 'speechSynthesis' in window && accumulatedText) {
+          speakText(accumulatedText);
+        }
+      }
+    };
+    waitForDrain();
 
     // TTS Speak if active
     if (isSpeechSynthesisActive && 'speechSynthesis' in window && accumulatedText) {
