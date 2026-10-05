@@ -1,6 +1,6 @@
 {
   "status": "success",
-  "count": 3,
+  "count": 12,
   "data": [
     {
       "id": "salah-al-din",
@@ -15,7 +15,7 @@
       "era_tag": "القرن السادس الهجري",
       "origin": "تكريت / دمشق",
       "achievement": "معركة حطين وتحرير بيت المقدس (١١٨٧ م)",
-      "quote": "كيف أبتسم والمسجد الأقصى أسير؟",
+      "quote": "حطين والقدس بين الحرب والصلح",
       "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2257%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2275%22%20fill%3D%22%23d4af37%22%20text-anchor%3D%22middle%22%20font-size%3D%2224%22%3E%D8%AD%D8%B7%D9%8A%D9%86%3C/text%3E%3C/svg%3E",
       "featured": true,
       "canvas_type": "interactive_map",
@@ -67,15 +67,15 @@
         {
           "year": "١١٩٣ م",
           "title": "الوفاة",
-          "desc": "توفي في دمشق ولم يترك في خزانته سوى بضعة دراهم"
+          "desc": "توفي في دمشق سنة 1193 م."
         }
       ],
       "artifacts": [
         {
-          "name": "سيف صلاح الدين",
+          "name": "سيف من العصر الأيوبي",
           "type": "سلاح",
           "icon": "⚔️",
-          "desc": "السيف الذي خاض به المعارك"
+          "desc": "نموذج تمثيلي لسلاح العصر، لا أثر شخصي موثق."
         }
       ],
       "map_locations": [
@@ -178,6 +178,270 @@
       ]
     },
     {
+      "id": "khalid-ibn-al-walid",
+      "name": "خالد بن الوليد",
+      "arabic_name": "خالد بن الوليد",
+      "latin_name": "Khalid ibn al-Walid",
+      "title": "قائد الجيوش الإسلامية",
+      "role_tag": "قائد عسكري",
+      "category": "commanders",
+      "category_ar": "قادة وفاتحون",
+      "era": "القرن السابع الميلادي",
+      "era_tag": "القرن السابع الميلادي",
+      "origin": "الحيرة / دمشق",
+      "achievement": "حروب الردة ومعركة اليرموك",
+      "quote": "مسارات حملات الشام والعراق",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2258%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2278%22%20text-anchor%3D%22middle%22%20font-size%3D%2242%22%20fill%3D%22%23d4af37%22%3E%D8%AE%3C/text%3E%3C/svg%3E",
+      "featured": true,
+      "canvas_type": "interactive_map",
+      "canvas_data": {
+        "type": "interactive_map",
+        "data": {
+          "center": [
+            33.5,
+            40.5
+          ],
+          "zoom": 5,
+          "markers": [
+            {
+              "name": "الحيرة",
+              "coords": [
+                31.88,
+                44.34
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            },
+            {
+              "name": "دمشق",
+              "coords": [
+                33.51,
+                36.29
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            },
+            {
+              "name": "اليرموك",
+              "coords": [
+                32.65,
+                35.75
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            }
+          ]
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-B",
+      "death_boundary": "642 م تقريباً؛ بعض المراجع 641 م",
+      "quick_prompts": [
+        "ما أبرز أحداث حياتك؟",
+        "ما الذي اختلف عليه المؤرخون في سيرتك؟"
+      ],
+      "timeline": [],
+      "artifacts": [],
+      "map_locations": [
+        {
+          "name": "الحيرة",
+          "coords": [
+            31.88,
+            44.34
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        },
+        {
+          "name": "دمشق",
+          "coords": [
+            33.51,
+            36.29
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        },
+        {
+          "name": "اليرموك",
+          "coords": [
+            32.65,
+            35.75
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        }
+      ]
+    },
+    {
+      "id": "hannibal-barca",
+      "name": "حنبعل برقا",
+      "arabic_name": "حنبعل برقا",
+      "latin_name": "Hannibal Barca",
+      "title": "قائد قرطاجة",
+      "role_tag": "قائد واستراتيجي",
+      "category": "commanders",
+      "category_ar": "قادة وفاتحون",
+      "era": "القرن الثالث قبل الميلاد",
+      "era_tag": "القرن الثالث قبل الميلاد",
+      "origin": "قرطاجة",
+      "achievement": "حملة الألب ومعركة كاناي",
+      "quote": "من قرطاجة إلى جبال الألب",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2258%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2278%22%20text-anchor%3D%22middle%22%20font-size%3D%2242%22%20fill%3D%22%23d4af37%22%3E%D8%AD%3C/text%3E%3C/svg%3E",
+      "featured": false,
+      "canvas_type": "interactive_map",
+      "canvas_data": {
+        "type": "interactive_map",
+        "data": {
+          "center": [
+            39.5,
+            10.0
+          ],
+          "zoom": 4,
+          "markers": [
+            {
+              "name": "قرطاجة",
+              "coords": [
+                36.85,
+                10.32
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            },
+            {
+              "name": "جبال الألب",
+              "coords": [
+                45.25,
+                6.0
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            },
+            {
+              "name": "كاناي",
+              "coords": [
+                41.3,
+                16.13
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            }
+          ]
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-C",
+      "death_boundary": "نحو 183 ق.م؛ التاريخ غير محسوم",
+      "quick_prompts": [
+        "ما أبرز أحداث حياتك؟",
+        "ما الذي اختلف عليه المؤرخون في سيرتك؟"
+      ],
+      "timeline": [],
+      "artifacts": [],
+      "map_locations": [
+        {
+          "name": "قرطاجة",
+          "coords": [
+            36.85,
+            10.32
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        },
+        {
+          "name": "جبال الألب",
+          "coords": [
+            45.25,
+            6.0
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        },
+        {
+          "name": "كاناي",
+          "coords": [
+            41.3,
+            16.13
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        }
+      ]
+    },
+    {
+      "id": "tariq-ibn-ziyad",
+      "name": "طارق بن زياد",
+      "arabic_name": "طارق بن زياد",
+      "latin_name": "Tariq ibn Ziyad",
+      "title": "قائد العبور إلى الأندلس",
+      "role_tag": "قائد عسكري",
+      "category": "commanders",
+      "category_ar": "قادة وفاتحون",
+      "era": "القرن الثامن الميلادي",
+      "era_tag": "القرن الثامن الميلادي",
+      "origin": "طنجة / الأندلس",
+      "achievement": "عبور المضيق سنة 711 م",
+      "quote": "رحلة العبور وطرق الأندلس",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2258%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2278%22%20text-anchor%3D%22middle%22%20font-size%3D%2242%22%20fill%3D%22%23d4af37%22%3E%D8%B7%3C/text%3E%3C/svg%3E",
+      "featured": false,
+      "canvas_type": "interactive_map",
+      "canvas_data": {
+        "type": "interactive_map",
+        "data": {
+          "center": [
+            36.0,
+            -4.5
+          ],
+          "zoom": 5,
+          "markers": [
+            {
+              "name": "طنجة",
+              "coords": [
+                35.76,
+                -5.83
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            },
+            {
+              "name": "جبل طارق",
+              "coords": [
+                36.14,
+                -5.35
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            },
+            {
+              "name": "طليطلة",
+              "coords": [
+                39.86,
+                -4.02
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            }
+          ]
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-B",
+      "death_boundary": "نحو 720 م حد تشغيلي؛ الوفاة غير مؤكدة",
+      "quick_prompts": [
+        "ما أبرز أحداث حياتك؟",
+        "ما الذي اختلف عليه المؤرخون في سيرتك؟"
+      ],
+      "timeline": [],
+      "artifacts": [],
+      "map_locations": [
+        {
+          "name": "طنجة",
+          "coords": [
+            35.76,
+            -5.83
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        },
+        {
+          "name": "جبل طارق",
+          "coords": [
+            36.14,
+            -5.35
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        },
+        {
+          "name": "طليطلة",
+          "coords": [
+            39.86,
+            -4.02
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        }
+      ]
+    },
+    {
       "id": "zenobia",
       "name": "زنوبيا (الزباء)",
       "arabic_name": "زنوبيا (الزباء)",
@@ -186,11 +450,11 @@
       "role_tag": "ملكة الشرق",
       "category": "queens",
       "category_ar": "ملكات ورائدات",
-      "era": "القرن الثالث الميلادي / ٢٤٠ - ٢٧٤ م",
+      "era": "القرن الثالث الميلادي؛ سنة الوفاة غير مؤكدة",
       "era_tag": "القرن الثالث الميلادي",
       "origin": "تدمر (سوريا)",
       "achievement": "توسيع مملكة تدمر ومواجهة الإمبراطورية الرومانية",
-      "quote": "أنا ملكة الشرق، ولن أنحني لروما.",
+      "quote": "تدمر وروما: صعود المملكة وتحولها",
       "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2257%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2275%22%20fill%3D%22%23d4af37%22%20text-anchor%3D%22middle%22%20font-size%3D%2224%22%3E%D8%AA%D8%AF%D9%85%D8%B1%3C/text%3E%3C/svg%3E",
       "featured": true,
       "canvas_type": "timeline",
@@ -217,16 +481,16 @@
         }
       },
       "voice_name": "ar-XA-Wavenet-A",
-      "death_boundary": "274 ap. J.-C. بحسب حدّ المخطط",
+      "death_boundary": "274 م حد معرفي؛ تاريخ الوفاة غير معروف",
       "quick_prompts": [
         "كيف بنيت إمبراطوريتك؟",
         "ما سبب صراعك مع روما؟"
       ],
       "timeline": [
         {
-          "year": "٢٤٠ م",
-          "title": "المولد",
-          "desc": "ولدت في تدمر"
+          "year": "نحو 267–268 م",
+          "title": "الوصاية",
+          "desc": "تولت الوصاية على ابنها بعد مقتل أذينة."
         },
         {
           "year": "٢٦٧ م",
@@ -265,6 +529,316 @@
           "desc": "أقصى اتساع للمملكة"
         }
       ]
+    },
+    {
+      "id": "shajar-al-durr",
+      "name": "شجر الدر",
+      "arabic_name": "شجر الدر",
+      "latin_name": "Shajar al-Durr",
+      "title": "سلطانة مصر",
+      "role_tag": "حاكمة",
+      "category": "queens",
+      "category_ar": "ملكات ورائدات",
+      "era": "القرن الثالث عشر",
+      "era_tag": "القرن الثالث عشر",
+      "origin": "القاهرة",
+      "achievement": "حكم مصر سنة 1250 م",
+      "quote": "تاريخ انتقال السلطة في مصر",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2258%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2278%22%20text-anchor%3D%22middle%22%20font-size%3D%2242%22%20fill%3D%22%23d4af37%22%3E%D8%B4%3C/text%3E%3C/svg%3E",
+      "featured": false,
+      "canvas_type": "timeline",
+      "canvas_data": {
+        "type": "timeline",
+        "data": {
+          "events": [
+            {
+              "date": "1250",
+              "title": "السلطنة",
+              "desc": "تولت حكم مصر سنة 1250 م."
+            },
+            {
+              "date": "1257",
+              "title": "نهاية الحياة",
+              "desc": "وفاتها المؤرخة في المصادر غالباً بسنة 1257 م."
+            }
+          ]
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-A",
+      "death_boundary": "1257 م تقريباً",
+      "quick_prompts": [
+        "ما أبرز أحداث حياتك؟",
+        "ما الذي اختلف عليه المؤرخون في سيرتك؟"
+      ],
+      "timeline": [
+        {
+          "year": "1250",
+          "title": "السلطنة",
+          "desc": "تولت حكم مصر سنة 1250 م."
+        },
+        {
+          "year": "1257",
+          "title": "نهاية الحياة",
+          "desc": "وفاتها المؤرخة في المصادر غالباً بسنة 1257 م."
+        }
+      ],
+      "artifacts": [],
+      "map_locations": []
+    },
+    {
+      "id": "bilqis",
+      "name": "بلقيس ملكة سبأ",
+      "arabic_name": "بلقيس ملكة سبأ",
+      "latin_name": "Queen of Sheba",
+      "title": "ملكة سبأ في التراث",
+      "role_tag": "شخصية تراثية",
+      "category": "queens",
+      "category_ar": "ملكات ورائدات",
+      "era": "العصور القديمة",
+      "era_tag": "العصور القديمة",
+      "origin": "سبأ / جنوب الجزيرة العربية",
+      "achievement": "تقاليد سبأ وملكة سبأ",
+      "quote": "بين الرواية الدينية والتاريخ",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2258%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2278%22%20text-anchor%3D%22middle%22%20font-size%3D%2242%22%20fill%3D%22%23d4af37%22%3E%D8%A8%3C/text%3E%3C/svg%3E",
+      "featured": false,
+      "canvas_type": "manuscript_viewer",
+      "canvas_data": {
+        "type": "manuscript_viewer",
+        "data": {
+          "title": "ملكة سبأ في التراث",
+          "subtitle": "بين الرواية الدينية والتاريخ"
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-A",
+      "death_boundary": "غير معروف؛ لا تاريخ وفاة موثق",
+      "quick_prompts": [
+        "ما أبرز أحداث حياتك؟",
+        "ما الذي اختلف عليه المؤرخون في سيرتك؟"
+      ],
+      "timeline": [],
+      "artifacts": [],
+      "map_locations": []
+    },
+    {
+      "id": "fatima-al-fihri",
+      "name": "فاطمة الفهرية",
+      "arabic_name": "فاطمة الفهرية",
+      "latin_name": "Fatima al-Fihri",
+      "title": "راعية جامع القرويين",
+      "role_tag": "راعية علم",
+      "category": "queens",
+      "category_ar": "ملكات ورائدات",
+      "era": "القرن التاسع",
+      "era_tag": "القرن التاسع",
+      "origin": "فاس",
+      "achievement": "تأسيس جامع القرويين منسوب إليها",
+      "quote": "فاس وجامع القرويين",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2258%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2278%22%20text-anchor%3D%22middle%22%20font-size%3D%2242%22%20fill%3D%22%23d4af37%22%3E%D9%81%3C/text%3E%3C/svg%3E",
+      "featured": false,
+      "canvas_type": "manuscript_viewer",
+      "canvas_data": {
+        "type": "manuscript_viewer",
+        "data": {
+          "title": "راعية جامع القرويين",
+          "subtitle": "فاس وجامع القرويين"
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-A",
+      "death_boundary": "نحو 880 م حد تشغيلي غير مؤكد",
+      "quick_prompts": [
+        "ما أبرز أحداث حياتك؟",
+        "ما الذي اختلف عليه المؤرخون في سيرتك؟"
+      ],
+      "timeline": [],
+      "artifacts": [],
+      "map_locations": []
+    },
+    {
+      "id": "ibn-al-haytham",
+      "name": "أبو علي الحسن بن الهيثم",
+      "arabic_name": "أبو علي الحسن بن الهيثم",
+      "latin_name": "Ibn al-Haytham",
+      "title": "عالم البصريات",
+      "role_tag": "عالم ومفكر",
+      "category": "thinkers",
+      "category_ar": "علماء ومفكرون",
+      "era": "القرن الحادي عشر",
+      "era_tag": "القرن الحادي عشر",
+      "origin": "البصرة / القاهرة",
+      "achievement": "كتاب المناظر ودراسة الرؤية",
+      "quote": "الضوء والتجربة في كتاب المناظر",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2258%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2278%22%20text-anchor%3D%22middle%22%20font-size%3D%2242%22%20fill%3D%22%23d4af37%22%3E%D8%A3%3C/text%3E%3C/svg%3E",
+      "featured": false,
+      "canvas_type": "manuscript_viewer",
+      "canvas_data": {
+        "type": "manuscript_viewer",
+        "data": {
+          "title": "عالم البصريات",
+          "subtitle": "الضوء والتجربة في كتاب المناظر"
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-C",
+      "death_boundary": "نحو 1040 م",
+      "quick_prompts": [
+        "ما أبرز أحداث حياتك؟",
+        "ما الذي اختلف عليه المؤرخون في سيرتك؟"
+      ],
+      "timeline": [],
+      "artifacts": [],
+      "map_locations": []
+    },
+    {
+      "id": "ibn-battuta",
+      "name": "ابن بطوطة",
+      "arabic_name": "ابن بطوطة",
+      "latin_name": "Ibn Battuta",
+      "title": "رحالة من طنجة",
+      "role_tag": "رحالة وقاض",
+      "category": "explorers",
+      "category_ar": "مستكشفون ورحالة",
+      "era": "القرن الرابع عشر",
+      "era_tag": "القرن الرابع عشر",
+      "origin": "طنجة",
+      "achievement": "رحلة من المغرب إلى الهند وشرق إفريقيا",
+      "quote": "مسار الرحلة عبر البلدان",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2258%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2278%22%20text-anchor%3D%22middle%22%20font-size%3D%2242%22%20fill%3D%22%23d4af37%22%3E%D8%A7%3C/text%3E%3C/svg%3E",
+      "featured": true,
+      "canvas_type": "interactive_map",
+      "canvas_data": {
+        "type": "interactive_map",
+        "data": {
+          "center": [
+            27.0,
+            40.0
+          ],
+          "zoom": 3,
+          "markers": [
+            {
+              "name": "طنجة",
+              "coords": [
+                35.76,
+                -5.83
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            },
+            {
+              "name": "مكة",
+              "coords": [
+                21.42,
+                39.83
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            },
+            {
+              "name": "دلهي",
+              "coords": [
+                28.61,
+                77.21
+              ],
+              "desc": "نقطة جغرافية تقريبية"
+            }
+          ]
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-B",
+      "death_boundary": "1368–1377 م؛ الوفاة مختلف عليها",
+      "quick_prompts": [
+        "ما أبرز أحداث حياتك؟",
+        "ما الذي اختلف عليه المؤرخون في سيرتك؟"
+      ],
+      "timeline": [],
+      "artifacts": [],
+      "map_locations": [
+        {
+          "name": "طنجة",
+          "coords": [
+            35.76,
+            -5.83
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        },
+        {
+          "name": "مكة",
+          "coords": [
+            21.42,
+            39.83
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        },
+        {
+          "name": "دلهي",
+          "coords": [
+            28.61,
+            77.21
+          ],
+          "desc": "نقطة جغرافية تقريبية"
+        }
+      ]
+    },
+    {
+      "id": "ibn-khaldoun",
+      "name": "ولي الدين عبد الرحمن بن محمد بن خلدون",
+      "arabic_name": "ولي الدين عبد الرحمن بن محمد بن خلدون",
+      "latin_name": "Ibn Khaldun",
+      "title": "صاحب المقدمة",
+      "role_tag": "مؤرخ ومفكر",
+      "category": "thinkers",
+      "category_ar": "علماء ومفكرون",
+      "era": "القرن الرابع عشر",
+      "era_tag": "القرن الرابع عشر",
+      "origin": "تونس / القاهرة",
+      "achievement": "المقدمة ونظرية العمران",
+      "quote": "مراحل البحث في العمران والتاريخ",
+      "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22128%22%20height%3D%22128%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2264%22%20fill%3D%22%2312151b%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2258%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%2278%22%20text-anchor%3D%22middle%22%20font-size%3D%2242%22%20fill%3D%22%23d4af37%22%3E%D9%88%3C/text%3E%3C/svg%3E",
+      "featured": false,
+      "canvas_type": "timeline",
+      "canvas_data": {
+        "type": "timeline",
+        "data": {
+          "events": [
+            {
+              "date": "1332",
+              "title": "الميلاد",
+              "desc": "ولد في تونس."
+            },
+            {
+              "date": "1377",
+              "title": "المقدمة",
+              "desc": "أنجز المسودة الأولى من المقدمة."
+            },
+            {
+              "date": "1406",
+              "title": "الوفاة",
+              "desc": "توفي بالقاهرة."
+            }
+          ]
+        }
+      },
+      "voice_name": "ar-XA-Wavenet-C",
+      "death_boundary": "1406 م",
+      "quick_prompts": [
+        "ما أبرز أحداث حياتك؟",
+        "ما الذي اختلف عليه المؤرخون في سيرتك؟"
+      ],
+      "timeline": [
+        {
+          "year": "1332",
+          "title": "الميلاد",
+          "desc": "ولد في تونس."
+        },
+        {
+          "year": "1377",
+          "title": "المقدمة",
+          "desc": "أنجز المسودة الأولى من المقدمة."
+        },
+        {
+          "year": "1406",
+          "title": "الوفاة",
+          "desc": "توفي بالقاهرة."
+        }
+      ],
+      "artifacts": [],
+      "map_locations": []
     }
   ]
 }

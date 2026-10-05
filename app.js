@@ -61,6 +61,14 @@ const AVATARS = {
     </svg>`
 };
 
+function avatarMarkup(char) {
+  if (AVATARS[char.id]) return AVATARS[char.id];
+  if (typeof char.avatar === 'string' && char.avatar.startsWith('data:image/svg+xml,')) {
+    return `<img src="${char.avatar}" alt="" style="display:block;width:100%;height:100%;object-fit:contain">`;
+  }
+  return AVATARS['al-mutanabbi'];
+}
+
 let CHARACTERS_DATA = [];
 
 
@@ -105,7 +113,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         roleTag: char.role_tag || char.roleTag,
         categoryAr: char.category_ar || char.categoryAr,
         eraTag: char.era_tag || char.eraTag,
-        avatarSvg: AVATARS[char.id] || AVATARS['al-mutanabbi'],
+        avatarSvg: avatarMarkup(char),
         quote: char.quote || '',
         title: char.title || '',
         origin: char.origin || '',
@@ -134,7 +142,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         roleTag: char.role_tag,
         categoryAr: char.category_ar,
         eraTag: char.era_tag,
-        avatarSvg: AVATARS[char.id] || AVATARS['al-mutanabbi'],
+        avatarSvg: avatarMarkup(char),
         mapLocations: char.map_locations || [],
         quickPrompts: char.quick_prompts || [],
         dialogueResponses: {default: char.quote || 'مرحباً بك! ماذا تود أن تسألني؟', prompts: {}}
@@ -650,7 +658,8 @@ async function streamChatMessageFromBackend(userText, character) {
             // Check for [GENERATE_IMAGE: ...] tag being streamed and replace with skeleton
             let displayHtml = escapeHtml(accumulatedText).replace(/\n/g, '<br>');
             if (displayHtml.includes('[GENERATE_IMAGE:')) {
-               displayHtml = displayHtml.replace(/\[GENERATE_IMAGE:.*?(?:\]|$)/g, '<div class="image-skeleton" style="width:100%; height:200px; background:rgba(212,175,55,0.1); border:1px dashed var(--accent-gold); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--accent-gold); animation: pulse 1.5s infinite;">جاري رسم المشهد...</div>');
+               const imageFinished = accumulatedText.includes('![Generated Image](') || accumulatedText.includes('تعذّر إنشاء الصورة');
+               displayHtml = displayHtml.replace(/\[GENERATE_IMAGE:.*?(?:\]|$)/g, imageFinished ? '' : '<div class="image-skeleton" style="width:100%; height:200px; background:rgba(212,175,55,0.1); border:1px dashed var(--accent-gold); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--accent-gold); animation: pulse 1.5s infinite;">جاري رسم المشهد...</div>');
             }
             
             // Parse Markdown images from backend ![Generated Image](url)
