@@ -434,17 +434,17 @@ function renderCanvasPreview(character) {
   const cData = character.canvas_data ? (character.canvas_data.data || {}) : {};
   
   if (canvasType === 'interactive_map') {
-    frame.innerHTML = '<div id="leaflet-map" style="width: 100%; height: 400px; border-radius: 8px; z-index: 1;"></div>';
+    frame.innerHTML = '<div id="leaflet-map" class="safar-leaflet-dark" style="width: 100%; height: 400px; border-radius: 8px; z-index: 1;"></div>';
     setTimeout(() => {
       const mapCenter = cData.center || [31.771959, 35.217018];
       const zoomLevel = cData.zoom || 6;
       
       const map = L.map('leaflet-map').setView(mapCenter, zoomLevel);
       
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-        subdomains: 'abcd',
-        maxZoom: 20
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors',
+        subdomains: 'abc',
+        maxZoom: 19
       }).addTo(map);
 
       // We explicitly mapped map_locations to mapLocations in the fix_mapping.js
