@@ -1,0 +1,100 @@
+{
+  "categories": [
+    "كل الاختيارات",
+    "التاريخ والفن",
+    "التركيز والعافية",
+    "أدوات المعرفة"
+  ],
+  "products": [
+    {
+      "id": "compass-antique",
+      "title": "بوصلة الرحّالة",
+      "category": "التاريخ والفن",
+      "desc": "قطعة تستحضر طرق الرحّالة والخرائط القديمة، وتقرّب التاريخ من تفاصيل المكان.",
+      "image_url": "assets/images/compass.jpg",
+      "affiliate_url": "",
+      "tag": "اختيار تحريري"
+    },
+    {
+      "id": "astrolabe-decoratif",
+      "title": "أسطرلاب نحاسي",
+      "category": "التاريخ والفن",
+      "desc": "أداة فلكية عريقة تروي جانباً من تاريخ الرصد والعلوم عند الحضارات القديمة.",
+      "image_url": "assets/images/compass.jpg",
+      "affiliate_url": "",
+      "tag": "قطعة لافتة"
+    },
+    {
+      "id": "livre-histoire-civilisations",
+      "title": "كتاب في تاريخ الحضارات",
+      "category": "التاريخ والفن",
+      "desc": "قراءة تفتح نوافذ على تجارب الشعوب وتحولات المجتمعات عبر الزمن.",
+      "image_url": "assets/images/rare-books.jpg",
+      "affiliate_url": "",
+      "tag": "من رفوف التاريخ"
+    },
+    {
+      "id": "atlas-historique",
+      "title": "أطلس تاريخي مصوّر",
+      "category": "التاريخ والفن",
+      "desc": "خرائط وصور تساعد على تتبّع طرق التجارة والهجرة وتبدّل الحدود.",
+      "image_url": "assets/images/rare-books.jpg",
+      "affiliate_url": "",
+      "tag": "مرجع بصري"
+    },
+    {
+      "id": "nootropics-focus",
+      "title": "مكمّلات التركيز الذهني",
+      "category": "التركيز والعافية",
+      "desc": "للمهتمين بموضوع التركيز والعافية؛ راجع المكوّنات والمصادر الطبية الموثوقة قبل اختيار أي مكمّل.",
+      "image_url": "assets/images/nootropics.jpg",
+      "affiliate_url": "",
+      "tag": "اختيار يحتاج إلى وعي"
+    },
+    {
+      "id": "cafe-noble",
+      "title": "قهوة مختصّة من محصول فاخر",
+      "category": "التركيز والعافية",
+      "desc": "حبوب مختارة لطقس هادئ يصاحب القراءة أو الاستماع أو متابعة حكاية جديدة.",
+      "image_url": "assets/images/coffee.webp",
+      "affiliate_url": "",
+      "tag": "رفيقة جلسة قراءة"
+    },
+    {
+      "id": "carnet-concentration",
+      "title": "دفتر للقراءة وتدوين الأفكار",
+      "category": "التركيز والعافية",
+      "desc": "مساحة ورقية لتسجيل الخواطر والأسئلة التي ترافق كل قراءة أو بحث.",
+      "image_url": "assets/images/rare-books.jpg",
+      "affiliate_url": "",
+      "tag": "أساسي لكل قارئ"
+    },
+    {
+      "id": "liseuse-kindle",
+      "title": "قارئ إلكتروني Kindle",
+      "category": "أدوات المعرفة",
+      "desc": "مكتبة محمولة للكتب والمراجع، تتيح مواصلة القراءة والبحث أينما ذهبت.",
+      "image_url": "assets/images/ereader.jpg",
+      "affiliate_url": "",
+      "tag": "رفيق المعرفة"
+    },
+    {
+      "id": "casque-audio-focus",
+      "title": "سماعة عازلة للاستماع والتركيز",
+      "category": "أدوات المعرفة",
+      "desc": "للاستماع إلى الحكايات والحوارات والموسيقى، أو للانغماس في القراءة والعمل.",
+      "image_url": "assets/images/headphones.jpg",
+      "affiliate_url": "",
+      "tag": "مساحة للإنصات"
+    },
+    {
+      "id": "support-livre-lecture",
+      "title": "حامل كتب للمكتب",
+      "category": "أدوات المعرفة",
+      "desc": "تفصيل عملي يرتّب مساحة القراءة ويجعل المراجع قريبة خلال الدراسة والعمل.",
+      "image_url": "assets/images/rare-books.jpg",
+      "affiliate_url": "",
+      "tag": "تفصيل عملي"
+    }
+  ]
+}
