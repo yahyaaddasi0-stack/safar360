@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://safar360-backend-production.up.railway.app/api/:match*"
+    }
+  ]
+}

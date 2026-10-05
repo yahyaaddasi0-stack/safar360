@@ -1,0 +1,23 @@
+{
+  "name": "Safar 360 | سَفَر ٣٦٠",
+  "short_name": "Safar360",
+  "description": "تجربة تفاعلية ثلاثية الأبعاد وحوار مباشر مع أعظم شخصيات التاريخ.",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "background_color": "#0a0c0e",
+  "theme_color": "#d4af37",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192/0a0c0e/d4af37?text=Safar+192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512/0a0c0e/d4af37?text=Safar+512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

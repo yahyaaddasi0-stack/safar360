@@ -1,0 +1,22 @@
+{
+  "name": "safar360",
+  "version": "1.0.0",
+  "description": "Safar 360 - Interactive Single Page Application for Historical Figures",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "safar360",
+    "history",
+    "spa",
+    "vanilla-js",
+    "dark-gold"
+  ],
+  "author": "Safar 360 Team",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^29.1.1",
+    "puppeteer": "^25.12.0"
+  }
+}

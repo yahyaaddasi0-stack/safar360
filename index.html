@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safar 360 | سَفَر ٣٦٠ - رحلة عبر التاريخ وحوار مع الشخصيات</title>
+  <meta name="description" content="Safar 360 - تجربة تفاعلية ثلاثية الأبعاد وحوار مباشر مع أعظم شخصيات التاريخ والعلوم والرحلات.">
+  <meta name="theme-color" content="#0a0c0e">
+
+  <!-- Google Fonts: Tajawal & Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- PWA Setup -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Safar 360">
+
+
+  <!-- Leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Atmospheric Canvas & Background Motifs -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="bg-ornament-layer"></div>
+  <div class="bg-ambient-radial"></div>
+
+  <!-- Main Container -->
+  <div class="app-layout">
+
+    <!-- 1. Top Navigation Bar -->
+    <header class="top-nav-bar" id="main-header">
+      <div class="nav-container">
+        
+        <!-- Brand / Logo -->
+        <div class="brand-group">
+          <div class="brand-emblem">
+            <svg class="emblem-svg" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="46" stroke="url(#gold-grad-1)" stroke-width="2.5" stroke-dasharray="4 2"/>
+              <circle cx="50" cy="50" r="38" stroke="url(#gold-grad-1)" stroke-width="1.5" opacity="0.6"/>
+              <!-- Astrolabe/Compass Motifs -->
+              <path d="M50 14 L50 86 M14 50 L86 50" stroke="url(#gold-grad-1)" stroke-width="1.5" stroke-linecap="round"/>
+              <polygon points="50,22 55,45 78,50 55,55 50,78 45,55 22,50 45,45" fill="url(#gold-grad-2)" opacity="0.85"/>
+              <circle cx="50" cy="50" r="5" fill="#f1c40f"/>
+              <defs>
+                <linearGradient id="gold-grad-1" x1="0" y1="0" x2="100" y2="100">
+                  <stop offset="0%" stop-color="#f1c40f"/>
+                  <stop offset="50%" stop-color="#d4af37"/>
+                  <stop offset="100%" stop-color="#996515"/>
+                </linearGradient>
+                <linearGradient id="gold-grad-2" x1="0" y1="0" x2="100" y2="100">
+                  <stop offset="0%" stop-color="#f1c40f"/>
+                  <stop offset="100%" stop-color="#d4af37"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="emblem-pulse"></div>
+          </div>
+          <div class="brand-text">
+            <div class="brand-title">
+              <span class="arabic-name">سَفَر ٣٦٠</span>
+              <span class="latin-name">SAFAR 360</span>
+            </div>
+            <div class="brand-tagline">حوار حيّ عبر أروقة التاريخ</div>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="nav-links" aria-label="التنقل الرئيسي">
+          <a href="#hero-carousel-section" class="nav-item active">
+            <span class="nav-icon">✦</span>
+            <span>الشخصيات البارزة</span>
+          </a>
+          <a href="#category-filter-section" class="nav-item">
+            <span class="nav-icon">❖</span>
+            <span>التصنيفات</span>
+          </a>
+          <a href="#main-split-screen" class="nav-item">
+            <span class="nav-icon">💬</span>
+            <span>الحوار التفاعلي</span>
+          </a>
+          <a href="#main-split-screen" class="nav-item" onclick="switchToCanvasTab('scene'); return false;">
+            <span class="nav-icon">🪐</span>
+            <span>المشهد 360°</span>
+          </a>
+        </nav>
+
+        <!-- Right / Utility Actions -->
+        <div class="nav-actions">
+          
+          <!-- Audio Ambience Switcher -->
+          <button class="action-btn audio-btn" id="audio-toggle-btn" title="تشغيل / إيقاف الصوت البيئي التاريخي" aria-label="الصوت البيئي">
+            <span class="audio-waves" id="audio-waves-icon">
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+            </span>
+            <span class="btn-text" id="audio-btn-label">أثير الصحراء</span>
+          </button>
+
+          <!-- Timeline Era Badge -->
+          <div class="era-badge" title="العصر المتاح حالياً">
+            <span class="badge-dot"></span>
+            <span class="badge-text" id="current-era-display">العصر الذهبي (القرن ٨ - ١٤ م)</span>
+          </div>
+
+          <!-- User VIP Profile -->
+          <div class="user-profile-badge" title="المسافر عبر الزمن">
+            <div class="user-avatar">
+              <span>م</span>
+            </div>
+            <div class="user-info">
+              <span class="user-name">المُستكشف</span>
+              <span class="user-role">درجة أولى</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+
+    <!-- 2. Hero Section & Carousel (5 Featured Characters) -->
+    <section class="hero-carousel-section" id="hero-carousel-section">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="tag-symbol">❖</span>
+          <span>شخصيات النخبة الخالدة</span>
+          <span class="tag-symbol">❖</span>
+        </div>
+        <h1 class="section-title">
+          استحضر قامات الحضارة <span class="gold-gradient-text">وحاورهم وجهاً لوجه</span>
+        </h1>
+        <p class="section-subtitle">
+          اختر شخصيتك التاريخية المفضلة من الكاروسيل للبدء في رحلة تفاعلية حية، واستكشف آثارهم وخوض حواراً حصرياً معهم.
+        </p>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="carousel-wrapper">
+        
+        <!-- Navigation Buttons -->
+        <button class="carousel-nav-btn prev-btn" id="carousel-prev" aria-label="الشخصية السابقة">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <button class="carousel-nav-btn next-btn" id="carousel-next" aria-label="الشخصية التالية">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Carousel Track -->
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carousel-track">
+            <!-- Dynamic 5 Character Cards injected by JS / Fallback structure in place -->
+          </div>
+        </div>
+
+        <!-- Carousel Pagination / Progress -->
+        <div class="carousel-controls-bottom">
+          <div class="carousel-dots" id="carousel-dots">
+            <!-- 5 Dots -->
+          </div>
+          <div class="carousel-counter">
+            <span id="current-slide-idx">01</span> / <span id="total-slides-count">05</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Category Filter Bar -->
+    <section class="category-filter-section" id="category-filter-section">
+      <div class="filter-bar-container">
+        
+        <div class="filter-header-inline">
+          <span class="filter-lead-icon">⚡</span>
+          <span class="filter-lead-text">التصنيفات التاريخية :</span>
+        </div>
+
+        <div class="filter-pills-list" id="category-pills" role="tablist">
+          
+          <button class="filter-pill active" data-category="all" role="tab" aria-selected="true">
+            <span class="pill-icon">✦</span>
+            <span class="pill-title">جميع الشخصيات</span>
+            <span class="pill-count">5</span>
+          </button>
+
+          <!-- 1. Commandants & Conquérants -->
+          <button class="filter-pill" data-category="commanders" role="tab" aria-selected="false">
+            <span class="pill-icon">⚔️</span>
+            <span class="pill-title">Commandants & Conquérants</span>
+            <span class="pill-sub">قادة وفاتحون</span>
+          </button>
+
+          <!-- 2. Écrivains & Poètes -->
+          <button class="filter-pill" data-category="writers" role="tab" aria-selected="false">
+            <span class="pill-icon">📜</span>
+            <span class="pill-title">Écrivains & Poètes</span>
+            <span class="pill-sub">كتّاب وشعراء</span>
+          </button>
+
+          <!-- 3. Savants & Penseurs -->
+          <button class="filter-pill" data-category="thinkers" role="tab" aria-selected="false">
+            <span class="pill-icon">🔭</span>
+            <span class="pill-title">Savants & Penseurs</span>
+            <span class="pill-sub">علماء ومفكرون</span>
+          </button>
+
+          <!-- 4. Explorateurs & Voyageurs -->
+          <button class="filter-pill" data-category="explorers" role="tab" aria-selected="false">
+            <span class="pill-icon">🧭</span>
+            <span class="pill-title">Explorateurs & Voyageurs</span>
+            <span class="pill-sub">رحالة ومستكشفون</span>
+          </button>
+
+          <!-- 5. Reines & Figures Féminines -->
+          <button class="filter-pill" data-category="queens" role="tab" aria-selected="false">
+            <span class="pill-icon">👑</span>
+            <span class="pill-title">Reines & Figures Féminines</span>
+            <span class="pill-sub">ملكات ورائدات</span>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Main Split-Screen Layout (Left: Chat Interface | Right: Interactive Canvas) -->
+    <main class="main-split-screen" id="main-split-screen">
+      
+      <!-- Split Screen Layout Notice / Mobile Toggle -->
+      <div class="split-mobile-toggle">
+        <button class="toggle-view-btn active" id="btn-show-chat" onclick="setMobileView('chat')">
+          <span>💬 واجهة الحوار (Chat)</span>
+        </button>
+        <button class="toggle-view-btn" id="btn-show-canvas" onclick="setMobileView('canvas')">
+          <span>🪐 المشهد التفاعلي (Canvas 360°)</span>
+        </button>
+      </div>
+
+      <div class="split-screen-container">
+
+        <!-- ============================================ -->
+        <!-- LEFT PANEL: Chat Interface                   -->
+        <!-- ============================================ -->
+        <aside class="split-panel chat-panel" id="chat-interface-panel" aria-label="واجهة المحادثة التفاعلية">
+          
+          <!-- Top Nav / Back to Characters Button -->
+          <div class="chat-top-nav-bar">
+            <button type="button" class="back-to-carousel-btn" id="btn-back-to-carousel" onclick="backToCarousel()">
+              <span class="back-arrow">→</span>
+              <span class="back-text">العودة إلى الشخصيات (Back to Characters)</span>
+            </button>
+            <div class="active-mode-tag">
+              <span class="mode-dot"></span>
+              <span>حوار حي ومباشر</span>
+            </div>
+          </div>
+
+          <!-- Chat Panel Header -->
+          <div class="chat-header">
+            <div class="chat-character-identity">
+              <div class="character-mini-avatar" id="chat-avatar-container">
+                <div class="mini-avatar-img" id="chat-mini-avatar"></div>
+                <div class="online-indicator" title="متصل بالوعي التاريخي"></div>
+              </div>
+              <div class="character-titles">
+                <div class="chat-name-row">
+                  <h2 class="chat-character-name" id="chat-character-name">ابن بطوطة</h2>
+                  <span class="chat-character-badge" id="chat-character-badge">أمير الرحالة</span>
+                </div>
+                <div class="chat-character-status" id="chat-character-status">
+                  <span class="status-dot"></span>
+                  <span class="status-text">جاهز للحوار والإجابة عن أسرار عصره</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Header Tools -->
+            <div class="chat-header-actions">
+              <button class="icon-tool-btn" id="btn-tts-toggle" title="تفعيل / كتم الصوت الآلي للإجابات">
+                <span id="tts-icon">🔊</span>
+              </button>
+              <button class="icon-tool-btn" id="btn-clear-chat" title="بدء محادثة جديدة">
+                <span>🔄</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Character Bio Snapshot Bar -->
+          <div class="chat-character-bio-bar" id="chat-bio-bar">
+            <div class="bio-pill">
+              <span class="bio-label">الحقبة :</span>
+              <span class="bio-val" id="bio-era">١٣٠٤ - ١٣٦٩ م</span>
+            </div>
+            <div class="bio-pill">
+              <span class="bio-label">الموطن :</span>
+              <span class="bio-val" id="bio-origin">طنجة، المغرب</span>
+            </div>
+            <div class="bio-pill">
+              <span class="bio-label">الأثر الأكبر :</span>
+              <span class="bio-val" id="bio-achievement">تحفة النظار (الرحلة)</span>
+            </div>
+          </div>
+
+          <!-- Chat Conversation Scroll Area -->
+          <div class="chat-messages-viewport" id="chat-messages-container">
+            <!-- Messages will be injected dynamically -->
+          </div>
+
+          <!-- Quick Suggestion Prompts -->
+          <div class="chat-quick-prompts-section">
+            <div class="prompts-title">
+              <span>✦</span> أسئلة مقترحة للحوار :
+            </div>
+            <div class="prompts-carousel" id="quick-prompts-list">
+              <!-- Dynamically updated based on active character -->
+            </div>
+          </div>
+
+          <!-- Chat Input Area -->
+          <div class="chat-input-container">
+            <form class="chat-input-form" id="chat-form" onsubmit="handleChatSubmit(event)">
+              
+              <!-- Voice Input Button (Mic Active: #e74c3c) -->
+              <button type="button" class="mic-btn" id="mic-toggle-btn" title="تحدث صوتياً للشخصية" aria-label="التحدث عبر الميكروفون">
+                <svg class="mic-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                  <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                </svg>
+                <div class="mic-ripple"></div>
+              </button>
+
+              <!-- Text Input -->
+              <div class="input-wrapper">
+                <textarea 
+                  id="chat-textarea" 
+                  class="chat-textarea" 
+                  rows="1" 
+                  placeholder="اسأل الشخصية عن مسيرتها، أفكارها أو أسرار عصرها..."
+                  aria-label="رسالتك للشخصية"></textarea>
+              </div>
+
+              <!-- Send Button -->
+              <button type="submit" class="send-btn" id="chat-send-btn" title="إرسال السؤال" aria-label="إرسال">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+              </button>
+
+            </form>
+            
+            <div class="input-footer-hint">
+              <span class="hint-dot"></span>
+              <span id="mic-status-hint">اضغط على الميكروفون للحديث الصوتي، أو اكتب استفسارك واضغط Enter</span>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- ============================================ -->
+        <!-- RIGHT PANEL: Interactive Canvas              -->
+        <!-- ============================================ -->
+        <section class="split-panel canvas-panel" id="interactive-canvas-panel" aria-label="Interactive Canvas (Map/Manuscript)">
+          
+          <!-- Empty placeholder container taking up the right half of the screen -->
+          <div class="interactive-canvas-placeholder" id="interactive-canvas-placeholder">
+            
+            <!-- Header Label -->
+            <div class="canvas-placeholder-header">
+              <div class="canvas-title-group">
+                <span class="canvas-title-icon">🗺️</span>
+                <h2 class="canvas-main-label">Interactive Canvas (Map/Manuscript)</h2>
+              </div>
+              <div class="canvas-status-pill">
+                <span class="pulse-dot"></span>
+                <span>المساحة البصرية التفاعلية</span>
+              </div>
+            </div>
+
+            <!-- Placeholder Main Content Area -->
+            <div class="canvas-placeholder-body">
+              <div class="canvas-empty-state-box">
+                
+                <!-- Ornate Astrolabe / Compass Watermark Icon -->
+                <div class="canvas-glow-circle">
+                  <svg class="astrolabe-grid-svg" viewBox="0 0 100 100" fill="none">
+                    <circle cx="50" cy="50" r="46" stroke="url(#ph-gold)" stroke-width="1.5" stroke-dasharray="4 2"/>
+                    <circle cx="50" cy="50" r="34" stroke="url(#ph-gold)" stroke-width="1" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="20" stroke="url(#ph-gold)" stroke-width="1" stroke-dasharray="2 2"/>
+                    <line x1="4" y1="50" x2="96" y2="50" stroke="url(#ph-gold)" stroke-width="1" opacity="0.5"/>
+                    <line x1="50" y1="4" x2="50" y2="96" stroke="url(#ph-gold)" stroke-width="1" opacity="0.5"/>
+                    <polygon points="50,15 54,46 85,50 54,54 50,85 46,54 15,50 46,46" fill="url(#ph-gold)" opacity="0.25"/>
+                    <circle cx="50" cy="50" r="4" fill="#f1c40f"/>
+                    <defs>
+                      <linearGradient id="ph-gold" x1="0" y1="0" x2="100" y2="100">
+                        <stop offset="0%" stop-color="#f1c40f"/>
+                        <stop offset="100%" stop-color="#996515"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+
+                <h3 class="canvas-headline">Interactive Canvas (Map/Manuscript)</h3>
+                <p class="canvas-desc">
+                  مساحة العرض التفاعلية المخصصة للمخطوطات التاريخية النادرة، خرائط الرحلات الاستكشافية، والمشاهد المكانية المرتبطة بالشخصية.
+                </p>
+
+                <!-- Info Meta Tags -->
+                <div class="canvas-placeholder-chips">
+                  <div class="placeholder-chip">
+                    <span class="chip-label">الشخصية الحالية :</span>
+                    <span class="chip-val" id="canvas-active-name">طارق بن زياد</span>
+                  </div>
+                  <div class="placeholder-chip">
+                    <span class="chip-label">نوع العرض :</span>
+                    <span class="chip-val">الخرائط والمخطوطات (Map & Manuscript)</span>
+                  </div>
+                </div>
+
+                <!-- Dynamic Canvas Preview / Interactive View Area -->
+                <div class="canvas-preview-frame" id="canvas-preview-frame">
+                  <!-- Injected dynamically with active character map & manuscript highlights -->
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Hotspot Modal Preview -->
+    <div class="modal-backdrop" id="hotspot-modal" onclick="closeHotspotModal(event)">
+      <div class="modal-card" onclick="event.stopPropagation()">
+        <button class="modal-close-btn" onclick="closeHotspotModal()">&times;</button>
+        <div class="modal-icon" id="modal-icon">✦</div>
+        <h3 class="modal-title" id="modal-title">تفاصيل الأثر التاريخي</h3>
+        <div class="modal-body" id="modal-body">
+          وصف الأثر التاريخي ودوره البارز في مسيرة الشخصية.
+        </div>
+        <div class="modal-footer">
+          <button class="btn-gold-action" onclick="askAboutHotspot()">اسأل الشخصية عن هذا الأثر</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="gold-gradient-text">سَفَر ٣٦٠ (Safar 360)</span> — بوابة الاستكشاف المعرفي والتفاعل الحي مع عباقرة التاريخ.
+        </div>
+        <div class="footer-tech-tags">
+          <span class="tech-tag">Pure HTML5</span>
+          <span class="tech-tag">CSS3 (Dark & Gold)</span>
+          <span class="tech-tag">Vanilla JavaScript</span>
+          <span class="tech-tag">RTL Native</span>
+          <span class="tech-tag">Tajawal & Cairo</span>
+        </div>
+        <div class="footer-copyright">
+          © 2026 Safar 360. جميع الحقوق محفوظة لرواد الاستكشاف والتاريخ.
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+  
+  <!-- PWA Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('ServiceWorker registered:', reg.scope))
+          .catch(err => console.error('ServiceWorker registration failed:', err));
+      });
+    }
+  </script>
+</body>
+</html>
