@@ -1,14 +1,12 @@
 """Arabic Google Cloud TTS, using the mounted Vertex service account file."""
 
-import os
 import re
-from pathlib import Path
 
 from fastapi import HTTPException
 from google.cloud import texttospeech
-from google.oauth2 import service_account
 from pydantic import BaseModel, Field
 
+from app.core.gcp_auth import load_service_account
 from app.services.ai_service import filter_tts_text
 
 
@@ -19,10 +17,7 @@ class TTSRequest(BaseModel):
 
 class TTSService:
     def __init__(self) -> None:
-        credentials_file = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "")
-        if not credentials_file or not Path(credentials_file).is_file():
-            raise HTTPException(status_code=503, detail="TTS credential file unavailable")
-        credentials = service_account.Credentials.from_service_account_file(credentials_file)
+        credentials = load_service_account()
         self.client = texttospeech.TextToSpeechAsyncClient(credentials=credentials)
 
     async def generate_audio(self, request: TTSRequest) -> bytes:

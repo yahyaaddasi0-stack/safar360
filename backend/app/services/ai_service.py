@@ -3,7 +3,6 @@
 import asyncio
 import base64
 import json
-import os
 import re
 import tempfile
 import time
@@ -14,12 +13,12 @@ from typing import AsyncGenerator
 
 import vertexai
 from fastapi import HTTPException
-from google.oauth2 import service_account
 from vertexai.generative_models import Content, GenerationConfig, GenerativeModel, Part
 from vertexai.preview.vision_models import ImageGenerationModel
 
 from app.api.v1.endpoints.characters import load_characters
 from app.core.config import settings
+from app.core.gcp_auth import load_service_account
 from app.schemas.chat import (
     ChatCompletionRequest,
     ChatCompletionResponse,
@@ -84,20 +83,15 @@ class BaseAIService(ABC):
 
 
 class VertexAIService(BaseAIService):
-    """Uses only a mounted service-account file named by GOOGLE_APPLICATION_CREDENTIALS."""
+    """Uses only the configured Google service account, never implicit ADC."""
 
     def __init__(self) -> None:
-        credentials_file = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "")
-        if not credentials_file or not Path(credentials_file).is_file():
-            raise HTTPException(
-                status_code=503,
-                detail="Vertex AI credential file unavailable via GOOGLE_APPLICATION_CREDENTIALS",
-            )
-        if not os.environ.get("GOOGLE_CLOUD_PROJECT"):
-            raise HTTPException(status_code=503, detail="GOOGLE_CLOUD_PROJECT is required for Vertex AI")
-        credentials = service_account.Credentials.from_service_account_file(credentials_file)
+        credentials = load_service_account()
+        project_id = settings.GOOGLE_CLOUD_PROJECT or credentials.project_id
+        if not project_id:
+            raise HTTPException(status_code=503, detail="Google Cloud project is not configured")
         vertexai.init(
-            project=settings.GOOGLE_CLOUD_PROJECT,
+            project=project_id,
             location=settings.VERTEX_AI_LOCATION,
             credentials=credentials,
         )

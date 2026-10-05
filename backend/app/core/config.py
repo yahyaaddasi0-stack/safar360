@@ -18,7 +18,7 @@ class Settings(BaseSettings):
         return [origin.strip().rstrip("/") for origin in self.FRONTEND_URL.split(",") if origin.strip()]
 
     # Google Vertex AI Configuration (Prepared for Phase 3)
-    GOOGLE_CLOUD_PROJECT: str = os.getenv("GOOGLE_CLOUD_PROJECT", "safar360-vertex-ai")
+    GOOGLE_CLOUD_PROJECT: str = os.getenv("GOOGLE_CLOUD_PROJECT", "")
     VERTEX_AI_LOCATION: str = os.getenv("VERTEX_AI_LOCATION", "us-central1")
     VERTEX_AI_MODEL: str = os.getenv("VERTEX_AI_MODEL", "gemini-2.5-flash")
     VERTEX_AI_CREDENTIALS_FILE: str = ""
