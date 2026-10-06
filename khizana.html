@@ -73,6 +73,10 @@
     .eyebrow { margin: 0 0 8px; color: var(--accent-gold); font-size: 10px; font-weight: 700; }
     .product-title { margin: 0; font-family: var(--font-display), var(--font-ui); font-size: 23px; font-weight: 400; line-height: 1.5; }
     .product-description { min-height: 52px; margin: 10px 0 19px; color: var(--text-muted); font-size: 12px; line-height: 1.8; }
+    .variant-field { display: grid; gap: 7px; margin: 0 0 14px; }
+    .variant-label { color: var(--text-muted); font-size: 10px; font-weight: 700; }
+    .variant-select { width: 100%; min-height: 42px; border: 1px solid rgba(212, 175, 55, .34); border-radius: 9px; padding: 9px 11px; background: rgba(10, 12, 14, .76); color: var(--text-main); cursor: pointer; direction: rtl; font-family: var(--font-ui); font-size: 11px; line-height: 1.6; }
+    .variant-select:focus-visible { outline: 2px solid var(--accent-gold); outline-offset: 2px; }
     .discover-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; border: 1px solid rgba(212, 175, 55, .56); border-radius: 9px; padding: 11px 13px; background: transparent; color: var(--accent-gold); cursor: pointer; font-size: 12px; font-weight: 700; text-decoration: none; transition: background .2s ease, color .2s ease; }
     .discover-link:hover, .discover-link:focus-visible { outline: none; background: var(--accent-gold); color: var(--bg-dark); }
     .discover-link .arrow { font-size: 17px; line-height: 10px; }
@@ -119,6 +123,13 @@
     }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+    @media (min-width: 1024px) {
+      .khizana { max-width: 1350px; width: 95%; margin: 0 auto; }
+      .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+      .product-card, .skeleton-card { border-color: transparent; }
+      .product-card:hover, .product-card.is-daily { border-color: transparent; }
+      .filter-button, .filter-button:hover, .filter-button[aria-pressed="true"] { border-color: transparent; }
     }
   </style>
 </head>
@@ -176,7 +187,7 @@
     (() => {
       const ALL_CATEGORY = 'كل الاختيارات';
       const STORAGE_KEY = 'sard360-khizana-catalog-v3';
-      const dataUrl = new URL('./products.json', window.location.href);
+      const dataUrl = new URL('./products.json?v=master-items-1', window.location.href);
       const filtersEl = document.getElementById('category-filters');
       const gridEl = document.getElementById('product-grid');
       const countEl = document.getElementById('product-count');
@@ -218,7 +229,12 @@
           desc: String(item.desc ?? item.description ?? ''),
           image_url: String(item.image_url ?? item.image ?? ''),
           affiliate_url: String(item.affiliate_url ?? item.affiliateUrl ?? ''),
-          tag: String(item.tag ?? item.eyebrow ?? 'اختيار تحريري')
+          tag: String(item.tag ?? item.eyebrow ?? 'اختيار تحريري'),
+          variants: Array.isArray(item.variants) ? item.variants.map((variant, index) => ({
+            id: String(variant.id || `${item.id || 'variant'}-${index + 1}`),
+            label: String(variant.label || variant.title || `النموذج ${index + 1}`),
+            affiliate_url: String(variant.affiliate_url ?? variant.affiliateUrl ?? '')
+          })).filter(variant => variant.affiliate_url) : []
         };
       }
 
@@ -275,9 +291,17 @@
 
         gridEl.innerHTML = visible.map((product, index) => {
           const imageUrl = product.image_url ? new URL(product.image_url, dataUrl).href : '';
-          const affiliateUrl = product.affiliate_url ? injectAffiliateParameters(product.affiliate_url) : '';
+          const initialUrl = product.variants.length ? product.variants[0].affiliate_url : product.affiliate_url;
+          const affiliateUrl = initialUrl ? injectAffiliateParameters(initialUrl) : '';
           const hasLink = Boolean(affiliateUrl);
           const href = hasLink ? escapeHtml(affiliateUrl) : '#';
+          const variantSelector = product.variants.length > 1 ? `
+                <label class="variant-field">
+                  <span class="variant-label">اختر النموذج</span>
+                  <select class="variant-select" data-product-id="${escapeHtml(product.id)}" aria-label="اختر نموذجًا لـ ${escapeHtml(product.title)}">
+                    ${product.variants.map(variant => `<option value="${escapeHtml(variant.id)}">${escapeHtml(variant.label)}</option>`).join('')}
+                  </select>
+                </label>` : '';
           const isDaily = product.id === dailyId;
           const style = animate ? ` style="--stagger:${Math.min(index * 45, 360)}ms"` : '';
           return `
@@ -291,6 +315,7 @@
                 <p class="eyebrow">${escapeHtml(product.tag)}</p>
                 <h3 class="product-title">${escapeHtml(product.title)}</h3>
                 <p class="product-description">${escapeHtml(product.desc)}</p>
+                ${variantSelector}
                 <a class="discover-link" href="${href}" ${hasLink ? 'target="_blank" rel="sponsored noopener noreferrer"' : 'data-unconfigured="true" aria-label="اكتشف ' + escapeHtml(product.title) + ' — رابط المتجر غير مضاف بعد"'}>
                   <span>اكتشف لدى المتجر</span><span class="arrow" aria-hidden="true">↗</span>
                 </a>
@@ -308,7 +333,9 @@
       function getSavedCatalog() {
         try {
           const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
-          return saved && saved.data && Array.isArray(saved.data.products) ? saved.data : null;
+          const data = saved && saved.data;
+          const hasMasterShape = data && Array.isArray(data.master_items) && Array.isArray(data.books);
+          return hasMasterShape || (data && Array.isArray(data.products)) ? data : null;
         } catch (_) { return null; }
       }
 
@@ -323,8 +350,10 @@
       }
 
       function applyCatalog(data, fromCache = false) {
-        if (!data || !Array.isArray(data.products)) throw new Error('Le JSON doit contenir un tableau products.');
-        products = shuffle(data.products.map(normalizeProduct).filter(item => item.id && item.title));
+        const hasMasterShape = data && Array.isArray(data.master_items) && Array.isArray(data.books);
+        const catalogItems = hasMasterShape ? [...data.master_items, ...data.books] : data && Array.isArray(data.products) ? data.products : null;
+        if (!catalogItems) throw new Error('Le JSON doit contenir master_items/books ou un tableau products.');
+        products = shuffle(catalogItems.map(normalizeProduct).filter(item => item.id && item.title));
         const dataCategories = Array.isArray(data.categories) ? data.categories.map(String) : [];
         categories = [ALL_CATEGORY, ...new Set([...dataCategories.filter(category => category !== ALL_CATEGORY), ...products.map(item => item.category)])];
         activeCategory = ALL_CATEGORY;
@@ -382,6 +411,29 @@
         renewButton.classList.add('is-spinning');
         window.setTimeout(() => renewButton.classList.remove('is-spinning'), 650);
         statusEl.textContent = 'تم تجديد الترشيحات';
+      });
+
+      gridEl.addEventListener('change', event => {
+        const select = event.target.closest('select.variant-select[data-product-id]');
+        if (!select) return;
+        const product = products.find(item => item.id === select.dataset.productId);
+        const variant = product && product.variants.find(item => item.id === select.value);
+        const link = select.closest('.card-content')?.querySelector('.discover-link');
+        if (!link) return;
+        const affiliateUrl = variant ? injectAffiliateParameters(variant.affiliate_url) : '';
+        if (affiliateUrl) {
+          link.href = affiliateUrl;
+          link.target = '_blank';
+          link.rel = 'sponsored noopener noreferrer';
+          link.removeAttribute('data-unconfigured');
+          link.removeAttribute('aria-label');
+        } else {
+          link.href = '#';
+          link.removeAttribute('target');
+          link.removeAttribute('rel');
+          link.dataset.unconfigured = 'true';
+          link.setAttribute('aria-label', `رابط المتجر غير مضاف لنموذج ${select.value}`);
+        }
       });
 
       gridEl.addEventListener('click', event => {
