@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SAFAR 360 (سَفَر ٣٦٠) - STYLESHEET
+   SARD 360 · SAFAR 360 INTERACTIVE PROJECT - STYLESHEET
    Pure CSS3 | Dark & Gold Theme | RTL Native | Tajawal & Cairo Typography
    ========================================================================== */
 
@@ -2544,7 +2544,7 @@ body.in-chat-mode .main-split-screen {
 }
 
 
-/* Darken the public OpenStreetMap raster layer to match Safar 360's dark & gold canvas. */
+/* Darken the public OpenStreetMap raster layer for Sard360's Safar interactive project. */
 .safar-leaflet-dark .leaflet-tile-pane {
   filter: invert(1) hue-rotate(180deg) brightness(0.72) saturate(0.62) contrast(0.9);
 }

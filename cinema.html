@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0a0c0e">
-  <meta name="description" content="سينما سرد — وثائقيات طويلة ورحلات معرفية من قناة سرد 360.">
-  <title>سينما سرد | وثائقيات طويلة — سرد 360</title>
+  <meta name="description" content="سينما سرد، إحدى مساحات منصة سرد 360، للأفلام الوثائقية الكبرى والتحقيقات المرئية.">
+  <title>سينما سرد | سرد 360</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -15,14 +15,15 @@
     html{background:var(--bg-dark);color:var(--text);font-family:var(--font-body);scroll-behavior:smooth}
     body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -18%,rgba(212,175,55,.12),transparent 42%),var(--bg-dark);line-height:1.7}
     a{color:inherit}
+    button{font-family:inherit}
     .page-shell{width:min(1320px,calc(100% - 40px));margin:0 auto;padding:22px 0 60px}
     .topline{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:6px 0 22px;border-bottom:1px solid rgba(212,175,55,.22)}
-    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:0 0 auto}
     .brand-mark{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(212,175,55,.6);border-radius:50%;color:var(--accent-gold);font-size:20px;box-shadow:0 0 22px rgba(212,175,55,.12)}
     .brand-name{font-family:var(--font-head);font-weight:800;font-size:18px;line-height:1.2}
     .brand-sub{display:block;color:var(--muted);font-size:11px;font-weight:500}
-    .top-links{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-    .top-links a{padding:8px 13px;border:1px solid var(--border);border-radius:999px;text-decoration:none;font-size:13px;color:#d8d2c4;transition:.2s ease}
+    .top-links{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+    .top-links a{padding:7px 11px;border:1px solid var(--border);border-radius:999px;text-decoration:none;font-size:12px;color:#d8d2c4;transition:.2s ease}
     .top-links a:hover,.top-links a:focus-visible{border-color:var(--accent-gold);color:var(--accent-gold)}
     .hero{padding:50px 0 26px;text-align:center}
     .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:4px 13px;border:1px solid rgba(212,175,55,.3);border-radius:99px;color:var(--accent-gold);background:rgba(212,175,55,.07);font-size:12px;font-weight:700;letter-spacing:.03em}
@@ -32,12 +33,12 @@
     .section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:30px 0 14px}
     .section-heading h2{margin:0;font-family:var(--font-head);font-size:clamp(22px,3vw,30px);line-height:1.3}
     .section-heading p{margin:5px 0 0;color:var(--muted);font-size:13px}
-    .quiet-button,.watch-button{appearance:none;border:1px solid rgba(212,175,55,.5);border-radius:999px;background:transparent;color:#efd487;padding:9px 16px;font:700 13px var(--font-body);cursor:pointer;text-decoration:none;transition:.2s ease;white-space:nowrap}
+    .quiet-button,.watch-button{appearance:none;border:1px solid rgba(212,175,55,.5);border-radius:999px;background:transparent;color:#efd487;padding:9px 16px;font:700 14px var(--font-head);cursor:pointer;text-decoration:none;transition:.2s ease;white-space:nowrap}
     .quiet-button:hover,.quiet-button:focus-visible{background:rgba(212,175,55,.1);border-color:var(--accent-gold)}
     .featured-card{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(280px,.88fr);min-height:310px;overflow:hidden;border:1px solid rgba(212,175,55,.34);border-radius:22px;background:linear-gradient(135deg,rgba(18,21,27,.98),rgba(12,14,18,.98));box-shadow:0 20px 60px rgba(0,0,0,.32)}
-    .featured-media{position:relative;min-height:100%;overflow:hidden;background:#161a20;aspect-ratio:16/9}
-    .featured-media img{display:block;width:100%;height:100%;min-height:310px;object-fit:cover;transition:transform .6s ease}
-    .featured-card:hover .featured-media img{transform:scale(1.025)}
+    .featured-media{position:relative;display:block;width:100%;min-height:0;aspect-ratio:16/9;overflow:hidden;padding:0;border:0;background:#161a20;cursor:pointer}
+    .featured-media img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+    .featured-media:hover img{transform:scale(1.025)}
     .media-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.62),transparent 48%);pointer-events:none}
     .duration-badge{position:absolute;bottom:14px;inset-inline-start:14px;padding:4px 9px;border-radius:7px;background:rgba(0,0,0,.78);border:1px solid rgba(255,255,255,.18);font-size:12px;font-weight:700;direction:ltr}
     .feature-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(22px,4vw,44px)}
@@ -51,47 +52,65 @@
     .filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 16px}
     .filter-button{padding:7px 13px;border:1px solid var(--border);border-radius:99px;background:rgba(18,21,27,.8);color:#b6bfca;font:600 12px var(--font-body);cursor:pointer}
     .filter-button[aria-pressed="true"],.filter-button:hover{border-color:var(--accent-gold);color:var(--accent-gold);background:rgba(212,175,55,.08)}
-    .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-    .video-card{min-width:0;overflow:hidden;border:1px solid rgba(212,175,55,.17);border-radius:16px;background:var(--panel-bg);text-decoration:none;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;animation:card-in .38s both}
-    .video-card:hover,.video-card:focus-visible{transform:translateY(-4px);border-color:rgba(212,175,55,.62);box-shadow:0 14px 34px rgba(0,0,0,.3)}
-    .video-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#25201a,#12151b);overflow:hidden}
-    .video-thumb img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+    .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;align-items:stretch;gap:18px}
+    .video-card{display:flex;flex-direction:column;min-width:0;height:100%;overflow:hidden;border:1px solid rgba(212,175,55,.2);border-radius:16px;background:var(--panel-bg);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;animation:card-in .38s both}
+    .video-card:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.62);box-shadow:0 14px 34px rgba(0,0,0,.3)}
+    .video-thumb{position:relative;display:block;flex:0 0 auto;width:100%;aspect-ratio:16/9;overflow:hidden;padding:0;border:0;background:linear-gradient(135deg,#302817,#161a20);cursor:pointer}
+    .video-thumb img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
     .video-card:hover .video-thumb img{transform:scale(1.04)}
-    .video-thumb .duration-badge{bottom:10px;inset-inline-start:10px;font-size:11px}
-    .video-body{padding:14px 15px 16px}
+    .video-thumb .duration-badge{bottom:10px;inset-inline-start:10px;font-size:11px;z-index:1}
+    .thumbnail-fallback{display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:18px;background:radial-gradient(ellipse at 50% 20%,rgba(212,175,55,.18),transparent 58%),linear-gradient(135deg,#1b1c1b,#12151b);color:#ead89c;text-align:center;font-size:14px;font-weight:700;line-height:1.5}
+    .thumbnail-fallback::before{content:'▶';display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(212,175,55,.65);border-radius:50%;color:var(--accent-gold)}
+    .thumb-unavailable .thumbnail-fallback{display:flex}
+    .video-body{display:flex;flex:1;flex-direction:column;min-width:0;padding:14px 15px 12px}
     .video-category{display:inline-block;color:var(--accent-gold);font-size:11px;font-weight:700;margin-bottom:5px}
     .video-body h3{margin:0 0 7px;font-family:var(--font-head);font-size:18px;line-height:1.45;color:#f2eee5}
-    .video-body p{margin:0;color:#aab2be;font-size:12px;line-height:1.85;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-    .card-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:13px;padding-top:10px;border-top:1px solid rgba(255,255,255,.06);color:#d8bf73;font-size:11px;font-weight:700}
-    .loading-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .video-body p{margin:0 0 14px;color:#aab2be;font-size:12px;line-height:1.85;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+    .card-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;margin-top:auto;padding:10px 0 0;border:0;border-top:1px solid rgba(255,255,255,.08);background:transparent;color:#d8bf73;text-align:right;font:700 12px var(--font-head);cursor:pointer}
+    .card-bottom:hover,.card-bottom:focus-visible{color:#f1d776}
+    .loading-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:18px}
     .skeleton{height:270px;border-radius:16px;background:linear-gradient(100deg,#14171d 20%,#20232a 38%,#14171d 60%);background-size:200% 100%;animation:shimmer 1.4s linear infinite;border:1px solid rgba(255,255,255,.04)}
     .status{padding:22px;border:1px solid var(--border);border-radius:14px;background:var(--panel-bg);color:#b9c0ca;text-align:center}
-    .page-footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:38px;padding-top:18px;border-top:1px solid rgba(212,175,55,.18);color:#808995;font-size:12px}
+    .page-footer{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-top:38px;padding-top:18px;border-top:1px solid rgba(212,175,55,.18);color:#9aa4b2;font-size:12px}
     .page-footer a{color:#d1b75f;text-decoration:none}
+    .footer-pillars{display:flex;flex-wrap:wrap;gap:12px}
+    .page-footer a:hover,.page-footer a:focus-visible{color:#f1d776}
+    .video-modal{width:min(960px,calc(100% - 24px));max-width:none;max-height:calc(100dvh - 24px);margin:auto;padding:0;border:0;overflow:visible;background:transparent;color:var(--text)}
+    .video-modal::backdrop{background:rgba(0,0,0,.84);backdrop-filter:blur(7px)}
+    .modal-panel{position:relative;padding:18px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
+    .modal-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+    .modal-header h2{margin:0;color:#f4eddf;font-family:var(--font-head);font-size:20px;line-height:1.35}
+    .modal-close{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border:1px solid rgba(212,175,55,.45);border-radius:50%;background:#101216;color:#f1d776;font-size:24px;line-height:1;cursor:pointer}
+    .modal-close:hover,.modal-close:focus-visible{background:rgba(212,175,55,.14)}
+    .modal-stage{width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#050608}
+    .modal-stage iframe{display:block;width:100%;height:100%;border:0}
+    .modal-note{margin:12px 2px 0;color:var(--muted);font-size:11px}
     @keyframes shimmer{to{background-position:-200% 0}}
     @keyframes card-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-    @media(max-width:980px){.featured-card{grid-template-columns:1fr}.featured-media img{min-height:unset;aspect-ratio:16/9}.feature-copy{padding:24px}.video-grid,.loading-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:620px){.page-shell{width:min(100% - 28px,1320px);padding-top:14px}.topline{align-items:flex-start}.brand-name{font-size:16px}.top-links{gap:6px;justify-content:flex-end}.top-links a{padding:6px 9px;font-size:11px}.hero{padding:37px 0 18px}.hero p{font-size:13px}.section-heading{align-items:flex-start;flex-direction:column;margin-top:23px}.section-heading .quiet-button{align-self:flex-start}.video-grid,.loading-grid{grid-template-columns:1fr;gap:13px}.video-body h3{font-size:17px}.featured-card{border-radius:16px}.feature-copy{padding:20px}.feature-copy h2{font-size:25px}.skeleton{height:250px}}
+    @media(max-width:980px){.featured-card{grid-template-columns:1fr}.featured-media{aspect-ratio:16/9}.video-grid,.loading-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:620px){.page-shell{width:min(100% - 28px,1320px);padding-top:14px}.topline{align-items:flex-start;flex-direction:column}.top-links{justify-content:flex-start;gap:6px}.top-links a{padding:6px 9px;font-size:11px}.brand-name{font-size:16px}.hero{padding:37px 0 18px}.hero p{font-size:13px}.section-heading{align-items:flex-start;flex-direction:column;margin-top:23px}.section-heading .quiet-button{align-self:flex-start}.video-grid,.loading-grid{grid-template-columns:1fr;gap:13px}.video-body h3{font-size:17px}.featured-card{border-radius:16px}.feature-copy{padding:20px}.feature-copy h2{font-size:25px}.skeleton{height:250px}.modal-panel{padding:12px;border-radius:14px}.modal-header h2{font-size:17px}.modal-stage{border-radius:8px}.modal-note{font-size:10px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
   </style>
 </head>
 <body>
   <main class="page-shell">
     <header class="topline">
-      <a class="brand" href="/" aria-label="العودة إلى سفر 360">
+      <a class="brand" href="https://sard360.com/" aria-label="الانتقال إلى منصة سرد 360">
         <span class="brand-mark" aria-hidden="true">✦</span>
-        <span class="brand-name">سرد 360<span class="brand-sub">سينما سرد · مشاهدة متأنية</span></span>
+        <span class="brand-name">سرد 360<span class="brand-sub">سينما سرد · إحدى مساحات المنصة</span></span>
       </a>
-      <nav class="top-links" aria-label="روابط">
-        <a href="/">العودة إلى سفر 360</a>
-        <a href="https://sard360.com/" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a>
+      <nav class="top-links" aria-label="أقسام منصة سرد 360">
+        <a href="https://sard360.com/">الرئيسية · سرد 360</a>
+        <a href="/cinema" aria-current="page">سينما سرد</a>
+        <a href="https://sard360.com/awraq-sard/">أوراق سرد</a>
+        <a href="https://sard360.com/khizana/">الخزانة</a>
       </nav>
     </header>
 
     <section class="hero" aria-labelledby="page-title">
-      <span class="eyebrow">✦ وثائقيات طويلة · بلا مقاطع قصيرة</span>
+      <span class="eyebrow">✦ وثائقيات كبرى وتحقيقات مرئية</span>
       <h1 id="page-title">سينما <span class="gold">سرد</span></h1>
-      <p>مساحة للأفلام الوثائقية والرحلات المعرفية المطوّلة من سرد 360. اختر موضوعاً، واستعد لمشاهدة تتّسع للحكاية كاملة.</p>
+      <p>مساحة للأفلام الوثائقية والرحلات المعرفية المطوّلة من قناة سرد 360. اختر موضوعاً، واستعد لمشاهدة تتّسع للحكاية كاملة.</p>
     </section>
 
     <section aria-labelledby="featured-title">
@@ -111,7 +130,7 @@
       <div class="section-heading">
         <div>
           <h2 id="library-title">مكتبة المشاهدة</h2>
-          <p id="library-count">جاري تحميل الأفلام الطويلة…</p>
+          <p id="library-count">جاري تحميل الأفلام…</p>
         </div>
       </div>
       <div class="filters" id="cinema-filters" role="group" aria-label="تصفية الأفلام"></div>
@@ -123,10 +142,25 @@
     </section>
 
     <footer class="page-footer">
-      <span>سرد 360 — الحكاية بأكملها، من كل زواياها.</span>
-      <a href="https://www.youtube.com/@sard360" target="_blank" rel="noopener noreferrer">القناة الرسمية على YouTube ↗</a>
+      <span>سرد 360 — سينما سرد، أوراق سرد، والخزانة؛ حكاية من كل الزوايا.</span>
+      <nav class="footer-pillars" aria-label="مساحات سرد 360">
+        <a href="https://sard360.com/awraq-sard/">أوراق سرد</a>
+        <a href="https://sard360.com/khizana/">الخزانة</a>
+        <a href="https://www.youtube.com/@sard360" target="_blank" rel="noopener noreferrer">اشترك في قناة سرد 360 على YouTube ↗</a>
+      </nav>
     </footer>
   </main>
+
+  <dialog class="video-modal" id="video-modal" aria-labelledby="video-modal-title">
+    <div class="modal-panel" dir="rtl">
+      <div class="modal-header">
+        <h2 id="video-modal-title">مشاهدة من سينما سرد</h2>
+        <button class="modal-close" id="close-video" type="button" aria-label="إغلاق مشغّل الفيديو">×</button>
+      </div>
+      <div class="modal-stage" id="modal-stage"></div>
+      <p class="modal-note">يُعرض الفيلم من قناة سرد 360 داخل هذه الصفحة.</p>
+    </div>
+  </dialog>
 
   <script>
     (() => {
@@ -137,9 +171,13 @@
       const LOADING = document.getElementById('cinema-loading');
       const COUNT = document.getElementById('library-count');
       const ROTATE = document.getElementById('rotate-feature');
+      const MODAL = document.getElementById('video-modal');
+      const MODAL_STAGE = document.getElementById('modal-stage');
+      const CLOSE_MODAL = document.getElementById('close-video');
       let items = [];
       let activeCategory = 'الكل';
       let featuredId = null;
+      let lastTrigger = null;
 
       function escapeHtml(value) {
         return String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -149,6 +187,20 @@
           const url = new URL(value);
           return url.protocol === 'https:' && hosts.includes(url.hostname) ? url.href : '';
         } catch (_) { return ''; }
+      }
+      function videoIdFromUrl(value) {
+        try {
+          const url = new URL(value);
+          if (!['youtube.com','www.youtube.com'].includes(url.hostname) || url.pathname !== '/watch') return '';
+          const id = url.searchParams.get('v') || '';
+          return /^[A-Za-z0-9_-]{11}$/.test(id) ? id : '';
+        } catch (_) { return ''; }
+      }
+      function imageMarkup(item, extraClass='') {
+        const id = videoIdFromUrl(item.youtube_url);
+        const primary = safeUrl(item.thumbnail, ['i.ytimg.com']) || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+        const fallback = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+        return `<img class="video-poster ${extraClass}" src="${escapeHtml(primary)}" data-fallback="${escapeHtml(fallback)}" data-fallback-label="${escapeHtml(item.title)}" alt="" loading="lazy" decoding="async">`;
       }
       function formatDuration(seconds) {
         const s = Math.max(0, Number(seconds) || 0);
@@ -166,9 +218,9 @@
       }
       function validateItem(item) {
         if (!item || typeof item.title !== 'string' || typeof item.description !== 'string') return false;
-        const videoUrl = safeUrl(item.youtube_url, ['www.youtube.com','youtube.com']);
+        const id = videoIdFromUrl(item.youtube_url);
         const thumb = safeUrl(item.thumbnail, ['i.ytimg.com']);
-        return Boolean(videoUrl && thumb && Number(item.duration_seconds) >= 480);
+        return Boolean(id && thumb && Number(item.duration_seconds) >= 480);
       }
       function currentList() {
         return activeCategory === 'الكل' ? items : items.filter(item => item.category === activeCategory);
@@ -176,13 +228,6 @@
       function renderFilters() {
         const categories = ['الكل', ...new Set(items.map(item => item.category).filter(Boolean))];
         FILTERS.innerHTML = categories.map(category => `<button class="filter-button" type="button" data-category="${escapeHtml(category)}" aria-pressed="${category === activeCategory}">${escapeHtml(category)}</button>`).join('');
-        FILTERS.addEventListener('click', event => {
-          const button = event.target.closest('[data-category]');
-          if (!button) return;
-          activeCategory = button.dataset.category;
-          renderFilters();
-          renderContent();
-        }, {once:true});
       }
       function renderFeature(item) {
         if (!item) {
@@ -190,19 +235,18 @@
           FEATURED_DAILY.setAttribute('aria-busy','false');
           return;
         }
-        const href = safeUrl(item.youtube_url, ['www.youtube.com','youtube.com']);
-        const thumb = safeUrl(item.thumbnail, ['i.ytimg.com']);
+        const id = videoIdFromUrl(item.youtube_url);
         FEATURED_DAILY.innerHTML = `<article class="featured-card">
-          <a class="featured-media" href="${href}" target="_blank" rel="noopener noreferrer" aria-label="مشاهدة ${escapeHtml(item.title)}">
-            <img src="${thumb}" alt="" loading="lazy" decoding="async">
+          <button class="featured-media video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" aria-label="مشاهدة ${escapeHtml(item.title)} داخل الصفحة">
+            ${imageMarkup(item)}
             <span class="media-shade"></span><span class="duration-badge">${formatDuration(item.duration_seconds)}</span>
-          </a>
+          </button>
           <div class="feature-copy">
             <span class="feature-label">✦ اختيار اليوم · ${escapeHtml(item.category)}</span>
             <h2>${escapeHtml(item.title)}</h2>
             <p>${escapeHtml(item.description)}</p>
             <div class="feature-meta"><span class="chip">${formatDuration(item.duration_seconds)} · مشاهدة طويلة</span><span class="chip">من قناة سرد 360</span></div>
-            <a class="watch-button" href="${href}" target="_blank" rel="noopener noreferrer">شاهد الفيلم ↗</a>
+            <button class="watch-button video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}">شاهد الفيلم <span aria-hidden="true">▶</span></button>
           </div>
         </article>`;
         FEATURED_DAILY.setAttribute('aria-busy','false');
@@ -212,6 +256,7 @@
         if (!list.length) {
           renderFeature(null);
           GRID.innerHTML = '';
+          GRID.hidden = true;
           COUNT.textContent = 'لا توجد أفلام في هذا التصنيف بعد.';
           return;
         }
@@ -220,17 +265,69 @@
         renderFeature(featured);
         const rest = shuffle(list.filter(item => item.id !== featured.id));
         GRID.innerHTML = rest.map((item, index) => {
-          const href = safeUrl(item.youtube_url, ['www.youtube.com','youtube.com']);
-          const thumb = safeUrl(item.thumbnail, ['i.ytimg.com']);
-          return `<a class="video-card" href="${href}" target="_blank" rel="noopener noreferrer" style="animation-delay:${Math.min(index,8)*45}ms">
-            <div class="video-thumb"><img src="${thumb}" alt="" loading="lazy" decoding="async"><span class="duration-badge">${formatDuration(item.duration_seconds)}</span></div>
-            <div class="video-body"><span class="video-category">${escapeHtml(item.category)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p><div class="card-bottom"><span>شاهد على YouTube</span><span>↗</span></div></div>
-          </a>`;
+          const id = videoIdFromUrl(item.youtube_url);
+          return `<article class="video-card" style="animation-delay:${Math.min(index,8)*45}ms">
+            <button class="video-thumb video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" aria-label="شاهد ${escapeHtml(item.title)} داخل الصفحة">
+              ${imageMarkup(item)}<span class="duration-badge">${formatDuration(item.duration_seconds)}</span><span class="thumbnail-fallback" aria-hidden="true"></span>
+            </button>
+            <div class="video-body"><span class="video-category">${escapeHtml(item.category)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p>
+              <button class="card-bottom video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}"><span>شاهد الفيلم داخل سرد</span><span aria-hidden="true">▶</span></button>
+            </div>
+          </article>`;
         }).join('');
-        COUNT.textContent = `${new Intl.NumberFormat('ar').format(list.length)} أفلام طويلة · يعرض الشبكة البقية بعد ترشيح اليوم`;
         GRID.hidden = false;
         GRID.setAttribute('aria-busy','false');
+        COUNT.textContent = `${new Intl.NumberFormat('ar').format(list.length)} أفلام طويلة · يعرض الشبكة البقية بعد ترشيح اليوم`;
       }
+      function openVideo(videoId, title, trigger) {
+        if (!/^[A-Za-z0-9_-]{11}$/.test(videoId || '') || MODAL.open) return;
+        lastTrigger = trigger;
+        document.getElementById('video-modal-title').textContent = title ? `مشاهدة: ${title}` : 'مشاهدة من سينما سرد';
+        const frame = document.createElement('iframe');
+        frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
+        frame.title = title ? `مشاهدة ${title}` : 'فيديو من قناة سرد 360';
+        frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        frame.allowFullscreen = true;
+        frame.referrerPolicy = 'strict-origin-when-cross-origin';
+        frame.loading = 'eager';
+        MODAL_STAGE.replaceChildren(frame);
+        MODAL.showModal();
+        CLOSE_MODAL.focus();
+      }
+      function closeVideo() {
+        if (MODAL.open) MODAL.close();
+      }
+
+      document.addEventListener('click', event => {
+        const trigger = event.target.closest('[data-video-id]');
+        if (trigger) openVideo(trigger.dataset.videoId, trigger.dataset.videoTitle, trigger);
+      });
+      document.addEventListener('error', event => {
+        const image = event.target;
+        if (!(image instanceof HTMLImageElement) || !image.classList.contains('video-poster')) return;
+        if (image.dataset.fallbackTried !== 'true' && image.src !== image.dataset.fallback) {
+          image.dataset.fallbackTried = 'true';
+          image.src = image.dataset.fallback;
+          return;
+        }
+        const holder = image.closest('.video-thumb,.featured-media');
+        if (holder) {
+          holder.classList.add('thumb-unavailable');
+          const placeholder = holder.querySelector('.thumbnail-fallback') || document.createElement('span');
+          placeholder.className = 'thumbnail-fallback';
+          placeholder.textContent = image.dataset.fallbackLabel || 'معاينة من سينما سرد';
+          placeholder.setAttribute('aria-hidden','true');
+          if (!placeholder.parentElement) holder.appendChild(placeholder);
+          image.remove();
+        }
+      }, true);
+      FILTERS.addEventListener('click', event => {
+        const button = event.target.closest('[data-category]');
+        if (!button) return;
+        activeCategory = button.dataset.category;
+        renderFilters();
+        renderContent();
+      });
       ROTATE.addEventListener('click', () => {
         const list = currentList();
         if (list.length < 2) return;
@@ -238,6 +335,14 @@
         featuredId = list[(i + 1) % list.length].id;
         renderContent();
       });
+      CLOSE_MODAL.addEventListener('click', closeVideo);
+      MODAL.addEventListener('click', event => { if (event.target === MODAL) closeVideo(); });
+      MODAL.addEventListener('close', () => {
+        MODAL_STAGE.replaceChildren();
+        if (lastTrigger?.isConnected) lastTrigger.focus();
+        lastTrigger = null;
+      });
+
       async function init() {
         try {
           const response = await fetch('/cinema.json', {cache:'no-store'});

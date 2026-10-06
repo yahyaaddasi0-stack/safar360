@@ -1,5 +1,5 @@
 /**
- * SAFAR 360 (سَفَر ٣٦٠) - APPLICATION LOGIC
+ * SARD 360 · SAFAR 360 INTERACTIVE PROJECT - APPLICATION LOGIC
  * Pure Vanilla JavaScript | No Frameworks | Senior Frontend Architecture
  */
 
@@ -722,7 +722,7 @@ async function streamChatMessageFromBackend(userText, character) {
     }
 
   } catch (error) {
-    console.warn('[Safar 360] Backend stream unavailable, falling back to local engine:', error);
+    console.warn('[Sard360 · Safar] Backend stream unavailable, falling back to local engine:', error);
     hideTypingIndicator();
     const reply = generateCharacterResponse(userText, character);
     addBotMessage(reply, character.arabicName);
@@ -1010,7 +1010,7 @@ async function speakText(text) {
     audio.play().catch(e => console.error("Audio playback error:", e));
 
   } catch (error) {
-    console.warn('[Safar 360] Fallback to browser TTS:', error);
+    console.warn('[Sard360 · Safar] Fallback to browser TTS:', error);
     if (!('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
