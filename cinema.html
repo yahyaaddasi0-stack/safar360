@@ -19,9 +19,7 @@
     .page-shell{width:min(1320px,calc(100% - 40px));margin:0 auto;padding:22px 0 60px}
     .topline{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:6px 0 22px;border-bottom:1px solid rgba(212,175,55,.22)}
     .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:0 0 auto}
-    .brand-mark{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(212,175,55,.6);border-radius:50%;color:var(--accent-gold);font-size:20px;box-shadow:0 0 22px rgba(212,175,55,.12)}
-    .brand-name{font-family:var(--font-head);font-weight:800;font-size:18px;line-height:1.2}
-    .brand-sub{display:block;color:var(--muted);font-size:11px;font-weight:500}
+    .brand-logo{display:block;flex:0 0 auto;width:42px;height:42px;object-fit:contain;filter:drop-shadow(0 2px 10px rgba(212,175,55,.16))}
     .top-links{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
     .top-links a{padding:7px 11px;border:1px solid var(--border);border-radius:999px;text-decoration:none;font-size:12px;color:#d8d2c4;transition:.2s ease}
     .top-links a:hover,.top-links a:focus-visible{border-color:var(--accent-gold);color:var(--accent-gold)}
@@ -101,9 +99,8 @@
 <body>
   <main class="page-shell">
     <header class="topline">
-      <a class="brand" href="https://sard360.com/" aria-label="الانتقال إلى منصة سرد 360">
-        <span class="brand-mark" aria-hidden="true">✦</span>
-        <span class="brand-name">سرد 360<span class="brand-sub">سينما سرد · إحدى مساحات المنصة</span></span>
+      <a class="brand" href="https://sard360.com/" aria-label="الصفحة الرئيسية لمنصة سرد 360">
+        <img class="brand-logo" src="/assets/images/sard360-logo.png" alt="سرد 360" width="42" height="42" decoding="async" fetchpriority="high">
       </a>
       <nav class="top-links" aria-label="أقسام منصة سرد 360">
         <a href="https://sard360.com/">الرئيسية · سرد 360</a>

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "channel": {
     "name": "سرد 360",
     "url": "https://www.youtube.com/@sard360",
@@ -8,58 +8,131 @@
   "selection_policy": {
     "minimum_duration_seconds": 480,
     "shorts_and_reels_included": false,
-    "note": "Long-form selection from the official channel; archival category is reserved for verified archival footage."
+    "visible_video_tab_entries_checked": 37,
+    "qualifying_visible_long_form_entries": 10,
+    "note": "تمت مراجعة العناصر الظاهرة في تبويب الفيديوهات بالقناة؛ أُدرج كل فيديو مدته 480 ثانية فأكثر، مع الحفاظ على فيلم الأندلس الطويل السابق ما دام رابط القناة الرسمي يقدّمه علناً. لا تُدرج المقاطع القصيرة."
   },
   "items": [
     {
       "id": "ibn-battuta-dhawat",
+      "youtube_id": "PDUxg_SJko0",
       "title": "ابن بطوطة: أعظم الرحّالة أم أكثرهم مبالغة؟",
-      "source_title": "Greatest Traveler or Biggest Liar? The Dark Secrets of Ibn Battuta's Life | Dhawat Series",
+      "source_title": "أكبرُ رحّالةٍ أم أعظمُ كاذب؟ الأسرارُ المظلمةُ في حياةِ ابنِ بطوطة | سلسلة ذوات",
       "youtube_url": "https://www.youtube.com/watch?v=PDUxg_SJko0",
       "description": "تحقيق مرئي يراجع سيرة ابن بطوطة وأسئلة المبالغة والذاكرة، ويضع رحلاته في سياقها التاريخي.",
-      "thumbnail": "https://i.ytimg.com/vi/PDUxg_SJko0/hq720.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/PDUxg_SJko0/hqdefault.jpg",
       "category": "التاريخ والرحلات",
       "duration_seconds": 481
     },
     {
       "id": "andalusia-journey",
+      "youtube_id": "eIMxLq4lVyU",
       "title": "أسرار الأندلس المنسية: رحلة بين قرطبة وغرناطة",
       "source_title": "أسرار الأندلس المنسية: رحلة هادئة بين جدران قرطبة وغرناطة (للقراءة والاسترخاء)",
       "youtube_url": "https://www.youtube.com/watch?v=eIMxLq4lVyU",
       "description": "رحلة بصرية تاريخية مطوّلة بين قرطبة وغرناطة تستحضر معالم الأندلس في عرض هادئ للمشاهدة المتأنية.",
-      "thumbnail": "https://i.ytimg.com/vi/eIMxLq4lVyU/hq720.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/eIMxLq4lVyU/hqdefault.jpg",
       "category": "التاريخ والرحلات",
       "duration_seconds": 21046
     },
     {
       "id": "creatures-survival-speed",
+      "youtube_id": "mt5_AXmFbn8",
       "title": "أربعة كائنات تتحدى قوانين البقاء",
       "source_title": "سرعة 390 كم/س وأسرار صادمة: 4 كائنات حطمت قوانين البقاء!",
       "youtube_url": "https://www.youtube.com/watch?v=mt5_AXmFbn8",
       "description": "وثائقي علمي عن أربعة كائنات تثير الدهشة بسرعتها وطرق تكيّفها مع قوانين البيئة والبقاء.",
-      "thumbnail": "https://i.ytimg.com/vi/mt5_AXmFbn8/hq720.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/mt5_AXmFbn8/hqdefault.jpg",
       "category": "علوم وطبيعة",
       "duration_seconds": 1021
     },
     {
       "id": "wolf-and-predators",
+      "youtube_id": "EQjEnNnA7rk",
       "title": "من أسرار الذئب إلى أعتى الوحوش: خمس حكايات عن البقاء",
-      "source_title": "من حقيقة الذئب المجهولة إلى أعتى الوحوش: 5 كائنات لا ترحم!",
+      "source_title": "من حقيقة الذئب المجهولة إلى أعتى الوحوش: 5 كائنات لا ترحم! 🐺🌍",
       "youtube_url": "https://www.youtube.com/watch?v=EQjEnNnA7rk",
       "description": "ملف في سلوك الذئب ومفترسات أخرى؛ يراجع الصور الشائعة عن عالم الحيوان واستراتيجيات التكيّف والبقاء.",
-      "thumbnail": "https://i.ytimg.com/vi/EQjEnNnA7rk/hq720.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/EQjEnNnA7rk/hqdefault.jpg",
       "category": "علوم وطبيعة",
       "duration_seconds": 1043
     },
     {
       "id": "dolphin-alliances",
+      "youtube_id": "zY64lIaNiXQ",
       "title": "تحالفات الدلافين: عوالم خفية واستراتيجيات بقاء",
-      "source_title": "The Terrifying Dolphin Alliances: 6 Ocean Floor Worlds Revealing the Fiercest Survival Tactics!",
+      "source_title": "تحالفات الدلفين المرعبة: 6 عوالم في قاع المحيط تكشف أشرس حيل البقاء! 🌊🐬",
       "youtube_url": "https://www.youtube.com/watch?v=zY64lIaNiXQ",
       "description": "وثائقي عن تحالفات الدلافين وعالم المحيط، وما تكشفه السلوكيات التعاونية عن الحياة وأساليب البقاء في الأعماق.",
-      "thumbnail": "https://i.ytimg.com/vi/zY64lIaNiXQ/hq720.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/zY64lIaNiXQ/hqdefault.jpg",
       "category": "علوم وطبيعة",
       "duration_seconds": 1146
+    },
+    {
+      "id": "cleopatra-queen-nile",
+      "youtube_id": "FMSGxrseIpQ",
+      "title": "كليوباترا: الوجه الحقيقي لملكة النيل",
+      "source_title": "كليوباترا: الوجه الحقيقيّ لملكَة النّيل وأسطورة الفرعونة الأكثر إثارة للجدل",
+      "youtube_url": "https://www.youtube.com/watch?v=FMSGxrseIpQ",
+      "description": "تحقيق تاريخي يتناول صورة كليوباترا بين الوقائع والأسطورة، ويعيد النظر في واحدة من أكثر ملكات مصر إثارة للجدل.",
+      "thumbnail": "https://i.ytimg.com/vi/FMSGxrseIpQ/hqdefault.jpg",
+      "category": "التاريخ والحضارات",
+      "duration_seconds": 486
+    },
+    {
+      "id": "zenobia-palmyra",
+      "youtube_id": "nDCxoG8DF08",
+      "title": "زنوبيا ملكة تدمر: المرأة التي زلزلت عرش روما",
+      "source_title": "زنوبيا ملكة تدمر: المرأة التي زلزلت عرش روما.. وما لُغز نهايتها؟",
+      "youtube_url": "https://www.youtube.com/watch?v=nDCxoG8DF08",
+      "description": "رحلة تاريخية إلى تدمر وصعود زنوبيا وصدامها مع روما، مع تتبّع اللغز الذي أحاط بنهاية الملكة.",
+      "thumbnail": "https://i.ytimg.com/vi/nDCxoG8DF08/hqdefault.jpg",
+      "category": "التاريخ والحضارات",
+      "duration_seconds": 524
+    },
+    {
+      "id": "zorba-freedom",
+      "youtube_id": "tc3VYhhzAtw",
+      "title": "زوربا اليوناني: رواية الحرية التي أُثير حولها الجدل",
+      "source_title": "لماذا يعتبرون هذه الرواية \"أخطر\" ما كُتب عن الحريّة؟ | زوربا اليوناني",
+      "youtube_url": "https://www.youtube.com/watch?v=tc3VYhhzAtw",
+      "description": "قراءة مرئية في رواية زوربا اليوناني وما تثيره من أسئلة حول الحرية والتمرّد وحدود العيش وفق الاختيار الشخصي.",
+      "thumbnail": "https://i.ytimg.com/vi/tc3VYhhzAtw/hqdefault.jpg",
+      "category": "الأدب والقراءات",
+      "duration_seconds": 487
+    },
+    {
+      "id": "one-hundred-years-solitude",
+      "youtube_id": "m47-2od9Q5I",
+      "title": "مائة عام من العزلة: رواية تتحدى الزمن",
+      "source_title": "لماذا اعتبروا هذه الرواية أعظم ما كُتب في القرن العشرين؟| رواية مائة عام من العزلة",
+      "youtube_url": "https://www.youtube.com/watch?v=m47-2od9Q5I",
+      "description": "قراءة في عالم مائة عام من العزلة وذاكرته المتوارثة، وفي الأسباب التي جعلت الرواية علامة بارزة في أدب القرن العشرين.",
+      "thumbnail": "https://i.ytimg.com/vi/m47-2od9Q5I/hqdefault.jpg",
+      "category": "الأدب والقراءات",
+      "duration_seconds": 485
+    },
+    {
+      "id": "amundsen-last-viking",
+      "youtube_id": "B1HP-gND-gc",
+      "title": "آخر الفايكنغ: روالد أموندسن وسباق القطب الجنوبي",
+      "source_title": "سرقة المجد: كيف سحق آخر الفايكنج كبرياء بريطانيا في القطب الجنوبي؟",
+      "youtube_url": "https://www.youtube.com/watch?v=B1HP-gND-gc",
+      "description": "تحقيق في رحلة روالد أموندسن إلى القطب الجنوبي والسباق الذي جعل إنجازه جزءاً من تاريخ الاستكشاف.",
+      "thumbnail": "https://i.ytimg.com/vi/B1HP-gND-gc/hqdefault.jpg",
+      "category": "التاريخ والرحلات",
+      "duration_seconds": 968
+    },
+    {
+      "id": "blind-sunflowers-novel",
+      "youtube_id": "546j819WypI",
+      "title": "أزهار عباد الشمس العمياء: ملحمة المنتصر والمهزوم",
+      "source_title": "المنتصر والمهزوم.. ملحمة \"أزهار عبّاد الشمس العمياء\" | رواية في دقائق",
+      "youtube_url": "https://www.youtube.com/watch?v=546j819WypI",
+      "description": "قراءة أدبية في رواية أزهار عباد الشمس العمياء وما تقدّمه من تأمل في الهزيمة الإنسانية والذاكرة، ضمن سلسلة رواية في دقائق.",
+      "thumbnail": "https://i.ytimg.com/vi/546j819WypI/hqdefault.jpg",
+      "category": "الأدب والقراءات",
+      "duration_seconds": 503
     }
   ]
 }

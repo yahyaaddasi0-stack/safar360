@@ -1,4 +1,4 @@
-const CACHE_NAME = 'safar360-v5';
+const CACHE_NAME = 'safar360-v6';
 const ASSETS = [
   '/',
   '/index.html',
@@ -7,7 +7,8 @@ const ASSETS = [
   '/characters-public.json',
   '/manifest.json',
   '/cinema.html',
-  '/cinema.json'
+  '/cinema.json',
+  '/assets/images/sard360-logo.png'
 ];
 
 self.addEventListener('install', (e) => {
