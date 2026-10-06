@@ -316,7 +316,7 @@
                 <h3 class="product-title">${escapeHtml(product.title)}</h3>
                 <p class="product-description">${escapeHtml(product.desc)}</p>
                 ${variantSelector}
-                <a class="discover-link" href="${href}" ${hasLink ? 'target="_blank" rel="sponsored noopener noreferrer"' : 'data-unconfigured="true" aria-label="اكتشف ' + escapeHtml(product.title) + ' — رابط المتجر غير مضاف بعد"'}>
+                <a class="discover-link" href="${href}" ${hasLink ? 'target="_blank" rel="noopener noreferrer sponsored"' : 'data-unconfigured="true" aria-label="اكتشف ' + escapeHtml(product.title) + ' — رابط المتجر غير مضاف بعد"'}>
                   <span>اكتشف لدى المتجر</span><span class="arrow" aria-hidden="true">↗</span>
                 </a>
               </div>
@@ -424,7 +424,7 @@
         if (affiliateUrl) {
           link.href = affiliateUrl;
           link.target = '_blank';
-          link.rel = 'sponsored noopener noreferrer';
+          link.rel = 'noopener noreferrer sponsored';
           link.removeAttribute('data-unconfigured');
           link.removeAttribute('aria-label');
         } else {
