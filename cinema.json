@@ -1,39 +1,95 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "channel": {
     "name": "سرد 360",
     "url": "https://www.youtube.com/@sard360",
     "channel_id": "UCfS3cfC09pe4iBYiL8tWNtQ"
   },
   "selection_policy": {
-    "minimum_duration_seconds": 480,
+    "source_uploads_count": 202,
+    "shorts_tab_ids_excluded": 159,
+    "non_shorts_public_videos": 43,
+    "minimum_duration_seconds": 0,
     "shorts_and_reels_included": false,
     "visible_video_tab_entries_checked": 37,
-    "qualifying_visible_long_form_entries": 10,
-    "note": "تمت مراجعة العناصر الظاهرة في تبويب الفيديوهات بالقناة؛ أُدرج كل فيديو مدته 480 ثانية فأكثر، مع الحفاظ على فيلم الأندلس الطويل السابق ما دام رابط القناة الرسمي يقدّمه علناً. لا تُدرج المقاطع القصيرة."
+    "note": "جُمعت قائمة الرفع الكاملة للقناة، ثم استُبعدت جميع المعرّفات الموجودة في تبويب Shorts. جرى التحقق من اسم القناة وعنوان كل فيديو متبقٍ عبر oEmbed الرسمي. لا يوجد حد أدنى للمدة؛ وتُعرض المشغلات والبطاقات بنسبة 16:9."
   },
+  "categories": [
+    "علوم وطبيعة",
+    "تحقيقات كبرى",
+    "تاريخ وحضارات",
+    "ذوات",
+    "أجواء وموسيقى",
+    "أدب وقراءات"
+  ],
   "items": [
     {
-      "id": "ibn-battuta-dhawat",
-      "youtube_id": "PDUxg_SJko0",
-      "title": "ابن بطوطة: أعظم الرحّالة أم أكثرهم مبالغة؟",
-      "source_title": "أكبرُ رحّالةٍ أم أعظمُ كاذب؟ الأسرارُ المظلمةُ في حياةِ ابنِ بطوطة | سلسلة ذوات",
-      "youtube_url": "https://www.youtube.com/watch?v=PDUxg_SJko0",
-      "description": "تحقيق مرئي يراجع سيرة ابن بطوطة وأسئلة المبالغة والذاكرة، ويضع رحلاته في سياقها التاريخي.",
-      "thumbnail": "https://i.ytimg.com/vi/PDUxg_SJko0/hqdefault.jpg",
-      "category": "التاريخ والرحلات",
-      "duration_seconds": 481
+      "id": "video-mHUWXmz9QiI",
+      "youtube_id": "mHUWXmz9QiI",
+      "title": "دِرع خفيّ وتكاثر بدون ذكور.. الكابوس الزّاحف الذي يذيب العظام! 🐉💀 | سرد 3",
+      "source_title": "دِرع خفيّ وتكاثر بدون ذكور.. الكابوس الزّاحف الذي يذيب العظام! 🐉💀 | سرد 3",
+      "youtube_url": "https://www.youtube.com/watch?v=mHUWXmz9QiI",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/mHUWXmz9QiI/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 183
     },
     {
-      "id": "andalusia-journey",
-      "youtube_id": "eIMxLq4lVyU",
-      "title": "أسرار الأندلس المنسية: رحلة بين قرطبة وغرناطة",
-      "source_title": "أسرار الأندلس المنسية: رحلة هادئة بين جدران قرطبة وغرناطة (للقراءة والاسترخاء)",
-      "youtube_url": "https://www.youtube.com/watch?v=eIMxLq4lVyU",
-      "description": "رحلة بصرية تاريخية مطوّلة بين قرطبة وغرناطة تستحضر معالم الأندلس في عرض هادئ للمشاهدة المتأنية.",
-      "thumbnail": "https://i.ytimg.com/vi/eIMxLq4lVyU/hqdefault.jpg",
-      "category": "التاريخ والرحلات",
-      "duration_seconds": 21046
+      "id": "video-la1nKZYBjQw",
+      "youtube_id": "la1nKZYBjQw",
+      "title": "قرش غرينلاند: الكائن الذي قهر الزمن.. أعمى، يبتلع الدببة، ويحمل بصمة القنابل النووية! 🦈☢️",
+      "source_title": "قرش غرينلاند: الكائن الذي قهر الزمن.. أعمى، يبتلع الدببة، ويحمل بصمة القنابل النووية! 🦈☢️",
+      "youtube_url": "https://www.youtube.com/watch?v=la1nKZYBjQw",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/la1nKZYBjQw/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 173
+    },
+    {
+      "id": "video-leGJagGfFnI",
+      "youtube_id": "leGJagGfFnI",
+      "title": "بلطجي الطّبيعة: كيف يلتهم غرير العسل أخطر الأفاعي؟ 🦡🔥",
+      "source_title": "بلطجي الطّبيعة: كيف يلتهم غرير العسل أخطر الأفاعي؟ 🦡🔥",
+      "youtube_url": "https://www.youtube.com/watch?v=leGJagGfFnI",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/leGJagGfFnI/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 199
+    },
+    {
+      "id": "video-aGI8iiCyM0Y",
+      "youtube_id": "aGI8iiCyM0Y",
+      "title": "حِلف الأخوات والعرش الوهميّ: الحقيقة الصادمة عن اللبؤة 👑⚔️ | سرد 3",
+      "source_title": "حِلف الأخوات والعرش الوهميّ: الحقيقة الصادمة عن اللبؤة 👑⚔️ | سرد 3",
+      "youtube_url": "https://www.youtube.com/watch?v=aGI8iiCyM0Y",
+      "description": "تحقيق مرئي من سرد 360 يفتح الموضوع على زوايا وأسئلة متعددة.",
+      "thumbnail": "https://i.ytimg.com/vi/aGI8iiCyM0Y/hqdefault.jpg",
+      "category": "تحقيقات كبرى",
+      "source_playlists": [],
+      "duration_seconds": 337
+    },
+    {
+      "id": "video-3H15cPUDB6g",
+      "youtube_id": "3H15cPUDB6g",
+      "title": "أعظم ملحمة طيران: كيف يهدم طائر البقويقة جسده للنجاة؟ 🌊",
+      "source_title": "أعظم ملحمة طيران: كيف يهدم طائر البقويقة جسده للنجاة؟ 🌊",
+      "youtube_url": "https://www.youtube.com/watch?v=3H15cPUDB6g",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/3H15cPUDB6g/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 209
     },
     {
       "id": "creatures-survival-speed",
@@ -43,8 +99,95 @@
       "youtube_url": "https://www.youtube.com/watch?v=mt5_AXmFbn8",
       "description": "وثائقي علمي عن أربعة كائنات تثير الدهشة بسرعتها وطرق تكيّفها مع قوانين البيئة والبقاء.",
       "thumbnail": "https://i.ytimg.com/vi/mt5_AXmFbn8/hqdefault.jpg",
-      "category": "علوم وطبيعة",
+      "category": "تحقيقات كبرى",
+      "source_playlists": [
+        "وثائقيات سرد 360 الكاملة — حلقات وتجميعات طويلة لساعات مشاهدة متواصلة."
+      ],
       "duration_seconds": 1021
+    },
+    {
+      "id": "video-0XPcatOqA4U",
+      "youtube_id": "0XPcatOqA4U",
+      "title": "أسرار الصقر الشاهين: أسرع كائن حيّ ونهاية سيادته في الظلام! 🦉",
+      "source_title": "أسرار الصقر الشاهين: أسرع كائن حيّ ونهاية سيادته في الظلام! 🦉",
+      "youtube_url": "https://www.youtube.com/watch?v=0XPcatOqA4U",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/0XPcatOqA4U/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 327
+    },
+    {
+      "id": "video-SMx54LlWnog",
+      "youtube_id": "SMx54LlWnog",
+      "title": "فخّ الأشواك الفتّاك وغيبوبة الـ 4 ثوانٍ.. الوجه الخفيّ للبطريق! 🐧💀",
+      "source_title": "فخّ الأشواك الفتّاك وغيبوبة الـ 4 ثوانٍ.. الوجه الخفيّ للبطريق! 🐧💀",
+      "youtube_url": "https://www.youtube.com/watch?v=SMx54LlWnog",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/SMx54LlWnog/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 286
+    },
+    {
+      "id": "video-lbRlbrX61GU",
+      "youtube_id": "lbRlbrX61GU",
+      "title": "السنجاب الطائر: لماذا يضيء في الظلام ويزرع الغابات؟",
+      "source_title": "السنجاب الطائر: لماذا يضيء في الظلام ويزرع الغابات؟",
+      "youtube_url": "https://www.youtube.com/watch?v=lbRlbrX61GU",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/lbRlbrX61GU/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 241
+    },
+    {
+      "id": "video-ihbgXvjqlB0",
+      "youtube_id": "ihbgXvjqlB0",
+      "title": "طائر الشّبنم: الدّيناصور الحيّ الّذي يبتلع السّموم القاتلة!",
+      "source_title": "طائر الشّبنم: الدّيناصور الحيّ الّذي يبتلع السّموم القاتلة!",
+      "youtube_url": "https://www.youtube.com/watch?v=ihbgXvjqlB0",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/ihbgXvjqlB0/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 186
+    },
+    {
+      "id": "video-QaVs-KD8R-w",
+      "youtube_id": "QaVs-KD8R-w",
+      "title": "أغرب حقيقة في عالم البحار: الذكر الذي يحمل ويولد",
+      "source_title": "أغرب حقيقة في عالم البحار: الذكر الذي يحمل ويولد",
+      "youtube_url": "https://www.youtube.com/watch?v=QaVs-KD8R-w",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/QaVs-KD8R-w/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 220
+    },
+    {
+      "id": "video-QTxK1QuIdBA",
+      "youtube_id": "QTxK1QuIdBA",
+      "title": "الوجه الخفيّ للدّعسوقة: أسرار السّفّاحة الأنيقة في عالم الحشرات | سرد 3",
+      "source_title": "الوجه الخفيّ للدّعسوقة: أسرار السّفّاحة الأنيقة في عالم الحشرات | سرد 3",
+      "youtube_url": "https://www.youtube.com/watch?v=QTxK1QuIdBA",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/QTxK1QuIdBA/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 228
     },
     {
       "id": "wolf-and-predators",
@@ -54,8 +197,67 @@
       "youtube_url": "https://www.youtube.com/watch?v=EQjEnNnA7rk",
       "description": "ملف في سلوك الذئب ومفترسات أخرى؛ يراجع الصور الشائعة عن عالم الحيوان واستراتيجيات التكيّف والبقاء.",
       "thumbnail": "https://i.ytimg.com/vi/EQjEnNnA7rk/hqdefault.jpg",
-      "category": "علوم وطبيعة",
+      "category": "تحقيقات كبرى",
+      "source_playlists": [
+        "وثائقيات سرد 360 الكاملة — حلقات وتجميعات طويلة لساعات مشاهدة متواصلة."
+      ],
       "duration_seconds": 1043
+    },
+    {
+      "id": "video-2FunfE7YiXk",
+      "youtube_id": "2FunfE7YiXk",
+      "title": "هل يغرق الكنغر أعداءه؟ أسرار تكتيكية تكشف لأول مرة",
+      "source_title": "هل يغرق الكنغر أعداءه؟ أسرار تكتيكية تكشف لأول مرة",
+      "youtube_url": "https://www.youtube.com/watch?v=2FunfE7YiXk",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/2FunfE7YiXk/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 276
+    },
+    {
+      "id": "video-RjKBgNHPIgo",
+      "youtube_id": "RjKBgNHPIgo",
+      "title": "حقيقة قرش الميجالودون: أضخم كابوس في تاريخ المحيطات.. هل انقرض حقًّا؟ | سرد 360",
+      "source_title": "حقيقة قرش الميجالودون: أضخم كابوس في تاريخ المحيطات.. هل انقرض حقًّا؟ | سرد 360",
+      "youtube_url": "https://www.youtube.com/watch?v=RjKBgNHPIgo",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/RjKBgNHPIgo/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 165
+    },
+    {
+      "id": "video-Ru8z4dpsOZE",
+      "youtube_id": "Ru8z4dpsOZE",
+      "title": "لغز البقاء المستحيل: كيف لا تختنق الفقمة في الأعماق المتجمدة؟",
+      "source_title": "لغز البقاء المستحيل: كيف لا تختنق الفقمة في الأعماق المتجمدة؟",
+      "youtube_url": "https://www.youtube.com/watch?v=Ru8z4dpsOZE",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/Ru8z4dpsOZE/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 254
+    },
+    {
+      "id": "video-ZYtn59RDz4E",
+      "youtube_id": "ZYtn59RDz4E",
+      "title": "أسرار سلحفاة البحر: كيف تسافر آلاف الكيلومترات دون أن تضلّ طريقها؟ 🌊🐢",
+      "source_title": "أسرار سلحفاة البحر: كيف تسافر آلاف الكيلومترات دون أن تضلّ طريقها؟ 🌊🐢",
+      "youtube_url": "https://www.youtube.com/watch?v=ZYtn59RDz4E",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/ZYtn59RDz4E/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 219
     },
     {
       "id": "dolphin-alliances",
@@ -65,8 +267,222 @@
       "youtube_url": "https://www.youtube.com/watch?v=zY64lIaNiXQ",
       "description": "وثائقي عن تحالفات الدلافين وعالم المحيط، وما تكشفه السلوكيات التعاونية عن الحياة وأساليب البقاء في الأعماق.",
       "thumbnail": "https://i.ytimg.com/vi/zY64lIaNiXQ/hqdefault.jpg",
-      "category": "علوم وطبيعة",
+      "category": "تحقيقات كبرى",
+      "source_playlists": [
+        "وثائقيات سرد 360 الكاملة — حلقات وتجميعات طويلة لساعات مشاهدة متواصلة."
+      ],
       "duration_seconds": 1146
+    },
+    {
+      "id": "video-8P-r9EU6Z44",
+      "youtube_id": "8P-r9EU6Z44",
+      "title": "وحيد القرن: الكائن المهيب الذي يخاف من العدم",
+      "source_title": "وحيد القرن: الكائن المهيب الذي يخاف من العدم",
+      "youtube_url": "https://www.youtube.com/watch?v=8P-r9EU6Z44",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/8P-r9EU6Z44/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 223
+    },
+    {
+      "id": "video-1SYUhlczH8g",
+      "youtube_id": "1SYUhlczH8g",
+      "title": "لغز سلاح حنّبعل: سرّ الفيل المفقود.. وكيف تحوّلت ذاكرة العمالقة إلى انتقام دمويّ؟ 🐘 | سرد 3",
+      "source_title": "لغز سلاح حنّبعل: سرّ الفيل المفقود.. وكيف تحوّلت ذاكرة العمالقة إلى انتقام دمويّ؟ 🐘 | سرد 3",
+      "youtube_url": "https://www.youtube.com/watch?v=1SYUhlczH8g",
+      "description": "رحلة مرئية إلى وقائع وشخصيات من الذاكرة التاريخية والحضارية.",
+      "thumbnail": "https://i.ytimg.com/vi/1SYUhlczH8g/hqdefault.jpg",
+      "category": "تاريخ وحضارات",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 229
+    },
+    {
+      "id": "video-H1Mh0sC6GDM",
+      "youtube_id": "H1Mh0sC6GDM",
+      "title": "مصارعة الثيران في إسبانيا: التّاريخ والثّقافة",
+      "source_title": "مصارعة الثيران في إسبانيا: التّاريخ والثّقافة",
+      "youtube_url": "https://www.youtube.com/watch?v=H1Mh0sC6GDM",
+      "description": "رحلة مرئية إلى وقائع وشخصيات من الذاكرة التاريخية والحضارية.",
+      "thumbnail": "https://i.ytimg.com/vi/H1Mh0sC6GDM/hqdefault.jpg",
+      "category": "تاريخ وحضارات",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 220
+    },
+    {
+      "id": "video-4d4dWDK2g3Q",
+      "youtube_id": "4d4dWDK2g3Q",
+      "title": "الخدعة الكبرى والمأساة البيئيّة: الأسرار العلميّة الصّادمة للدّبّ القطبيّ | وثائقيّ كامل",
+      "source_title": "الخدعة الكبرى والمأساة البيئيّة: الأسرار العلميّة الصّادمة للدّبّ القطبيّ | وثائقيّ كامل",
+      "youtube_url": "https://www.youtube.com/watch?v=4d4dWDK2g3Q",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/4d4dWDK2g3Q/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 196
+    },
+    {
+      "id": "video-D5c8wOYCh1Q",
+      "youtube_id": "D5c8wOYCh1Q",
+      "title": "الكائن الوحيد الّذي كسر قوانين الكون وهزم الموت | قنديل البحر الخالد | سرد 3",
+      "source_title": "الكائن الوحيد الّذي كسر قوانين الكون وهزم الموت | قنديل البحر الخالد | سرد 3",
+      "youtube_url": "https://www.youtube.com/watch?v=D5c8wOYCh1Q",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/D5c8wOYCh1Q/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 178
+    },
+    {
+      "id": "video-LGIn_8fAik0",
+      "youtube_id": "LGIn_8fAik0",
+      "title": "الجانب الخفيّ لذكاء الدلافين: دهاء الأعماق والتفسير العلميّ لصداقة البشر | سرد 360",
+      "source_title": "الجانب الخفيّ لذكاء الدلافين: دهاء الأعماق والتفسير العلميّ لصداقة البشر | سرد 360",
+      "youtube_url": "https://www.youtube.com/watch?v=LGIn_8fAik0",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/LGIn_8fAik0/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 190
+    },
+    {
+      "id": "video-2rAF9VGMjJY",
+      "youtube_id": "2rAF9VGMjJY",
+      "title": "الخدعة البيولوجية الأعظم: كيف هزم الباندا الانقراض بذكاء غريب؟ 🐼✨ | سرد 3",
+      "source_title": "الخدعة البيولوجية الأعظم: كيف هزم الباندا الانقراض بذكاء غريب؟ 🐼✨ | سرد 3",
+      "youtube_url": "https://www.youtube.com/watch?v=2rAF9VGMjJY",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/2rAF9VGMjJY/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 202
+    },
+    {
+      "id": "video-9UROYLYac8o",
+      "youtube_id": "9UROYLYac8o",
+      "title": "الأخطبوط: 9 أدمغة و3 قلوب — كيف يُخدع الدلافين؟ | سرد360",
+      "source_title": "الأخطبوط: 9 أدمغة و3 قلوب — كيف يُخدع الدلافين؟ | سرد360",
+      "youtube_url": "https://www.youtube.com/watch?v=9UROYLYac8o",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/9UROYLYac8o/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 230
+    },
+    {
+      "id": "video-qKymd9W0u5I",
+      "youtube_id": "qKymd9W0u5I",
+      "title": "أضخم كائن في تاريخ الأرض: لغز الحوت الأزرق وعزلته الموحشة في الأعماق | سرد 3",
+      "source_title": "أضخم كائن في تاريخ الأرض: لغز الحوت الأزرق وعزلته الموحشة في الأعماق | سرد 3",
+      "youtube_url": "https://www.youtube.com/watch?v=qKymd9W0u5I",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/qKymd9W0u5I/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 177
+    },
+    {
+      "id": "video-_Z4QO74fKI8",
+      "youtube_id": "_Z4QO74fKI8",
+      "title": "مملكة الذئاب: حقيقة القائد المستبدّ والجانب الخفيّ من حياتهم",
+      "source_title": "مملكة الذئاب: حقيقة القائد المستبدّ والجانب الخفيّ من حياتهم",
+      "youtube_url": "https://www.youtube.com/watch?v=_Z4QO74fKI8",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/_Z4QO74fKI8/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 172
+    },
+    {
+      "id": "ibn-battuta-dhawat",
+      "youtube_id": "PDUxg_SJko0",
+      "title": "ابن بطوطة: أعظم الرحّالة أم أكثرهم مبالغة؟",
+      "source_title": "أكبرُ رحّالةٍ أم أعظمُ كاذب؟ الأسرارُ المظلمةُ في حياةِ ابنِ بطوطة | سلسلة ذوات",
+      "youtube_url": "https://www.youtube.com/watch?v=PDUxg_SJko0",
+      "description": "تحقيق مرئي يراجع سيرة ابن بطوطة وأسئلة المبالغة والذاكرة، ويضع رحلاته في سياقها التاريخي.",
+      "thumbnail": "https://i.ytimg.com/vi/PDUxg_SJko0/hqdefault.jpg",
+      "category": "ذوات",
+      "source_playlists": [
+        "بودكاست ذَوَاتْ | سرد 360",
+        "ذوات"
+      ],
+      "duration_seconds": 481
+    },
+    {
+      "id": "video-rwxUnbDOAdw",
+      "youtube_id": "rwxUnbDOAdw",
+      "title": "رحلة بصرية إلى أعظم إمبراطورية: قرطاج 300 ق.م 🌅 | استرخاء، إلهام، وسفر عبر الزمن",
+      "source_title": "رحلة بصرية إلى أعظم إمبراطورية: قرطاج 300 ق.م 🌅 | استرخاء، إلهام، وسفر عبر الزمن",
+      "youtube_url": "https://www.youtube.com/watch?v=rwxUnbDOAdw",
+      "description": "رحلة مرئية إلى وقائع وشخصيات من الذاكرة التاريخية والحضارية.",
+      "thumbnail": "https://i.ytimg.com/vi/rwxUnbDOAdw/hqdefault.jpg",
+      "category": "تاريخ وحضارات",
+      "source_playlists": [
+        "SARD360 STUDIO | البث المباشر 24/7"
+      ],
+      "duration_seconds": 5492
+    },
+    {
+      "id": "video-qE-3LXMw9lc",
+      "youtube_id": "qE-3LXMw9lc",
+      "title": "🔴 بث مباشر 24/7 | مكتبة بغداد: موسيقى تاريخية هادئة للدراسة، العمل، والاسترخاء - سرد 360 (4K)",
+      "source_title": "🔴 بث مباشر 24/7 | مكتبة بغداد: موسيقى تاريخية هادئة للدراسة، العمل، والاسترخاء - سرد 360 (4K)",
+      "youtube_url": "https://www.youtube.com/watch?v=qE-3LXMw9lc",
+      "description": "مساحة بصرية وموسيقية من سرد 360 للمطالعة والتأمل.",
+      "thumbnail": "https://i.ytimg.com/vi/qE-3LXMw9lc/hqdefault.jpg",
+      "category": "أجواء وموسيقى",
+      "source_playlists": [
+        "SARD360 STUDIO | البث المباشر 24/7"
+      ],
+      "duration_seconds": 42899
+    },
+    {
+      "id": "video--ze5LpsnBC8",
+      "youtube_id": "-ze5LpsnBC8",
+      "title": "الأوركا: المفترس الأعظم الذي كسر هيبة القرش الأبيض | سرد 3",
+      "source_title": "الأوركا: المفترس الأعظم الذي كسر هيبة القرش الأبيض | سرد 3",
+      "youtube_url": "https://www.youtube.com/watch?v=-ze5LpsnBC8",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/-ze5LpsnBC8/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 190
+    },
+    {
+      "id": "video-KS-9NGEs4oU",
+      "youtube_id": "KS-9NGEs4oU",
+      "title": "شعب الباجاو: بشر تخلّوا عن اليابسة وتطوّروا إلى أسماك! | سرد 3",
+      "source_title": "شعب الباجاو: بشر تخلّوا عن اليابسة وتطوّروا إلى أسماك! | سرد 3",
+      "youtube_url": "https://www.youtube.com/watch?v=KS-9NGEs4oU",
+      "description": "عرض مرئي يقترب من أسرار الطبيعة والكائنات من قناة سرد 360.",
+      "thumbnail": "https://i.ytimg.com/vi/KS-9NGEs4oU/hqdefault.jpg",
+      "category": "علوم وطبيعة",
+      "source_playlists": [
+        "سرد 3"
+      ],
+      "duration_seconds": 187
     },
     {
       "id": "cleopatra-queen-nile",
@@ -76,7 +492,11 @@
       "youtube_url": "https://www.youtube.com/watch?v=FMSGxrseIpQ",
       "description": "تحقيق تاريخي يتناول صورة كليوباترا بين الوقائع والأسطورة، ويعيد النظر في واحدة من أكثر ملكات مصر إثارة للجدل.",
       "thumbnail": "https://i.ytimg.com/vi/FMSGxrseIpQ/hqdefault.jpg",
-      "category": "التاريخ والحضارات",
+      "category": "ذوات",
+      "source_playlists": [
+        "بودكاست ذَوَاتْ | سرد 360",
+        "ذوات"
+      ],
       "duration_seconds": 486
     },
     {
@@ -87,7 +507,11 @@
       "youtube_url": "https://www.youtube.com/watch?v=nDCxoG8DF08",
       "description": "رحلة تاريخية إلى تدمر وصعود زنوبيا وصدامها مع روما، مع تتبّع اللغز الذي أحاط بنهاية الملكة.",
       "thumbnail": "https://i.ytimg.com/vi/nDCxoG8DF08/hqdefault.jpg",
-      "category": "التاريخ والحضارات",
+      "category": "ذوات",
+      "source_playlists": [
+        "بودكاست ذَوَاتْ | سرد 360",
+        "ذوات"
+      ],
       "duration_seconds": 524
     },
     {
@@ -98,7 +522,11 @@
       "youtube_url": "https://www.youtube.com/watch?v=tc3VYhhzAtw",
       "description": "قراءة مرئية في رواية زوربا اليوناني وما تثيره من أسئلة حول الحرية والتمرّد وحدود العيش وفق الاختيار الشخصي.",
       "thumbnail": "https://i.ytimg.com/vi/tc3VYhhzAtw/hqdefault.jpg",
-      "category": "الأدب والقراءات",
+      "category": "أدب وقراءات",
+      "source_playlists": [
+        "بودكاست رٍوَاية في دقائق| سرد 360",
+        "رواية في دقائق"
+      ],
       "duration_seconds": 487
     },
     {
@@ -109,8 +537,16 @@
       "youtube_url": "https://www.youtube.com/watch?v=m47-2od9Q5I",
       "description": "قراءة في عالم مائة عام من العزلة وذاكرته المتوارثة، وفي الأسباب التي جعلت الرواية علامة بارزة في أدب القرن العشرين.",
       "thumbnail": "https://i.ytimg.com/vi/m47-2od9Q5I/hqdefault.jpg",
-      "category": "الأدب والقراءات",
-      "duration_seconds": 485
+      "category": "أدب وقراءات",
+      "source_playlists": [
+        "بودكاست رٍوَاية في دقائق| سرد 360",
+        "رواية في دقائق"
+      ],
+      "duration_seconds": 485,
+      "khizana_book": {
+        "title": "مائة عام من العزلة — غابرييل غارسيا ماركيز (الطبعة الإنجليزية)",
+        "url": "https://www.amazon.com/dp/0060883286?tag=sard360-20"
+      }
     },
     {
       "id": "amundsen-last-viking",
@@ -120,7 +556,11 @@
       "youtube_url": "https://www.youtube.com/watch?v=B1HP-gND-gc",
       "description": "تحقيق في رحلة روالد أموندسن إلى القطب الجنوبي والسباق الذي جعل إنجازه جزءاً من تاريخ الاستكشاف.",
       "thumbnail": "https://i.ytimg.com/vi/B1HP-gND-gc/hqdefault.jpg",
-      "category": "التاريخ والرحلات",
+      "category": "ذوات",
+      "source_playlists": [
+        "بودكاست ذَوَاتْ | سرد 360",
+        "ذوات"
+      ],
       "duration_seconds": 968
     },
     {
@@ -131,8 +571,70 @@
       "youtube_url": "https://www.youtube.com/watch?v=546j819WypI",
       "description": "قراءة أدبية في رواية أزهار عباد الشمس العمياء وما تقدّمه من تأمل في الهزيمة الإنسانية والذاكرة، ضمن سلسلة رواية في دقائق.",
       "thumbnail": "https://i.ytimg.com/vi/546j819WypI/hqdefault.jpg",
-      "category": "الأدب والقراءات",
+      "category": "أدب وقراءات",
+      "source_playlists": [
+        "بودكاست رٍوَاية في دقائق| سرد 360",
+        "رواية في دقائق"
+      ],
       "duration_seconds": 503
+    },
+    {
+      "id": "video-p2FPda6IgkE",
+      "youtube_id": "p2FPda6IgkE",
+      "title": "أجواء مكتبة الإسكندرية المفقودة: موسيقى هادئة للدراسة والقراءة | Dark Academia",
+      "source_title": "أجواء مكتبة الإسكندرية المفقودة: موسيقى هادئة للدراسة والقراءة | Dark Academia",
+      "youtube_url": "https://www.youtube.com/watch?v=p2FPda6IgkE",
+      "description": "مساحة بصرية وموسيقية من سرد 360 للمطالعة والتأمل.",
+      "thumbnail": "https://i.ytimg.com/vi/p2FPda6IgkE/hqdefault.jpg",
+      "category": "أجواء وموسيقى",
+      "source_playlists": [
+        "SARD360 STUDIO | البث المباشر 24/7"
+      ],
+      "duration_seconds": 2968
+    },
+    {
+      "id": "video-cb8wwn5Fmas",
+      "youtube_id": "cb8wwn5Fmas",
+      "title": "ليلة في مكتبة الإسكندرية القديمة 📜 أجواء للدراسة، القراءة، والتأمل (Ambient History)",
+      "source_title": "ليلة في مكتبة الإسكندرية القديمة 📜 أجواء للدراسة، القراءة، والتأمل (Ambient History)",
+      "youtube_url": "https://www.youtube.com/watch?v=cb8wwn5Fmas",
+      "description": "مساحة بصرية وموسيقية من سرد 360 للمطالعة والتأمل.",
+      "thumbnail": "https://i.ytimg.com/vi/cb8wwn5Fmas/hqdefault.jpg",
+      "category": "أجواء وموسيقى",
+      "source_playlists": [
+        "SARD360 STUDIO | البث المباشر 24/7"
+      ],
+      "duration_seconds": 2565
+    },
+    {
+      "id": "video-w4bqC-F1xO0",
+      "youtube_id": "w4bqC-F1xO0",
+      "title": "سرد 360: كشف الستار عن غموض قلعة ألموت ومأساة الأندلس",
+      "source_title": "سرد 360: كشف الستار عن غموض قلعة ألموت ومأساة الأندلس",
+      "youtube_url": "https://www.youtube.com/watch?v=w4bqC-F1xO0",
+      "description": "رحلة مرئية إلى وقائع وشخصيات من الذاكرة التاريخية والحضارية.",
+      "thumbnail": "https://i.ytimg.com/vi/w4bqC-F1xO0/hqdefault.jpg",
+      "category": "تاريخ وحضارات",
+      "source_playlists": [
+        "SARD360 STUDIO | البث المباشر 24/7"
+      ],
+      "duration_seconds": 19846,
+      "khizana_book": {
+        "title": "الحشاشون: طائفة راديكالية في الإسلام — برنارد لويس",
+        "url": "https://amzn.to/3VqI72U"
+      }
+    },
+    {
+      "id": "andalusia-journey",
+      "youtube_id": "eIMxLq4lVyU",
+      "title": "أسرار الأندلس المنسية: رحلة بين قرطبة وغرناطة",
+      "source_title": "أسرار الأندلس المنسية: رحلة هادئة بين جدران قرطبة وغرناطة (للقراءة والاسترخاء)",
+      "youtube_url": "https://www.youtube.com/watch?v=eIMxLq4lVyU",
+      "description": "رحلة بصرية تاريخية مطوّلة بين قرطبة وغرناطة تستحضر معالم الأندلس في عرض هادئ للمشاهدة المتأنية.",
+      "thumbnail": "https://i.ytimg.com/vi/eIMxLq4lVyU/hqdefault.jpg",
+      "category": "تاريخ وحضارات",
+      "source_playlists": [],
+      "duration_seconds": 21046
     }
   ]
 }

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'safar360-v6';
+const CACHE_NAME = 'safar360-v7';
 const ASSETS = [
   '/',
   '/index.html',

@@ -17,9 +17,9 @@
     a{color:inherit}
     button{font-family:inherit}
     .page-shell{width:min(1320px,calc(100% - 40px));margin:0 auto;padding:22px 0 60px}
-    .topline{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:6px 0 22px;border-bottom:1px solid rgba(212,175,55,.22)}
+    .topline{display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:88px;padding:10px 0 24px;border-bottom:1px solid rgba(212,175,55,.22)}
     .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:0 0 auto}
-    .brand-logo{display:block;flex:0 0 auto;width:42px;height:42px;object-fit:contain;filter:drop-shadow(0 2px 10px rgba(212,175,55,.16))}
+    .brand-logo{display:block;flex:0 0 auto;width:auto;height:60px;max-width:220px;object-fit:contain;filter:drop-shadow(0 2px 12px rgba(212,175,55,.2))}
     .top-links{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
     .top-links a{padding:7px 11px;border:1px solid var(--border);border-radius:999px;text-decoration:none;font-size:12px;color:#d8d2c4;transition:.2s ease}
     .top-links a:hover,.top-links a:focus-visible{border-color:var(--accent-gold);color:var(--accent-gold)}
@@ -74,25 +74,32 @@
     .page-footer a{color:#d1b75f;text-decoration:none}
     .footer-pillars{display:flex;flex-wrap:wrap;gap:12px}
     .page-footer a:hover,.page-footer a:focus-visible{color:#f1d776}
-    .video-modal{width:min(1120px,calc(100% - 32px));max-width:none;max-height:calc(100dvh - 28px);margin:auto;padding:0;border:0;overflow:visible;background:transparent;color:var(--text)}
+    .video-modal{width:min(1120px,calc(100vw - 32px),108vh);max-width:none;max-height:90vh;margin:auto;padding:0;border:0;overflow:hidden;background:transparent;color:var(--text)}
     .video-modal::backdrop{background:rgba(0,0,0,.85);backdrop-filter:blur(12px)}
-    .modal-panel{position:relative;max-height:calc(100dvh - 28px);overflow-y:auto;padding:20px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
-    .modal-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+    .modal-panel{position:relative;display:flex;flex-direction:column;max-height:90vh;overflow:hidden;padding:18px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
+    .modal-header{display:flex;flex:0 0 auto;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px}
     .modal-kicker{color:var(--accent-gold);font-family:var(--font-head);font-size:12px;font-weight:800}
     .modal-close{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border:1px solid rgba(212,175,55,.45);border-radius:50%;background:#101216;color:#f1d776;font-size:24px;line-height:1;cursor:pointer}
     .modal-close:hover,.modal-close:focus-visible{background:rgba(212,175,55,.14)}
-    .modal-stage{width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#050608}
+    .modal-stage{flex:0 0 auto;width:100%;aspect-ratio:16/9;max-height:65vh;overflow:hidden;border-radius:12px;background:#050608}
     .modal-stage iframe{display:block;width:100%;height:100%;border:0}
-    .modal-info{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:16px;padding:16px 4px 2px}
+    .modal-info{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:14px;margin:0;padding:12px 4px 0;min-height:0}
     .modal-info-copy{flex:1;min-width:0}
     .modal-info-copy h2{margin:0 0 5px;color:#f4eddf;font-family:var(--font-head);font-size:clamp(20px,2.6vw,29px);line-height:1.35}
-    .modal-info-copy p{margin:0;color:#b9c0ca;font-size:13px;line-height:1.75}
+    .modal-info-copy p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin:0;color:#b9c0ca;font-size:13px;line-height:1.65}
+    .modal-book{display:flex;align-items:center;gap:9px;margin-top:9px;padding:8px 10px;border-inline-start:2px solid rgba(212,175,55,.72);border-radius:8px;background:rgba(212,175,55,.055);color:#d9d0b8;font-size:12px;line-height:1.45}
+    .modal-book[hidden]{display:none!important}
+    .modal-book-icon{flex:0 0 auto;color:var(--accent-gold);font-size:17px}
+    .modal-book-label{min-width:0;flex:1}
+    .modal-book-label strong{color:#f0d782;font-weight:700}
+    .modal-book-action{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:6px 11px;border:1px solid rgba(212,175,55,.65);border-radius:99px;background:linear-gradient(135deg,#e5c76d,#c49a35);color:#15120b;text-decoration:none;font:800 11px var(--font-head);white-space:nowrap}
+    .modal-book-action:hover,.modal-book-action:focus-visible{filter:brightness(1.08)}
     .modal-subscribe{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;gap:8px;min-height:44px;padding:11px 19px;border:0;border-radius:999px;background:linear-gradient(135deg,#e5c76d,#c49a35);box-shadow:0 8px 22px rgba(212,175,55,.2);color:#15120b;text-decoration:none;font:800 14px var(--font-head);white-space:nowrap;transition:filter .2s ease,transform .2s ease}
     .modal-subscribe:hover,.modal-subscribe:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
     @keyframes shimmer{to{background-position:-200% 0}}
     @keyframes card-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
     @media(max-width:980px){.featured-card{grid-template-columns:1fr}.featured-media{aspect-ratio:16/9}.video-grid,.loading-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:620px){.page-shell{width:min(100% - 28px,1320px);padding-top:14px}.topline{align-items:flex-start;flex-direction:column}.top-links{justify-content:flex-start;gap:6px}.top-links a{padding:6px 9px;font-size:11px}.brand-name{font-size:16px}.hero{padding:37px 0 18px}.hero p{font-size:13px}.section-heading{align-items:flex-start;flex-direction:column;margin-top:23px}.section-heading .quiet-button{align-self:flex-start}.video-grid,.loading-grid{grid-template-columns:1fr;gap:13px}.video-body h3{font-size:17px}.featured-card{border-radius:16px}.feature-copy{padding:20px}.feature-copy h2{font-size:25px}.skeleton{height:250px}.modal-panel{padding:12px;border-radius:14px}.modal-stage{border-radius:8px}.modal-info{align-items:stretch;flex-direction:column;gap:13px;margin-top:10px;padding:10px 2px 0}.modal-info-copy h2{font-size:20px}.modal-info-copy p{font-size:12px}.modal-subscribe{align-self:flex-start}.modal-kicker{font-size:11px}}
+    @media(max-width:620px){.page-shell{width:min(100% - 28px,1320px);padding-top:14px}.topline{align-items:flex-start;flex-direction:column;min-height:0;padding:8px 0 18px}.brand{min-height:60px}.top-links{justify-content:flex-start;gap:6px}.top-links a{padding:6px 9px;font-size:11px}.filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter-button{flex:0 0 auto}.hero{padding:37px 0 18px}.hero p{font-size:13px}.section-heading{align-items:flex-start;flex-direction:column;margin-top:23px}.section-heading .quiet-button{align-self:flex-start}.video-grid,.loading-grid{grid-template-columns:1fr;gap:13px}.video-body h3{font-size:17px}.featured-card{border-radius:16px}.feature-copy{padding:20px}.feature-copy h2{font-size:25px}.skeleton{height:250px}.video-modal{width:calc(100vw - 20px);max-height:90vh}.modal-panel{padding:12px;border-radius:14px}.modal-header{margin-bottom:8px}.modal-stage{border-radius:8px}.modal-info{grid-template-columns:1fr;gap:8px;padding:10px 2px 0}.modal-info-copy h2{font-size:20px}.modal-info-copy p{font-size:12px}.modal-book{flex-wrap:wrap;gap:7px;margin-top:7px;padding:7px 8px;font-size:11px}.modal-book-label{flex-basis:calc(100% - 32px)}.modal-book-action{margin-inline-start:26px}.modal-subscribe{justify-self:start;min-height:38px;padding:8px 14px;font-size:12px}.modal-kicker{font-size:11px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
   </style>
 </head>
@@ -100,7 +107,7 @@
   <main class="page-shell">
     <header class="topline">
       <a class="brand" href="https://sard360.com/" aria-label="الصفحة الرئيسية لمنصة سرد 360">
-        <img class="brand-logo" src="/assets/images/sard360-logo.png" alt="سرد 360" width="42" height="42" decoding="async" fetchpriority="high">
+        <img class="brand-logo" src="/assets/images/sard360-logo.png" alt="سرد 360" width="120" height="60" decoding="async" fetchpriority="high">
       </a>
       <nav class="top-links" aria-label="أقسام منصة سرد 360">
         <a href="https://sard360.com/">الرئيسية · سرد 360</a>
@@ -113,7 +120,7 @@
     <section class="hero" aria-labelledby="page-title">
       <span class="eyebrow">✦ وثائقيات كبرى وتحقيقات مرئية</span>
       <h1 id="page-title">سينما <span class="gold">سرد</span></h1>
-      <p>مساحة للأفلام الوثائقية والرحلات المعرفية المطوّلة من قناة سرد 360. اختر موضوعاً، واستعد لمشاهدة تتّسع للحكاية كاملة.</p>
+      <p>مكتبة من الأفلام والوثائقيات والحلقات المرئية من قناة سرد 360؛ اختر موضوعاً أو سلسلة، وشاهد داخل مساحةٍ واحدة.</p>
     </section>
 
     <section aria-labelledby="featured-title">
@@ -122,7 +129,7 @@
           <h2 id="featured-title">اختيار <span class="gold">اليوم</span></h2>
           <p>يتجدّد الفيلم البارز تلقائياً كل يوم، ويمكنك تدويره متى شئت.</p>
         </div>
-        <button class="quiet-button" id="rotate-feature" type="button">ترشيح فيلم آخر ↻</button>
+        <button class="quiet-button" id="rotate-feature" type="button">ترشيح فيديو آخر ↻</button>
       </div>
       <div id="featured-film" aria-live="polite" aria-busy="true">
         <div class="skeleton" style="height:320px"></div>
@@ -165,6 +172,11 @@
         <div class="modal-info-copy">
           <h2 id="video-modal-title">مشاهدة من سينما سرد</h2>
           <p id="video-modal-description">وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.</p>
+          <div class="modal-book" id="modal-book" hidden>
+            <span class="modal-book-icon" aria-hidden="true">▤</span>
+            <span class="modal-book-label">مرجع الفيلم من خزانة سرد: <strong id="modal-book-title"></strong></span>
+            <a class="modal-book-action" id="modal-book-action" href="#" target="_blank" rel="noopener noreferrer sponsored">اقتَنِ النسخة</a>
+          </div>
         </div>
         <a class="modal-subscribe" href="https://www.youtube.com/@sard360?sub_confirmation=1" target="_blank" rel="noopener noreferrer">اشترك في القناة <span aria-hidden="true">↗</span></a>
       </section>
@@ -196,6 +208,13 @@
           const url = new URL(value);
           return url.protocol === 'https:' && hosts.includes(url.hostname) ? url.href : '';
         } catch (_) { return ''; }
+      }
+      function safeAffiliateUrl(value) {
+        return safeUrl(value, ['amzn.to','amazon.com','www.amazon.com','amazon.ca','www.amazon.ca']);
+      }
+      function bookAttributes(item) {
+        const book = item?.khizana_book || {};
+        return `data-book-title="${escapeHtml(book.title || '')}" data-book-url="${escapeHtml(book.url || '')}"`;
       }
       function videoIdFromUrl(value) {
         try {
@@ -229,7 +248,8 @@
         if (!item || typeof item.title !== 'string' || typeof item.description !== 'string') return false;
         const id = videoIdFromUrl(item.youtube_url);
         const thumb = safeUrl(item.thumbnail, ['i.ytimg.com']);
-        return Boolean(id && thumb && Number(item.duration_seconds) >= 480);
+        const duration = Number(item.duration_seconds);
+        return Boolean(id && thumb && item.category && Number.isFinite(duration) && duration >= 0);
       }
       function currentList() {
         return activeCategory === 'الكل' ? items : items.filter(item => item.category === activeCategory);
@@ -245,8 +265,9 @@
           return;
         }
         const id = videoIdFromUrl(item.youtube_url);
+        const bookAttrs = bookAttributes(item);
         FEATURED_DAILY.innerHTML = `<article class="featured-card">
-          <button class="featured-media video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" aria-label="مشاهدة ${escapeHtml(item.title)} داخل الصفحة">
+          <button class="featured-media video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" ${bookAttrs} aria-label="مشاهدة ${escapeHtml(item.title)} داخل الصفحة">
             ${imageMarkup(item)}
             <span class="media-shade"></span><span class="duration-badge">${formatDuration(item.duration_seconds)}</span>
           </button>
@@ -254,8 +275,8 @@
             <span class="feature-label">✦ اختيار اليوم · ${escapeHtml(item.category)}</span>
             <h2>${escapeHtml(item.title)}</h2>
             <p>${escapeHtml(item.description)}</p>
-            <div class="feature-meta"><span class="chip">${formatDuration(item.duration_seconds)} · مشاهدة طويلة</span><span class="chip">من قناة سرد 360</span></div>
-            <button class="watch-button video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}">شاهد الفيلم <span aria-hidden="true">▶</span></button>
+            <div class="feature-meta"><span class="chip">المدة ${formatDuration(item.duration_seconds)}</span><span class="chip">من قناة سرد 360</span></div>
+            <button class="watch-button video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" ${bookAttrs}>شاهد داخل سينما سرد <span aria-hidden="true">▶</span></button>
           </div>
         </article>`;
         FEATURED_DAILY.setAttribute('aria-busy','false');
@@ -275,24 +296,37 @@
         const rest = shuffle(list.filter(item => item.id !== featured.id));
         GRID.innerHTML = rest.map((item, index) => {
           const id = videoIdFromUrl(item.youtube_url);
+          const bookAttrs = bookAttributes(item);
           return `<article class="video-card" style="animation-delay:${Math.min(index,8)*45}ms">
-            <button class="video-thumb video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" aria-label="شاهد ${escapeHtml(item.title)} داخل الصفحة">
+            <button class="video-thumb video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" ${bookAttrs} aria-label="شاهد ${escapeHtml(item.title)} داخل الصفحة">
               ${imageMarkup(item)}<span class="duration-badge">${formatDuration(item.duration_seconds)}</span><span class="thumbnail-fallback" aria-hidden="true"></span>
             </button>
             <div class="video-body"><span class="video-category">${escapeHtml(item.category)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p>
-              <button class="card-bottom video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}"><span>شاهد الفيلم داخل سرد</span><span aria-hidden="true">▶</span></button>
+              <button class="card-bottom video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" ${bookAttrs}><span>شاهد داخل سينما سرد</span><span aria-hidden="true">▶</span></button>
             </div>
           </article>`;
         }).join('');
         GRID.hidden = false;
         GRID.setAttribute('aria-busy','false');
-        COUNT.textContent = `${new Intl.NumberFormat('ar').format(list.length)} أفلام طويلة · يعرض الشبكة البقية بعد ترشيح اليوم`;
+        COUNT.textContent = `${new Intl.NumberFormat('ar').format(list.length)} مواد مرئية · يظهر اختيار اليوم وتُعرض بقية المكتبة أسفله`;
       }
       function openVideo(videoId, title, description, trigger) {
         if (!/^[A-Za-z0-9_-]{11}$/.test(videoId || '') || MODAL.open) return;
         lastTrigger = trigger;
         document.getElementById('video-modal-title').textContent = title || 'مشاهدة من سينما سرد';
         document.getElementById('video-modal-description').textContent = description || 'وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.';
+        const bookTitle = trigger?.dataset.bookTitle || '';
+        const bookUrl = safeAffiliateUrl(trigger?.dataset.bookUrl || '');
+        const bookWidget = document.getElementById('modal-book');
+        const bookAction = document.getElementById('modal-book-action');
+        bookWidget.hidden = !(bookTitle && bookUrl);
+        if (bookTitle && bookUrl) {
+          document.getElementById('modal-book-title').textContent = bookTitle;
+          bookAction.href = bookUrl;
+        } else {
+          document.getElementById('modal-book-title').textContent = '';
+          bookAction.removeAttribute('href');
+        }
         const frame = document.createElement('iframe');
         frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
         frame.title = title ? `مشاهدة ${title}` : 'فيديو من قناة سرد 360';
@@ -349,6 +383,7 @@
       MODAL.addEventListener('click', event => { if (event.target === MODAL) closeVideo(); });
       MODAL.addEventListener('close', () => {
         MODAL_STAGE.replaceChildren();
+        document.getElementById('modal-book').hidden = true;
         if (lastTrigger?.isConnected) lastTrigger.focus();
         lastTrigger = null;
       });
@@ -365,7 +400,7 @@
           renderFilters();
           renderContent();
           LOADING.hidden = true;
-          COUNT.textContent = `${new Intl.NumberFormat('ar').format(items.length)} أفلام طويلة · من قناة سرد 360`;
+          COUNT.textContent = `${new Intl.NumberFormat('ar').format(items.length)} مواد مرئية · من قناة سرد 360`;
         } catch (error) {
           console.error('Cinema catalogue unavailable:', error);
           LOADING.hidden = true;
