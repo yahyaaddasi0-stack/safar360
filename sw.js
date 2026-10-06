@@ -35,6 +35,28 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   
+  const requestUrl = new URL(e.request.url);
+  const isKhizanaPage = /^\/khizana(?:\/|\.html)?$/.test(requestUrl.pathname);
+  const isKhizanaCatalog = /^\/(?:khizana\/)?products\.json$/.test(requestUrl.pathname);
+  if (isKhizanaPage || isKhizanaCatalog) {
+    e.respondWith(
+      fetch(e.request).then((fetchRes) => {
+        if (e.request.method === 'GET' && fetchRes.status === 200) {
+          return caches.open(CACHE_NAME).then((cache) => {
+            return cache.put(e.request, fetchRes.clone()).then(() => fetchRes);
+          });
+        }
+        return fetchRes;
+      }).catch(() => caches.match(e.request).then((res) => {
+        if (res) return res;
+        if ((e.request.headers.get('accept') || '').includes('text/html')) {
+          return caches.match('/index.html');
+        }
+      }))
+    );
+    return;
+  }
+
   e.respondWith(
     caches.match(e.request).then((res) => {
       return res || fetch(e.request).then((fetchRes) => {
