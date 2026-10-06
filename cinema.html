@@ -74,32 +74,58 @@
     .page-footer a{color:#d1b75f;text-decoration:none}
     .footer-pillars{display:flex;flex-wrap:wrap;gap:12px}
     .page-footer a:hover,.page-footer a:focus-visible{color:#f1d776}
-    .video-modal{width:min(1120px,calc(100vw - 32px),108vh);max-width:none;max-height:90vh;margin:auto;padding:0;border:0;overflow:hidden;background:transparent;color:var(--text)}
+    .video-modal{width:min(1120px,calc(100vw - 32px),108vh);max-width:none;max-height:90vh;max-height:90dvh;margin:auto;padding:0;border:0;overflow:hidden;background:transparent;color:var(--text)}
     .video-modal::backdrop{background:rgba(0,0,0,.85);backdrop-filter:blur(12px)}
-    .modal-panel{position:relative;display:flex;flex-direction:column;max-height:90vh;overflow:hidden;padding:18px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
+    .modal-panel{position:relative;display:flex;flex-direction:column;width:100%;height:90vh;height:90dvh;max-height:90vh;max-height:90dvh;overflow:hidden;padding:16px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
     .modal-header{display:flex;flex:0 0 auto;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px}
     .modal-kicker{color:var(--accent-gold);font-family:var(--font-head);font-size:12px;font-weight:800}
     .modal-close{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border:1px solid rgba(212,175,55,.45);border-radius:50%;background:#101216;color:#f1d776;font-size:24px;line-height:1;cursor:pointer}
     .modal-close:hover,.modal-close:focus-visible{background:rgba(212,175,55,.14)}
-    .modal-stage{flex:0 0 auto;width:100%;aspect-ratio:16/9;max-height:65vh;overflow:hidden;border-radius:12px;background:#050608}
+    .modal-stage{flex:0 0 auto;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#050608}
     .modal-stage iframe{display:block;width:100%;height:100%;border:0}
-    .modal-info{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:14px;margin:0;padding:12px 4px 0;min-height:0}
+    .modal-lower{display:flex;flex:1 1 auto;flex-direction:column;gap:18px;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;padding:20px;scrollbar-color:rgba(212,175,55,.5) transparent;scrollbar-width:thin}
+    .modal-lower::-webkit-scrollbar{width:6px}
+    .modal-lower::-webkit-scrollbar-thumb{border-radius:99px;background:rgba(212,175,55,.42)}
+    .modal-info{display:flex;flex:0 0 auto;flex-direction:column;align-items:stretch;gap:14px;min-width:0;margin:0;padding:0}
+    .modal-info-header{display:flex;align-items:center;justify-content:space-between;gap:20px;min-width:0}
     .modal-info-copy{flex:1;min-width:0}
-    .modal-info-copy h2{margin:0 0 5px;color:#f4eddf;font-family:var(--font-head);font-size:clamp(20px,2.6vw,29px);line-height:1.35}
-    .modal-info-copy p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin:0;color:#b9c0ca;font-size:13px;line-height:1.65}
-    .modal-book{display:flex;align-items:center;gap:9px;margin-top:9px;padding:8px 10px;border-inline-start:2px solid rgba(212,175,55,.72);border-radius:8px;background:rgba(212,175,55,.055);color:#d9d0b8;font-size:12px;line-height:1.45}
-    .modal-book[hidden]{display:none!important}
-    .modal-book-icon{flex:0 0 auto;color:var(--accent-gold);font-size:17px}
-    .modal-book-label{min-width:0;flex:1}
-    .modal-book-label strong{color:#f0d782;font-weight:700}
-    .modal-book-action{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:6px 11px;border:1px solid rgba(212,175,55,.65);border-radius:99px;background:linear-gradient(135deg,#e5c76d,#c49a35);color:#15120b;text-decoration:none;font:800 11px var(--font-head);white-space:nowrap}
+    .modal-info-copy h2{margin:0 0 5px;color:#f4eddf;font-family:var(--font-head);font-size:clamp(22px,2.7vw,31px);line-height:1.35}
+    .modal-video-category{display:inline-flex;align-items:center;width:max-content;max-width:100%;padding:3px 10px;border:1px solid rgba(212,175,55,.32);border-radius:99px;background:rgba(212,175,55,.07);color:#dfc57a;font-size:11px;font-weight:700}
+    .modal-description{display:block;overflow:visible;margin:0;color:#c0c7d0;font-size:14px;line-height:1.95;white-space:normal;overflow-wrap:anywhere}
+    .modal-books{display:flex;flex:0 0 auto;flex-direction:column;gap:10px;padding:15px;border:1px solid rgba(212,175,55,.42);border-inline-start:3px solid var(--accent-gold);border-radius:13px;background:linear-gradient(120deg,rgba(212,175,55,.13),rgba(212,175,55,.035) 60%,rgba(18,21,27,.94));box-shadow:0 10px 28px rgba(0,0,0,.2)}
+    .modal-books[hidden]{display:none!important}
+    .modal-books-heading{display:flex;align-items:center;gap:9px;color:#f0d782;font:800 14px var(--font-head)}
+    .modal-books-heading span{color:var(--accent-gold);font-size:19px}
+    .modal-book-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:10px}
+    .modal-book-card{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;padding:11px 12px;border:1px solid rgba(212,175,55,.18);border-radius:10px;background:rgba(9,11,14,.58)}
+    .modal-book-title{min-width:0;color:#e6e0d2;font-size:12px;line-height:1.65;font-weight:700}
+    .modal-book-action{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:7px 12px;border:1px solid rgba(212,175,55,.65);border-radius:99px;background:linear-gradient(135deg,#e5c76d,#c49a35);color:#15120b;text-decoration:none;font:800 11px var(--font-head);white-space:nowrap}
     .modal-book-action:hover,.modal-book-action:focus-visible{filter:brightness(1.08)}
     .modal-subscribe{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;gap:8px;min-height:44px;padding:11px 19px;border:0;border-radius:999px;background:linear-gradient(135deg,#e5c76d,#c49a35);box-shadow:0 8px 22px rgba(212,175,55,.2);color:#15120b;text-decoration:none;font:800 14px var(--font-head);white-space:nowrap;transition:filter .2s ease,transform .2s ease}
     .modal-subscribe:hover,.modal-subscribe:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
+    .modal-suggestions{flex:0 0 auto;min-width:0;margin:0;padding:14px 0 2px;border-top:1px solid rgba(212,175,55,.2)}
+    .modal-suggestions[hidden]{display:none!important}
+    .modal-suggestions-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 10px}
+    .modal-suggestions-heading h3{margin:0;color:#e9ddb9;font:800 17px var(--font-head)}
+    .modal-suggestions-heading span{color:#8f98a5;font-size:10px}
+    .modal-suggestions-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;min-width:0}
+    .modal-suggestion{display:flex;flex-direction:column;align-items:stretch;gap:8px;min-width:0;min-height:0;padding:8px;border:1px solid rgba(212,175,55,.18);border-radius:12px;background:rgba(18,21,27,.82);color:var(--text);text-align:right;cursor:pointer;transition:border-color .2s ease,background .2s ease,transform .2s ease}
+    .modal-suggestion:hover,.modal-suggestion:focus-visible{transform:translateY(-1px);border-color:rgba(212,175,55,.62);background:rgba(212,175,55,.07)}
+    .modal-suggestion-thumb{position:relative;display:block;flex:0 0 auto;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:8px;background:#17191d}
+    .modal-suggestion-thumb .video-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .modal-suggestion-thumb .duration-badge{bottom:5px;inset-inline-start:5px;padding:2px 5px;font-size:9px}
+    .modal-suggestion-thumb .thumbnail-fallback{font-size:8px;line-height:1.25;padding:4px}
+    .modal-suggestion-thumb .thumbnail-fallback::before{width:22px;height:22px;font-size:10px}
+    .modal-suggestion-copy{display:flex;flex:1;flex-direction:column;gap:3px;min-width:0}
+    .modal-suggestion-category{overflow:hidden;color:var(--accent-gold);font-size:10px;text-overflow:ellipsis;white-space:nowrap}
+    .modal-suggestion-title{display:-webkit-box;overflow:hidden;color:#e8e4db;font:700 12px/1.5 var(--font-head);-webkit-box-orient:vertical;-webkit-line-clamp:2}
     @keyframes shimmer{to{background-position:-200% 0}}
     @keyframes card-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
     @media(max-width:980px){.featured-card{grid-template-columns:1fr}.featured-media{aspect-ratio:16/9}.video-grid,.loading-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:620px){.page-shell{width:min(100% - 28px,1320px);padding-top:14px}.topline{align-items:flex-start;flex-direction:column;min-height:0;padding:8px 0 18px}.brand{min-height:60px}.top-links{justify-content:flex-start;gap:6px}.top-links a{padding:6px 9px;font-size:11px}.filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter-button{flex:0 0 auto}.hero{padding:37px 0 18px}.hero p{font-size:13px}.section-heading{align-items:flex-start;flex-direction:column;margin-top:23px}.section-heading .quiet-button{align-self:flex-start}.video-grid,.loading-grid{grid-template-columns:1fr;gap:13px}.video-body h3{font-size:17px}.featured-card{border-radius:16px}.feature-copy{padding:20px}.feature-copy h2{font-size:25px}.skeleton{height:250px}.video-modal{width:calc(100vw - 20px);max-height:90vh}.modal-panel{padding:12px;border-radius:14px}.modal-header{margin-bottom:8px}.modal-stage{border-radius:8px}.modal-info{grid-template-columns:1fr;gap:8px;padding:10px 2px 0}.modal-info-copy h2{font-size:20px}.modal-info-copy p{font-size:12px}.modal-book{flex-wrap:wrap;gap:7px;margin-top:7px;padding:7px 8px;font-size:11px}.modal-book-label{flex-basis:calc(100% - 32px)}.modal-book-action{margin-inline-start:26px}.modal-subscribe{justify-self:start;min-height:38px;padding:8px 14px;font-size:12px}.modal-kicker{font-size:11px}}
+    @media(max-width:620px){.modal-suggestions-list{display:flex;overflow-x:auto;gap:8px;padding-bottom:5px;scroll-snap-type:x proximity;scrollbar-width:thin;overscroll-behavior-x:contain}.modal-suggestion{flex:0 0 min(84vw,270px);scroll-snap-align:start}.modal-lower{scroll-padding-block:10px}}
+    @media(max-width:850px){.modal-suggestions-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:620px){.video-modal{width:calc(100vw - 20px);max-height:90vh;max-height:90dvh}.modal-panel{height:90vh;height:90dvh;max-height:90vh;max-height:90dvh;padding:10px;border-radius:14px}.modal-header{margin-bottom:8px}.modal-stage{border-radius:8px}.modal-lower{padding:16px 12px;gap:16px}.modal-info{display:flex;gap:12px;padding:0}.modal-info-header{align-items:flex-start;flex-direction:column;gap:9px}.modal-info-copy h2{font-size:21px}.modal-info-copy p{display:block;-webkit-line-clamp:unset;overflow:visible;font-size:13px;line-height:1.9}.modal-subscribe{align-self:flex-start;min-height:38px;padding:8px 14px;font-size:12px}.modal-books{padding:12px}.modal-book-list{grid-template-columns:1fr}.modal-book-card{align-items:flex-start;flex-direction:column;gap:8px}.modal-book-action{align-self:flex-start}.modal-suggestions-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;padding:0;scroll-snap-type:none}.modal-suggestion{flex:initial;min-height:0;padding:6px;gap:6px}.modal-suggestion-thumb{width:100%;flex:0 0 auto}.modal-suggestion-title{font-size:11px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
   </style>
 </head>
@@ -168,18 +194,26 @@
         <button class="modal-close" id="close-video" type="button" aria-label="إغلاق مشغّل الفيديو">×</button>
       </div>
       <div class="modal-stage" id="modal-stage"></div>
-      <section class="modal-info" aria-live="polite">
-        <div class="modal-info-copy">
-          <h2 id="video-modal-title">مشاهدة من سينما سرد</h2>
-          <p id="video-modal-description">وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.</p>
-          <div class="modal-book" id="modal-book" hidden>
-            <span class="modal-book-icon" aria-hidden="true">▤</span>
-            <span class="modal-book-label">مرجع الفيلم من خزانة سرد: <strong id="modal-book-title"></strong></span>
-            <a class="modal-book-action" id="modal-book-action" href="#" target="_blank" rel="noopener noreferrer sponsored">اقتَنِ النسخة</a>
+      <div class="modal-lower">
+        <section class="modal-info" aria-live="polite">
+          <div class="modal-info-header">
+            <div class="modal-info-copy">
+              <h2 id="video-modal-title" tabindex="-1">مشاهدة من سينما سرد</h2>
+              <span class="modal-video-category" id="video-modal-category">وثائقيات كبرى وتحقيقات مرئية</span>
+            </div>
+            <a class="modal-subscribe" href="https://www.youtube.com/@sard360?sub_confirmation=1" target="_blank" rel="noopener noreferrer">اشترك في القناة <span aria-hidden="true">↗</span></a>
           </div>
-        </div>
-        <a class="modal-subscribe" href="https://www.youtube.com/@sard360?sub_confirmation=1" target="_blank" rel="noopener noreferrer">اشترك في القناة <span aria-hidden="true">↗</span></a>
-      </section>
+          <p class="modal-description" id="video-modal-description">وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.</p>
+          <section class="modal-books" id="modal-books" aria-label="مراجع من خزانة سرد" hidden>
+            <div class="modal-books-heading"><span aria-hidden="true">▤</span> مرجع الفيلم من خزانة سرد</div>
+            <div class="modal-book-list" id="modal-book-list"></div>
+          </section>
+        </section>
+        <section class="modal-suggestions" id="modal-recommendations" aria-label="وثائقيات مقترحة" hidden>
+          <div class="modal-suggestions-heading"><h3>وثائقيات مقترحة</h3><span>من مكتبة سينما سرد</span></div>
+          <div class="modal-suggestions-list" id="modal-recommendations-list" aria-live="polite"></div>
+        </section>
+      </div>
     </div>
   </dialog>
 
@@ -194,7 +228,12 @@
       const ROTATE = document.getElementById('rotate-feature');
       const MODAL = document.getElementById('video-modal');
       const MODAL_STAGE = document.getElementById('modal-stage');
+      const MODAL_LOWER = document.querySelector('.modal-lower');
       const CLOSE_MODAL = document.getElementById('close-video');
+      const BOOKS_SECTION = document.getElementById('modal-books');
+      const BOOK_LIST = document.getElementById('modal-book-list');
+      const RECOMMENDATIONS = document.getElementById('modal-recommendations');
+      const RECOMMENDATION_LIST = document.getElementById('modal-recommendations-list');
       let items = [];
       let activeCategory = 'الكل';
       let featuredId = null;
@@ -212,9 +251,9 @@
       function safeAffiliateUrl(value) {
         return safeUrl(value, ['amzn.to','amazon.com','www.amazon.com','amazon.ca','www.amazon.ca']);
       }
-      function bookAttributes(item) {
-        const book = item?.khizana_book || {};
-        return `data-book-title="${escapeHtml(book.title || '')}" data-book-url="${escapeHtml(book.url || '')}"`;
+      function booksFor(item) {
+        const raw = Array.isArray(item?.khizana_books) ? item.khizana_books : item?.khizana_book ? [item.khizana_book] : [];
+        return raw.slice(0, 2).map(book => ({title:String(book?.title || '').trim(),url:safeAffiliateUrl(book?.url || '')})).filter(book => book.title && book.url);
       }
       function videoIdFromUrl(value) {
         try {
@@ -233,8 +272,9 @@
       function formatDuration(seconds) {
         const s = Math.max(0, Number(seconds) || 0);
         const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), r = s % 60;
-        const localizeDigits = value => String(value).replace(/[0-9]/g, digit => '٠١٢٣٤٥٦٧٨٩'[Number(digit)]);
-        return h ? `${localizeDigits(h)}:${localizeDigits(String(m).padStart(2,'0'))}:${localizeDigits(String(r).padStart(2,'0'))}` : `${localizeDigits(m)}:${localizeDigits(String(r).padStart(2,'0'))}`;
+        const pad = value => String(value).padStart(2,'0');
+        if (h) return `${pad(h)}:${pad(m)}:${pad(r)}`;
+        return `${m === 0 ? '0' : pad(m)}:${pad(r)}`;
       }
       function shuffle(list) {
         const out = [...list];
@@ -265,9 +305,8 @@
           return;
         }
         const id = videoIdFromUrl(item.youtube_url);
-        const bookAttrs = bookAttributes(item);
         FEATURED_DAILY.innerHTML = `<article class="featured-card">
-          <button class="featured-media video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" ${bookAttrs} aria-label="مشاهدة ${escapeHtml(item.title)} داخل الصفحة">
+          <button class="featured-media video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" aria-label="مشاهدة ${escapeHtml(item.title)} داخل الصفحة">
             ${imageMarkup(item)}
             <span class="media-shade"></span><span class="duration-badge">${formatDuration(item.duration_seconds)}</span>
           </button>
@@ -276,7 +315,7 @@
             <h2>${escapeHtml(item.title)}</h2>
             <p>${escapeHtml(item.description)}</p>
             <div class="feature-meta"><span class="chip">المدة ${formatDuration(item.duration_seconds)}</span><span class="chip">من قناة سرد 360</span></div>
-            <button class="watch-button video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" ${bookAttrs}>شاهد داخل سينما سرد <span aria-hidden="true">▶</span></button>
+            <button class="watch-button video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}">شاهد داخل سينما سرد <span aria-hidden="true">▶</span></button>
           </div>
         </article>`;
         FEATURED_DAILY.setAttribute('aria-busy','false');
@@ -296,13 +335,12 @@
         const rest = shuffle(list.filter(item => item.id !== featured.id));
         GRID.innerHTML = rest.map((item, index) => {
           const id = videoIdFromUrl(item.youtube_url);
-          const bookAttrs = bookAttributes(item);
           return `<article class="video-card" style="animation-delay:${Math.min(index,8)*45}ms">
-            <button class="video-thumb video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" ${bookAttrs} aria-label="شاهد ${escapeHtml(item.title)} داخل الصفحة">
+            <button class="video-thumb video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" aria-label="شاهد ${escapeHtml(item.title)} داخل الصفحة">
               ${imageMarkup(item)}<span class="duration-badge">${formatDuration(item.duration_seconds)}</span><span class="thumbnail-fallback" aria-hidden="true"></span>
             </button>
             <div class="video-body"><span class="video-category">${escapeHtml(item.category)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p>
-              <button class="card-bottom video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" ${bookAttrs}><span>شاهد داخل سينما سرد</span><span aria-hidden="true">▶</span></button>
+              <button class="card-bottom video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}"><span>شاهد داخل سينما سرد</span><span aria-hidden="true">▶</span></button>
             </div>
           </article>`;
         }).join('');
@@ -310,23 +348,34 @@
         GRID.setAttribute('aria-busy','false');
         COUNT.textContent = `${new Intl.NumberFormat('ar').format(list.length)} مواد مرئية · يظهر اختيار اليوم وتُعرض بقية المكتبة أسفله`;
       }
+      function renderRecommendations(currentItem) {
+        const sameCategory = currentItem ? items.filter(item => item.id !== currentItem.id && item.category === currentItem.category) : [];
+        const otherCategories = items.filter(item => item.id !== currentItem?.id && item.category !== currentItem?.category);
+        const recommendations = [...shuffle(sameCategory), ...shuffle(otherCategories)].slice(0, 4);
+        RECOMMENDATION_LIST.innerHTML = recommendations.map(item => {
+          const id = videoIdFromUrl(item.youtube_url);
+          return `<button class="modal-suggestion" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" aria-label="شاهد ${escapeHtml(item.title)}">
+            <span class="modal-suggestion-thumb">${imageMarkup(item, 'suggestion-poster')}<span class="duration-badge">${formatDuration(item.duration_seconds)}</span><span class="thumbnail-fallback" aria-hidden="true"></span></span>
+            <span class="modal-suggestion-copy"><span class="modal-suggestion-category">${escapeHtml(item.category)}</span><span class="modal-suggestion-title">${escapeHtml(item.title)}</span></span>
+          </button>`;
+        }).join('');
+        RECOMMENDATIONS.hidden = recommendations.length === 0;
+      }
+      function renderBooks(item) {
+        const books = booksFor(item);
+        BOOK_LIST.innerHTML = books.map(book => `<div class="modal-book-card"><span class="modal-book-title">${escapeHtml(book.title)}</span><a class="modal-book-action" href="${escapeHtml(book.url)}" target="_blank" rel="noopener noreferrer sponsored">اقتَنِ النسخة <span aria-hidden="true">↗</span></a></div>`).join('');
+        BOOKS_SECTION.hidden = books.length === 0;
+      }
       function openVideo(videoId, title, description, trigger) {
-        if (!/^[A-Za-z0-9_-]{11}$/.test(videoId || '') || MODAL.open) return;
-        lastTrigger = trigger;
-        document.getElementById('video-modal-title').textContent = title || 'مشاهدة من سينما سرد';
-        document.getElementById('video-modal-description').textContent = description || 'وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.';
-        const bookTitle = trigger?.dataset.bookTitle || '';
-        const bookUrl = safeAffiliateUrl(trigger?.dataset.bookUrl || '');
-        const bookWidget = document.getElementById('modal-book');
-        const bookAction = document.getElementById('modal-book-action');
-        bookWidget.hidden = !(bookTitle && bookUrl);
-        if (bookTitle && bookUrl) {
-          document.getElementById('modal-book-title').textContent = bookTitle;
-          bookAction.href = bookUrl;
-        } else {
-          document.getElementById('modal-book-title').textContent = '';
-          bookAction.removeAttribute('href');
-        }
+        if (!/^[A-Za-z0-9_-]{11}$/.test(videoId || '')) return;
+        const wasOpen = MODAL.open;
+        if (!wasOpen) lastTrigger = trigger;
+        const currentItem = items.find(item => videoIdFromUrl(item.youtube_url) === videoId);
+        document.getElementById('video-modal-title').textContent = currentItem?.title || title || 'مشاهدة من سينما سرد';
+        document.getElementById('video-modal-category').textContent = currentItem?.category || 'وثائقيات كبرى وتحقيقات مرئية';
+        document.getElementById('video-modal-description').textContent = currentItem?.description || description || 'وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.';
+        renderRecommendations(currentItem);
+        renderBooks(currentItem);
         const frame = document.createElement('iframe');
         frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
         frame.title = title ? `مشاهدة ${title}` : 'فيديو من قناة سرد 360';
@@ -335,8 +384,13 @@
         frame.referrerPolicy = 'strict-origin-when-cross-origin';
         frame.loading = 'eager';
         MODAL_STAGE.replaceChildren(frame);
-        MODAL.showModal();
-        CLOSE_MODAL.focus();
+        if (!wasOpen) {
+          MODAL.showModal();
+          CLOSE_MODAL.focus();
+        } else {
+          MODAL_LOWER.scrollTo({top:0,behavior:'smooth'});
+          document.getElementById('video-modal-title').focus({preventScroll:true});
+        }
       }
       function closeVideo() {
         if (MODAL.open) MODAL.close();
@@ -354,7 +408,7 @@
           image.src = image.dataset.fallback;
           return;
         }
-        const holder = image.closest('.video-thumb,.featured-media');
+        const holder = image.closest('.video-thumb,.featured-media,.modal-suggestion-thumb');
         if (holder) {
           holder.classList.add('thumb-unavailable');
           const placeholder = holder.querySelector('.thumbnail-fallback') || document.createElement('span');
@@ -383,7 +437,10 @@
       MODAL.addEventListener('click', event => { if (event.target === MODAL) closeVideo(); });
       MODAL.addEventListener('close', () => {
         MODAL_STAGE.replaceChildren();
-        document.getElementById('modal-book').hidden = true;
+        BOOKS_SECTION.hidden = true;
+        BOOK_LIST.replaceChildren();
+        RECOMMENDATIONS.hidden = true;
+        RECOMMENDATION_LIST.replaceChildren();
         if (lastTrigger?.isConnected) lastTrigger.focus();
         lastTrigger = null;
       });

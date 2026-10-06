@@ -622,7 +622,17 @@
       "khizana_book": {
         "title": "الحشاشون: طائفة راديكالية في الإسلام — برنارد لويس",
         "url": "https://amzn.to/3VqI72U"
-      }
+      },
+      "khizana_books": [
+        {
+          "title": "ألموت — فلاديمير بارتول (ترجمة مايكل بيغينز)",
+          "url": "https://amzn.to/3VRSBIC"
+        },
+        {
+          "title": "الحشاشون: طائفة راديكالية في الإسلام — برنارد لويس",
+          "url": "https://amzn.to/3VqI72U"
+        }
+      ]
     },
     {
       "id": "andalusia-journey",
