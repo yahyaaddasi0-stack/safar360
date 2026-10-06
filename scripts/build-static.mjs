@@ -13,6 +13,8 @@ const files = [
   'manus-routes.json',
   'khizana.html',
   'products.json',
+  'cinema.html',
+  'cinema.json',
 ];
 
 rmSync(output, { recursive: true, force: true });

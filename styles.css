@@ -865,7 +865,8 @@ h1, h2, h3, h4, h5, h6, .brand-title, .section-title, .pill-title {
 
 /* Transition States: Carousel View vs Split-Screen View */
 .hero-carousel-section,
-.category-filter-section {
+.category-filter-section,
+.awraq-section {
   transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
               max-height 0.5s ease,
@@ -875,7 +876,8 @@ h1, h2, h3, h4, h5, h6, .brand-title, .section-title, .pill-title {
 }
 
 body.in-chat-mode .hero-carousel-section,
-body.in-chat-mode .category-filter-section {
+body.in-chat-mode .category-filter-section,
+body.in-chat-mode .awraq-section {
   opacity: 0;
   transform: translateY(-25px) scale(0.97);
   pointer-events: none;
@@ -2545,4 +2547,235 @@ body.in-chat-mode .main-split-screen {
 /* Darken the public OpenStreetMap raster layer to match Safar 360's dark & gold canvas. */
 .safar-leaflet-dark .leaflet-tile-pane {
   filter: invert(1) hue-rotate(180deg) brightness(0.72) saturate(0.62) contrast(0.9);
+}
+
+/* Sard360 editorial feed — isolated styles; existing mobile rules remain unchanged. */
+.awraq-section {
+  width: calc(100% - 3rem);
+  max-width: 1600px;
+  margin: 0 auto 2rem;
+  padding: 1.4rem 0 0;
+  border-top: 1px solid rgba(212, 175, 55, 0.18);
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              max-height 0.5s ease, margin 0.45s ease, padding 0.45s ease;
+  will-change: opacity, transform;
+}
+
+.awraq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.awraq-kicker {
+  margin: 0 0 0.25rem;
+  color: var(--accent-gold);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.awraq-heading-copy h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-tajawal);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  line-height: 1.35;
+}
+
+.awraq-subtitle {
+  max-width: 720px;
+  margin: 0.35rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+}
+
+.awraq-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.awraq-cinema-link,
+.awraq-site-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: var(--radius-full);
+  padding: 0.55rem 0.9rem;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  transition: var(--transition-fast);
+}
+
+.awraq-cinema-link {
+  color: #0a0c0e;
+  background: var(--gold-gradient);
+}
+
+.awraq-site-link {
+  color: var(--text-gold);
+  border: 1px solid var(--gold-border);
+  background: rgba(18, 21, 27, 0.72);
+}
+
+.awraq-cinema-link:hover,
+.awraq-site-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.awraq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.awraq-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.17);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(145deg, rgba(18, 21, 27, 0.98), rgba(14, 17, 22, 0.96));
+  color: inherit;
+  text-decoration: none;
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.awraq-card:hover,
+.awraq-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.62);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.42), 0 0 18px rgba(212, 175, 55, 0.08);
+  outline: none;
+}
+
+.awraq-cover-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1b1d20, #302718 58%, #11151a);
+}
+
+.awraq-cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+
+.awraq-card:hover .awraq-cover { transform: scale(1.035); }
+
+.awraq-art-fallback {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  color: var(--accent-gold);
+  font-family: var(--font-tajawal);
+  font-size: 2rem;
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.14), transparent 42%);
+}
+
+.awraq-art-fallback b { font-size: 2.6rem; opacity: 0.58; }
+
+.awraq-feature-badge {
+  position: absolute;
+  top: 0.7rem;
+  inset-inline-start: 0.7rem;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-radius: var(--radius-full);
+  padding: 0.25rem 0.65rem;
+  background: rgba(10, 12, 14, 0.86);
+  color: var(--accent-gold-hover);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.awraq-card-body { display: flex; flex: 1; flex-direction: column; padding: 0.95rem 1rem 1rem; }
+
+.awraq-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--text-gold);
+  font-size: 0.68rem;
+}
+
+.awraq-card-meta time { color: var(--text-muted); white-space: nowrap; }
+
+.awraq-card-body h3 {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0.4rem 0 0.25rem;
+  color: var(--text-primary);
+  font-family: var(--font-tajawal);
+  font-size: 1.08rem;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.awraq-card-body p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.8;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.awraq-read-link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  color: var(--accent-gold-hover);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.awraq-skeleton {
+  min-height: 280px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(100deg, #14171d 20%, #20232a 38%, #14171d 60%);
+  background-size: 200% 100%;
+  animation: awraq-shimmer 1.4s linear infinite;
+}
+
+.awraq-status {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--panel-bg);
+  color: var(--text-secondary);
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+@keyframes awraq-shimmer { to { background-position: -200% 0; } }
+
+@media (max-width: 992px) {
+  .awraq-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .awraq-section { width: calc(100% - 2rem); margin-bottom: 1.5rem; }
+  .awraq-header { align-items: flex-start; flex-direction: column; }
+  .awraq-grid { grid-template-columns: minmax(0, 1fr); gap: 0.8rem; }
+  .awraq-skeleton { min-height: 250px; }
 }

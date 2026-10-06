@@ -1,11 +1,13 @@
-const CACHE_NAME = 'safar360-v2';
+const CACHE_NAME = 'safar360-v3';
 const ASSETS = [
   '/',
   '/index.html',
   '/styles.css',
   '/app.js',
   '/characters-public.json',
-  '/manifest.json'
+  '/manifest.json',
+  '/cinema.html',
+  '/cinema.json'
 ];
 
 self.addEventListener('install', (e) => {
@@ -30,15 +32,19 @@ self.addEventListener('activate', (e) => {
 });
 
 self.addEventListener('fetch', (e) => {
+  const requestUrl = new URL(e.request.url);
+  // Let WordPress, YouTube, Google Fonts and other third-party APIs/assets use the network directly.
+  if (requestUrl.origin !== self.location.origin) return;
   // Do not intercept or cache API calls to ensure live interactions
-  if (e.request.url.includes('/api/')) {
+  if (requestUrl.pathname.includes('/api/')) {
     return;
   }
-  
-  const requestUrl = new URL(e.request.url);
+
   const isKhizanaPage = /^\/khizana(?:\/|\.html)?$/.test(requestUrl.pathname);
   const isKhizanaCatalog = /^\/(?:khizana\/)?products\.json$/.test(requestUrl.pathname);
-  if (isKhizanaPage || isKhizanaCatalog) {
+  const isCinemaPage = /^\/cinema(?:\/|\.html)?$/.test(requestUrl.pathname);
+  const isCinemaCatalog = /^\/cinema\.json$/.test(requestUrl.pathname);
+  if (isKhizanaPage || isKhizanaCatalog || isCinemaPage || isCinemaCatalog) {
     e.respondWith(
       fetch(e.request).then((fetchRes) => {
         if (e.request.method === 'GET' && fetchRes.status === 200) {

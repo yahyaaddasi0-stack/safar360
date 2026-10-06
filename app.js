@@ -96,6 +96,8 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
   document.addEventListener('DOMContentLoaded', async () => {
   // 1. Setup Canvas Particle Background
   initParticleBackground();
+  // Load Sard360 editorial cards independently from the character API.
+  loadAwraqArticles();
 
   // Fetch Characters
   try {
@@ -1427,4 +1429,95 @@ function escapeHtml(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+// =============================================================================
+// 15. Awraq Sard — live editorial cross-linking from the public WordPress API
+// =============================================================================
+async function loadAwraqArticles() {
+  const grid = document.getElementById('awraq-grid');
+  const status = document.getElementById('awraq-status');
+  if (!grid || !status) return;
+
+  const api = 'https://sard360.com/wp-json/wp/v2/posts';
+  const fields = 'id,date,slug,link,title,excerpt,content,_embedded';
+  const request = async (query) => {
+    const url = `${api}?${query}&_embed=1&_fields=${encodeURIComponent(fields)}`;
+    const response = await fetch(url, { mode: 'cors', cache: 'no-store' });
+    if (!response.ok) throw new Error(`Sard360 API HTTP ${response.status}`);
+    const posts = await response.json();
+    return Array.isArray(posts) ? posts : [];
+  };
+
+  try {
+    const [latest, alamut] = await Promise.all([
+      request('per_page=5&orderby=date&order=desc').catch(() => []),
+      request('slug=alamut-castle-archaeological-secrets-assassins').catch(() => [])
+    ]);
+    const selected = [];
+    const pinned = alamut.find(post => post.slug === 'alamut-castle-archaeological-secrets-assassins') || alamut[0];
+    if (pinned) selected.push(pinned);
+    for (const post of latest) {
+      if (!selected.some(item => item.id === post.id)) selected.push(post);
+    }
+    const posts = selected.slice(0, 6);
+    if (!posts.length) throw new Error('No public Sard360 articles were returned.');
+
+    grid.innerHTML = posts.map(post => renderAwraqCard(post, post.id === pinned?.id)).join('');
+    grid.setAttribute('aria-busy', 'false');
+    status.hidden = true;
+  } catch (error) {
+    console.warn('Awraq Sard feed could not be loaded:', error);
+    grid.innerHTML = '';
+    grid.setAttribute('aria-busy', 'false');
+    status.textContent = 'تعذّر تحميل الأوراق الآن. يمكنك متابعة ملف قلعة ألموت على منصة سرد 360.';
+    status.hidden = false;
+  }
+}
+
+function renderAwraqCard(post, isFeatured) {
+  const title = awraqPlainText(post.title?.rendered) || 'ورقة من سرد 360';
+  const excerpt = awraqPlainText(post.excerpt?.rendered) || 'تحقيق وقراءة من أرشيف سرد 360.';
+  const link = awraqSafeUrl(post.link, true);
+  if (!link) return '';
+  const image = awraqPostImage(post);
+  const date = post.date ? new Intl.DateTimeFormat('ar', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(post.date)) : '';
+  const imageMarkup = image
+    ? `<img class="awraq-cover" src="${escapeHtml(image)}" alt="" loading="lazy" decoding="async">`
+    : '<div class="awraq-art-fallback" aria-hidden="true"><span>سَرد</span><b>360</b></div>';
+  return `<a class="awraq-card${isFeatured ? ' is-featured' : ''}" href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">
+    <div class="awraq-cover-frame">${imageMarkup}${isFeatured ? '<span class="awraq-feature-badge">ملف مختار</span>' : ''}</div>
+    <div class="awraq-card-body">
+      <div class="awraq-card-meta"><span>${isFeatured ? 'ألموت · حسن الصبّاح' : 'من أوراق سرد'}</span>${date ? `<time datetime="${escapeHtml(post.date)}">${escapeHtml(date)}</time>` : ''}</div>
+      <h3>${escapeHtml(title)}</h3>
+      <p>${escapeHtml(excerpt)}</p>
+      <span class="awraq-read-link">تابع القراءة <span aria-hidden="true">←</span></span>
+    </div>
+  </a>`;
+}
+
+function awraqPlainText(markup) {
+  const parsed = new DOMParser().parseFromString(String(markup || ''), 'text/html');
+  return (parsed.body.textContent || '').replace(/\s+/g, ' ').trim();
+}
+
+function awraqSafeUrl(value, articleOnly = false) {
+  try {
+    const url = new URL(value);
+    if (url.protocol !== 'https:') return '';
+    if (articleOnly && url.hostname !== 'sard360.com' && !url.hostname.endsWith('.sard360.com')) return '';
+    return url.href;
+  } catch (_) {
+    return '';
+  }
+}
+
+function awraqPostImage(post) {
+  const media = post._embedded?.['wp:featuredmedia']?.[0];
+  const candidate = media?.media_details?.sizes?.medium_large?.source_url || media?.source_url;
+  if (candidate) return awraqSafeUrl(candidate);
+  const template = document.createElement('template');
+  template.innerHTML = String(post.content?.rendered || '');
+  const source = template.content.querySelector('img[src]')?.getAttribute('src');
+  return source ? awraqSafeUrl(source) : '';
 }
