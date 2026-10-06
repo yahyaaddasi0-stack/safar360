@@ -112,6 +112,13 @@ const safeCatalogJson = JSON.stringify(catalogue)
   .replace(/>/g, '\\u003e')
   .replace(/&/g, '\\u0026');
 
+const wordpressShellCss = `
+html:has(#sard360-cinema-root),body:has(#sard360-cinema-root){margin:0!important;padding:0!important;min-height:100vh!important;background:#0a0c0e!important;overflow-x:hidden!important}
+body:has(#sard360-cinema-root) #wpadminbar,body:has(#sard360-cinema-root) #masthead,body:has(#sard360-cinema-root) .site-header,body:has(#sard360-cinema-root) #colophon,body:has(#sard360-cinema-root) .site-footer,body:has(#sard360-cinema-root) .entry-header,body:has(#sard360-cinema-root) .ast-single-entry-banner{display:none!important}
+body:has(#sard360-cinema-root) #content,body:has(#sard360-cinema-root) .site-content,body:has(#sard360-cinema-root) .ast-container,body:has(#sard360-cinema-root) #primary,body:has(#sard360-cinema-root) .content-area,body:has(#sard360-cinema-root) .site-main,body:has(#sard360-cinema-root) .entry-content{display:block!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;flex-basis:100%!important}
+body:has(#sard360-cinema-root) #sard360-cinema-root{width:100vw!important;max-width:100vw!important;margin-inline:calc(50% - 50vw)!important}
+`;
+
 const embed = `<!--
 سينما سرد — مقطع WordPress مستقل.
 انسخ هذا الملف كاملاً إلى كتلة HTML مخصّصة في صفحة /cinema ذات قالب Full Width أو Canvas.
@@ -120,6 +127,9 @@ const embed = `<!--
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style id="sard360-cinema-wordpress-shell">
+${wordpressShellCss}
+</style>
 <style>
 ${scopedCss}
 </style>
