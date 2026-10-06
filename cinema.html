@@ -74,7 +74,7 @@
     .page-footer a{color:#d1b75f;text-decoration:none}
     .footer-pillars{display:flex;flex-wrap:wrap;gap:12px}
     .page-footer a:hover,.page-footer a:focus-visible{color:#f1d776}
-    .video-modal{width:min(1120px,calc(100vw - 32px),95vh);max-width:none;max-height:90vh;max-height:90dvh;margin:auto;padding:0;border:0;overflow:hidden;background:transparent;color:var(--text)}
+    .video-modal{width:min(1500px,calc(100vw - 40px),145vh);max-width:none;max-height:90vh;max-height:90dvh;margin:auto;padding:0;border:0;overflow:hidden;background:transparent;color:var(--text)}
     .video-modal::backdrop{background:rgba(0,0,0,.85);backdrop-filter:blur(12px)}
     .modal-panel{position:relative;display:flex;flex-direction:column;width:100%;height:90vh;height:90dvh;max-height:90vh;max-height:90dvh;overflow:hidden;padding:14px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
     .modal-header{display:flex;flex:0 0 auto;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px}
@@ -129,6 +129,7 @@
     @media(max-width:850px){.modal-suggestions-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:620px){.video-modal{width:calc(100vw - 20px);max-height:90vh;max-height:90dvh}.modal-panel{height:90vh;height:90dvh;max-height:90vh;max-height:90dvh;padding:10px;border-radius:14px}.modal-header{margin-bottom:8px}.modal-stage{border-radius:8px}.modal-lower{padding:16px 12px;gap:16px}.modal-info{display:flex;gap:12px;padding:0}.modal-info-header{align-items:flex-start;flex-direction:column;gap:9px}.modal-info-copy h2{font-size:21px}.modal-info-copy p{display:block;-webkit-line-clamp:unset;overflow:visible;font-size:13px;line-height:1.9}.modal-subscribe{align-self:flex-start;min-height:38px;padding:8px 14px;font-size:12px}.modal-books{padding:12px}.modal-book-list{grid-template-columns:1fr}.modal-book-card{align-items:flex-start;flex-direction:column;gap:8px}.modal-book-action{align-self:flex-start}.modal-suggestions-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;padding:0;scroll-snap-type:none}.modal-suggestion{flex:initial;min-height:0;padding:6px;gap:6px}.modal-suggestion-thumb{width:100%;flex:0 0 auto}.modal-suggestion-title{font-size:11px}}
     @media(max-width:620px){.modal-books{padding:9px}.modal-book-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.modal-book-list[data-count="1"]{grid-template-columns:minmax(0,1fr)}.modal-book-card{display:flex;align-items:flex-start;flex-direction:column;gap:4px;padding:6px}.modal-book-type{font-size:8px}.modal-book-title{display:-webkit-box;font-size:10px;line-height:1.45;white-space:normal;-webkit-box-orient:vertical;-webkit-line-clamp:2}.modal-book-action{align-self:flex-start;padding:4px 7px;font-size:9px}}
+    @media(min-width:1024px){.video-modal{width:min(1500px,calc(100vw - 48px),145vh)}.modal-panel{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(340px,.95fr);grid-template-rows:auto minmax(0,1fr);gap:14px;padding:16px}.modal-header{grid-column:1/-1;grid-row:1;margin:0}.modal-stage{grid-column:1;grid-row:2;align-self:center;min-width:0}.modal-lower{grid-column:2;grid-row:2;align-self:stretch;width:100%;min-height:0;max-height:100%;overflow-y:auto;padding:10px;gap:12px}.modal-info{gap:9px}.modal-info-header{align-items:stretch;flex-direction:column;gap:7px}.modal-info-copy h2{font-size:clamp(23px,2.1vw,30px)}.modal-description{font-size:13px;line-height:1.7}.modal-subscribe{align-self:flex-start;min-height:38px;padding:8px 14px;font-size:13px}.modal-books{padding:8px}.modal-book-list{gap:6px}.modal-book-card{display:flex;align-items:flex-start;flex-direction:column;gap:4px;padding:6px}.modal-book-type{max-width:100%;font-size:8px}.modal-book-title{display:-webkit-box;font-size:10px;line-height:1.45;white-space:normal;-webkit-box-orient:vertical;-webkit-line-clamp:2}.modal-book-action{align-self:flex-start;padding:4px 7px;font-size:9px}.modal-suggestions{padding:9px 0 0}.modal-suggestions-heading{margin-bottom:7px}.modal-suggestions-heading h3{font-size:16px}.modal-suggestions-list{grid-template-columns:minmax(0,1fr);gap:7px}.modal-suggestion{display:grid;grid-template-columns:118px minmax(0,1fr);align-items:center;gap:8px;padding:6px}.modal-suggestion-thumb{width:118px}.modal-suggestion-title{font-size:11px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
   </style>
 </head>
@@ -361,7 +362,7 @@
       function renderRecommendations(currentItem) {
         const sameCategory = currentItem ? items.filter(item => item.id !== currentItem.id && item.category === currentItem.category) : [];
         const otherCategories = items.filter(item => item.id !== currentItem?.id && item.category !== currentItem?.category);
-        const recommendations = [...shuffle(sameCategory), ...shuffle(otherCategories)].slice(0, 4);
+        const recommendations = [...shuffle(sameCategory), ...shuffle(otherCategories)].slice(0, 3);
         RECOMMENDATION_LIST.innerHTML = recommendations.map(item => {
           const id = videoIdFromUrl(item.youtube_url);
           return `<button class="modal-suggestion" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" aria-label="شاهد ${escapeHtml(item.title)}">
@@ -390,7 +391,7 @@
         const frame = document.createElement('iframe');
         frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
         frame.title = title ? `مشاهدة ${title}` : 'فيديو من قناة سرد 360';
-        frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        frame.allow = 'fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
         frame.allowFullscreen = true;
         frame.referrerPolicy = 'strict-origin-when-cross-origin';
         frame.loading = 'eager';
@@ -458,9 +459,15 @@
 
       async function init() {
         try {
-          const response = await fetch('/cinema.json', {cache:'no-store'});
-          if (!response.ok) throw new Error(`HTTP ${response.status}`);
-          const catalogue = await response.json();
+          const inlineData = document.getElementById('sard360-cinema-inline-data');
+          let catalogue;
+          if (inlineData) {
+            catalogue = JSON.parse(inlineData.textContent);
+          } else {
+            const response = await fetch('/cinema.json', {cache:'no-store'});
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            catalogue = await response.json();
+          }
           items = (Array.isArray(catalogue.items) ? catalogue.items : []).filter(validateItem);
           if (!items.length) throw new Error('Catalogue contains no eligible long-form videos.');
           const day = Math.floor(Date.now() / 86400000);

@@ -1,8 +1,10 @@
 import { copyFileSync, cpSync, existsSync, mkdirSync, rmSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 
 const root = process.cwd();
 const output = join(root, 'dist');
+execFileSync(process.execPath, [join(root, 'scripts/build-wordpress-embed.mjs')], { cwd: root, stdio: 'inherit' });
 const files = [
   'index.html',
   'styles.css',
@@ -15,6 +17,7 @@ const files = [
   'products.json',
   'cinema.html',
   'cinema.json',
+  'cinema-wordpress-embed.html',
 ];
 
 rmSync(output, { recursive: true, force: true });
