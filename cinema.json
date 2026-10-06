@@ -35,7 +35,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 183
+      "duration_seconds": 183,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Komodo Dragons: Biology and Conservation — James B. Murphy, Claudio Ciofi, Colomba de La Panouse, Trooper Walsh",
+          "url": "https://www.amazon.com/dp/1588340732?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-la1nKZYBjQw",
@@ -49,7 +56,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 173
+      "duration_seconds": 173,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Shark drunk — Morten Andreas Strøksnes",
+          "url": "https://www.amazon.com/dp/0451493486?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-leGJagGfFnI",
@@ -63,7 +77,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 199
+      "duration_seconds": 199,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "Jackals, Golden Wolves, and Honey Badgers — Keith Somerville",
+          "url": "https://www.amazon.com/dp/1000777812?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-aGI8iiCyM0Y",
@@ -75,7 +96,14 @@
       "thumbnail": "https://i.ytimg.com/vi/aGI8iiCyM0Y/hqdefault.jpg",
       "category": "تحقيقات كبرى",
       "source_playlists": [],
-      "duration_seconds": 337
+      "duration_seconds": 337,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "The Serengeti Lion: A Study of Predator-Prey Relations — George B. Schaller",
+          "url": "https://www.amazon.com/dp/B01JXSQJK4?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-3H15cPUDB6g",
@@ -89,7 +117,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 209
+      "duration_seconds": 209,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "The Migration Ecology of Birds, 2nd Edition — Ian Newton",
+          "url": "https://www.amazon.com/dp/0128237511?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "creatures-survival-speed",
@@ -103,7 +138,14 @@
       "source_playlists": [
         "وثائقيات سرد 360 الكاملة — حلقات وتجميعات طويلة لساعات مشاهدة متواصلة."
       ],
-      "duration_seconds": 1021
+      "duration_seconds": 1021,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Animal physiology — Knut Schmidt-Nielsen",
+          "url": "https://www.amazon.com/dp/0130373907?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-0XPcatOqA4U",
@@ -117,7 +159,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 327
+      "duration_seconds": 327,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "The peregrine falcon — Derek A. Ratcliffe",
+          "url": "https://www.amazon.com/dp/0856610607?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-SMx54LlWnog",
@@ -131,7 +180,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 286
+      "duration_seconds": 286,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Penguins: Natural History and Conservation — Pablo Garcia Borboroglu & P. Dee Boersma",
+          "url": "https://www.amazon.com/dp/0295992840?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-lbRlbrX61GU",
@@ -145,7 +201,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 241
+      "duration_seconds": 241,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Flying squirrels — Nancy Wells-Gosling",
+          "url": "https://www.amazon.com/dp/0874749522?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-ihbgXvjqlB0",
@@ -159,7 +222,8 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 186
+      "duration_seconds": 186,
+      "khizana_books": []
     },
     {
       "id": "video-QaVs-KD8R-w",
@@ -173,7 +237,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 220
+      "duration_seconds": 220,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Seahorses — Sara A. Lourie",
+          "url": "https://www.amazon.com/dp/022633841X?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-QTxK1QuIdBA",
@@ -187,7 +258,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 228
+      "duration_seconds": 228,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Biology of Coccinellidae — Ivo Hodek",
+          "url": "https://www.amazon.com/dp/9061932467?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "wolf-and-predators",
@@ -201,7 +279,14 @@
       "source_playlists": [
         "وثائقيات سرد 360 الكاملة — حلقات وتجميعات طويلة لساعات مشاهدة متواصلة."
       ],
-      "duration_seconds": 1043
+      "duration_seconds": 1043,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Canids of the World — José R. Castelló",
+          "url": "https://www.amazon.com/dp/069117685X?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-2FunfE7YiXk",
@@ -215,7 +300,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 276
+      "duration_seconds": 276,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Kangaroos: Biology of the Largest Marsupials — Terence J. Dawson",
+          "url": "https://www.amazon.com/dp/0801482623?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-RjKBgNHPIgo",
@@ -229,7 +321,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 165
+      "duration_seconds": 165,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Megalodon and Other Prehistoric Sharks — Jack Cooper",
+          "url": "https://www.amazon.com/dp/069129447X?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-Ru8z4dpsOZE",
@@ -243,7 +342,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 254
+      "duration_seconds": 254,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Marine Mammals: Evolutionary Biology, 3rd Edition — Annalisa Berta et al.",
+          "url": "https://www.amazon.com/dp/0123970024?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-ZYtn59RDz4E",
@@ -257,7 +363,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 219
+      "duration_seconds": 219,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Sea Turtles: A Complete Guide to Their Biology, Behavior, and Conservation — James R. Spotila",
+          "url": "https://www.amazon.com/dp/0801880076?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "dolphin-alliances",
@@ -271,7 +384,14 @@
       "source_playlists": [
         "وثائقيات سرد 360 الكاملة — حلقات وتجميعات طويلة لساعات مشاهدة متواصلة."
       ],
-      "duration_seconds": 1146
+      "duration_seconds": 1146,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "Cetacean Societies: Field Studies of Dolphins and Whales — Janet Mann et al.",
+          "url": "https://www.amazon.com/dp/0226503410?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-8P-r9EU6Z44",
@@ -285,7 +405,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 223
+      "duration_seconds": 223,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "The Return of the Unicorns — Eric Dinerstein",
+          "url": "https://www.amazon.com/dp/023108451X?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-1SYUhlczH8g",
@@ -299,7 +426,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 229
+      "duration_seconds": 229,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "Hannibal: A Hellenistic Life — Eve MacDonald",
+          "url": "https://www.amazon.com/dp/0300240309?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-H1Mh0sC6GDM",
@@ -313,7 +447,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 220
+      "duration_seconds": 220,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "Bulls, Bullfighting, and Spanish Identities — Carrie B. Douglass",
+          "url": "https://www.amazon.com/dp/0816516529?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-4d4dWDK2g3Q",
@@ -327,7 +468,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 196
+      "duration_seconds": 196,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Polar Bears: A Complete Guide to Their Biology and Behavior — Andrew E. Derocher",
+          "url": "https://www.amazon.com/dp/1421403056?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-D5c8wOYCh1Q",
@@ -341,7 +489,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 178
+      "duration_seconds": 178,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Jellyfish: A Natural History — Lisa-ann Gershwin",
+          "url": "https://www.amazon.com/dp/022628767X?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-LGIn_8fAik0",
@@ -355,7 +510,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 190
+      "duration_seconds": 190,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "Are Dolphins Really Smart? — Justin Gregg",
+          "url": "https://www.amazon.com/dp/019966045X?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-2rAF9VGMjJY",
@@ -369,7 +531,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 202
+      "duration_seconds": 202,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Giant Pandas: Biology and Conservation — edited by Donald Lindburg & Karen Baragona",
+          "url": "https://www.amazon.com/dp/0520238672?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-9UROYLYac8o",
@@ -383,7 +552,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 230
+      "duration_seconds": 230,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "Other Minds — Peter Godfrey-Smith",
+          "url": "https://www.amazon.com/dp/0374537194?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-qKymd9W0u5I",
@@ -397,7 +573,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 177
+      "duration_seconds": 177,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "The blue whale — George L. Small",
+          "url": "https://www.amazon.com/dp/0231032889?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-_Z4QO74fKI8",
@@ -411,7 +594,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 172
+      "duration_seconds": 172,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "Wolves: Behavior, Ecology, and Conservation — L. David Mech & Luigi Boitani",
+          "url": "https://www.amazon.com/dp/0226516970?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "ibn-battuta-dhawat",
@@ -426,7 +616,19 @@
         "بودكاست ذَوَاتْ | سرد 360",
         "ذوات"
       ],
-      "duration_seconds": 481
+      "duration_seconds": 481,
+      "khizana_books": [
+        {
+          "type": "المرجع التاريخي",
+          "title": "Travels of Ibn Battuta, A. D. 1325-1354 — H. A. R. Gibb",
+          "url": "https://www.amazon.com/dp/1351539914?tag=sard360-20"
+        },
+        {
+          "type": "دراسة موثقة",
+          "title": "The Adventures of Ibn Battuta — Ross E. Dunn",
+          "url": "https://www.amazon.com/dp/0520057716?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-rwxUnbDOAdw",
@@ -440,7 +642,14 @@
       "source_playlists": [
         "SARD360 STUDIO | البث المباشر 24/7"
       ],
-      "duration_seconds": 5492
+      "duration_seconds": 5492,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "The Punic wars — Adrian Keith Goldsworthy",
+          "url": "https://www.amazon.com/dp/0304352845?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-qE-3LXMw9lc",
@@ -454,7 +663,8 @@
       "source_playlists": [
         "SARD360 STUDIO | البث المباشر 24/7"
       ],
-      "duration_seconds": 42899
+      "duration_seconds": 42899,
+      "khizana_books": []
     },
     {
       "id": "video--ze5LpsnBC8",
@@ -468,7 +678,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 190
+      "duration_seconds": 190,
+      "khizana_books": [
+        {
+          "type": "مرجع علمي",
+          "title": "Killer whales — Robin W. Baird",
+          "url": "https://www.amazon.com/dp/159764305X?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-KS-9NGEs4oU",
@@ -482,7 +699,14 @@
       "source_playlists": [
         "سرد 3"
       ],
-      "duration_seconds": 187
+      "duration_seconds": 187,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "The Bajau Laut — Clifford Sather",
+          "url": "https://www.amazon.com/dp/9835600155?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "cleopatra-queen-nile",
@@ -497,7 +721,14 @@
         "بودكاست ذَوَاتْ | سرد 360",
         "ذوات"
       ],
-      "duration_seconds": 486
+      "duration_seconds": 486,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "Cleopatra: A Life — Stacy Schiff",
+          "url": "https://www.amazon.com/dp/0316001945?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "zenobia-palmyra",
@@ -512,7 +743,14 @@
         "بودكاست ذَوَاتْ | سرد 360",
         "ذوات"
       ],
-      "duration_seconds": 524
+      "duration_seconds": 524,
+      "khizana_books": [
+        {
+          "type": "المرجع التاريخي",
+          "title": "Zenobia — Nathanael J. Andrade",
+          "url": "https://www.amazon.com/dp/0190638818?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "zorba-freedom",
@@ -527,7 +765,14 @@
         "بودكاست رٍوَاية في دقائق| سرد 360",
         "رواية في دقائق"
       ],
-      "duration_seconds": 487
+      "duration_seconds": 487,
+      "khizana_books": [
+        {
+          "type": "الرواية الأصلية",
+          "title": "Zorba the Greek — Nikos Kazantzakis (translated by Peter Bien)",
+          "url": "https://www.amazon.com/dp/1476782814?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "one-hundred-years-solitude",
@@ -546,7 +791,14 @@
       "khizana_book": {
         "title": "مائة عام من العزلة — غابرييل غارسيا ماركيز (الطبعة الإنجليزية)",
         "url": "https://www.amazon.com/dp/0060883286?tag=sard360-20"
-      }
+      },
+      "khizana_books": [
+        {
+          "type": "الرواية الأصلية",
+          "title": "One Hundred Years of Solitude (Cien años de soledad) — Gabriel García Márquez, translated by Gregory Rabassa",
+          "url": "https://www.amazon.com/dp/0060883286?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "amundsen-last-viking",
@@ -561,7 +813,14 @@
         "بودكاست ذَوَاتْ | سرد 360",
         "ذوات"
       ],
-      "duration_seconds": 968
+      "duration_seconds": 968,
+      "khizana_books": [
+        {
+          "type": "المرجع التاريخي",
+          "title": "The last Viking — Stephen R. Bown, Stephen Bown",
+          "url": "https://www.amazon.com/dp/0306820676?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "blind-sunflowers-novel",
@@ -576,7 +835,14 @@
         "بودكاست رٍوَاية في دقائق| سرد 360",
         "رواية في دقائق"
       ],
-      "duration_seconds": 503
+      "duration_seconds": 503,
+      "khizana_books": [
+        {
+          "type": "الرواية الأصلية",
+          "title": "Los girasoles ciegos (The Blind Sunflowers) — Alberto Méndez",
+          "url": "https://www.amazon.com/dp/8447360881?tag=sard360-20"
+        }
+      ]
     },
     {
       "id": "video-p2FPda6IgkE",
@@ -590,7 +856,8 @@
       "source_playlists": [
         "SARD360 STUDIO | البث المباشر 24/7"
       ],
-      "duration_seconds": 2968
+      "duration_seconds": 2968,
+      "khizana_books": []
     },
     {
       "id": "video-cb8wwn5Fmas",
@@ -604,7 +871,8 @@
       "source_playlists": [
         "SARD360 STUDIO | البث المباشر 24/7"
       ],
-      "duration_seconds": 2565
+      "duration_seconds": 2565,
+      "khizana_books": []
     },
     {
       "id": "video-w4bqC-F1xO0",
@@ -625,12 +893,14 @@
       },
       "khizana_books": [
         {
+          "type": "الرواية الأصلية",
           "title": "ألموت — فلاديمير بارتول (ترجمة مايكل بيغينز)",
-          "url": "https://amzn.to/3VRSBIC"
+          "url": "https://amzn.to/3VRSBIC?tag=sard360-20"
         },
         {
+          "type": "المرجع التاريخي",
           "title": "الحشاشون: طائفة راديكالية في الإسلام — برنارد لويس",
-          "url": "https://amzn.to/3VqI72U"
+          "url": "https://amzn.to/3VqI72U?tag=sard360-20"
         }
       ]
     },
@@ -644,7 +914,14 @@
       "thumbnail": "https://i.ytimg.com/vi/eIMxLq4lVyU/hqdefault.jpg",
       "category": "تاريخ وحضارات",
       "source_playlists": [],
-      "duration_seconds": 21046
+      "duration_seconds": 21046,
+      "khizana_books": [
+        {
+          "type": "دراسة موثقة",
+          "title": "Revisiting al-Andalus — Glaire D. Anderson, Mariam Rosser-Owen",
+          "url": "https://www.amazon.com/dp/9004162275?tag=sard360-20"
+        }
+      ]
     }
   ]
 }

@@ -74,16 +74,16 @@
     .page-footer a{color:#d1b75f;text-decoration:none}
     .footer-pillars{display:flex;flex-wrap:wrap;gap:12px}
     .page-footer a:hover,.page-footer a:focus-visible{color:#f1d776}
-    .video-modal{width:min(1120px,calc(100vw - 32px),108vh);max-width:none;max-height:90vh;max-height:90dvh;margin:auto;padding:0;border:0;overflow:hidden;background:transparent;color:var(--text)}
+    .video-modal{width:min(1120px,calc(100vw - 32px),95vh);max-width:none;max-height:90vh;max-height:90dvh;margin:auto;padding:0;border:0;overflow:hidden;background:transparent;color:var(--text)}
     .video-modal::backdrop{background:rgba(0,0,0,.85);backdrop-filter:blur(12px)}
-    .modal-panel{position:relative;display:flex;flex-direction:column;width:100%;height:90vh;height:90dvh;max-height:90vh;max-height:90dvh;overflow:hidden;padding:16px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
+    .modal-panel{position:relative;display:flex;flex-direction:column;width:100%;height:90vh;height:90dvh;max-height:90vh;max-height:90dvh;overflow:hidden;padding:14px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
     .modal-header{display:flex;flex:0 0 auto;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px}
     .modal-kicker{color:var(--accent-gold);font-family:var(--font-head);font-size:12px;font-weight:800}
     .modal-close{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border:1px solid rgba(212,175,55,.45);border-radius:50%;background:#101216;color:#f1d776;font-size:24px;line-height:1;cursor:pointer}
     .modal-close:hover,.modal-close:focus-visible{background:rgba(212,175,55,.14)}
     .modal-stage{flex:0 0 auto;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#050608}
     .modal-stage iframe{display:block;width:100%;height:100%;border:0}
-    .modal-lower{display:flex;flex:1 1 auto;flex-direction:column;gap:18px;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;padding:20px;scrollbar-color:rgba(212,175,55,.5) transparent;scrollbar-width:thin}
+    .modal-lower{display:flex;flex:1 1 auto;flex-direction:column;gap:18px;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;padding:16px;scrollbar-color:rgba(212,175,55,.5) transparent;scrollbar-width:thin}
     .modal-lower::-webkit-scrollbar{width:6px}
     .modal-lower::-webkit-scrollbar-thumb{border-radius:99px;background:rgba(212,175,55,.42)}
     .modal-info{display:flex;flex:0 0 auto;flex-direction:column;align-items:stretch;gap:14px;min-width:0;margin:0;padding:0}
@@ -92,14 +92,16 @@
     .modal-info-copy h2{margin:0 0 5px;color:#f4eddf;font-family:var(--font-head);font-size:clamp(22px,2.7vw,31px);line-height:1.35}
     .modal-video-category{display:inline-flex;align-items:center;width:max-content;max-width:100%;padding:3px 10px;border:1px solid rgba(212,175,55,.32);border-radius:99px;background:rgba(212,175,55,.07);color:#dfc57a;font-size:11px;font-weight:700}
     .modal-description{display:block;overflow:visible;margin:0;color:#c0c7d0;font-size:14px;line-height:1.95;white-space:normal;overflow-wrap:anywhere}
-    .modal-books{display:flex;flex:0 0 auto;flex-direction:column;gap:10px;padding:15px;border:1px solid rgba(212,175,55,.42);border-inline-start:3px solid var(--accent-gold);border-radius:13px;background:linear-gradient(120deg,rgba(212,175,55,.13),rgba(212,175,55,.035) 60%,rgba(18,21,27,.94));box-shadow:0 10px 28px rgba(0,0,0,.2)}
+    .modal-books{display:flex;flex:0 0 auto;flex-direction:column;gap:6px;padding:8px 10px;border:1px solid rgba(212,175,55,.42);border-inline-start:3px solid var(--accent-gold);border-radius:13px;background:linear-gradient(120deg,rgba(212,175,55,.13),rgba(212,175,55,.035) 60%,rgba(18,21,27,.94));box-shadow:0 10px 28px rgba(0,0,0,.2)}
     .modal-books[hidden]{display:none!important}
     .modal-books-heading{display:flex;align-items:center;gap:9px;color:#f0d782;font:800 14px var(--font-head)}
     .modal-books-heading span{color:var(--accent-gold);font-size:19px}
-    .modal-book-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:10px}
-    .modal-book-card{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;padding:11px 12px;border:1px solid rgba(212,175,55,.18);border-radius:10px;background:rgba(9,11,14,.58)}
-    .modal-book-title{min-width:0;color:#e6e0d2;font-size:12px;line-height:1.65;font-weight:700}
-    .modal-book-action{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:7px 12px;border:1px solid rgba(212,175,55,.65);border-radius:99px;background:linear-gradient(135deg,#e5c76d,#c49a35);color:#15120b;text-decoration:none;font:800 11px var(--font-head);white-space:nowrap}
+    .modal-book-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;min-width:0}
+    .modal-book-list[data-count="1"]{grid-template-columns:minmax(0,1fr)}
+    .modal-book-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto;align-items:center;gap:6px;min-width:0;padding:6px 8px;border:1px solid rgba(212,175,55,.2);border-radius:10px;background:rgba(9,11,14,.58)}
+    .modal-book-type{grid-column:auto;grid-row:1;width:max-content;max-width:120px;overflow:hidden;padding:1px 7px;border:1px solid rgba(212,175,55,.2);border-radius:99px;color:#d9bd69;font-size:9px;line-height:1.5;text-overflow:ellipsis;white-space:nowrap}
+    .modal-book-title{display:block;grid-column:2;grid-row:1;min-width:0;overflow:hidden;color:#e6e0d2;font-size:11px;line-height:1.5;font-weight:700;text-overflow:ellipsis;white-space:nowrap}
+    .modal-book-action{grid-column:3;grid-row:1;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:5px 9px;border:1px solid rgba(212,175,55,.65);border-radius:99px;background:linear-gradient(135deg,#e5c76d,#c49a35);color:#15120b;text-decoration:none;font:800 10px var(--font-head);white-space:nowrap}
     .modal-book-action:hover,.modal-book-action:focus-visible{filter:brightness(1.08)}
     .modal-subscribe{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;gap:8px;min-height:44px;padding:11px 19px;border:0;border-radius:999px;background:linear-gradient(135deg,#e5c76d,#c49a35);box-shadow:0 8px 22px rgba(212,175,55,.2);color:#15120b;text-decoration:none;font:800 14px var(--font-head);white-space:nowrap;transition:filter .2s ease,transform .2s ease}
     .modal-subscribe:hover,.modal-subscribe:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
@@ -126,6 +128,7 @@
     @media(max-width:620px){.modal-suggestions-list{display:flex;overflow-x:auto;gap:8px;padding-bottom:5px;scroll-snap-type:x proximity;scrollbar-width:thin;overscroll-behavior-x:contain}.modal-suggestion{flex:0 0 min(84vw,270px);scroll-snap-align:start}.modal-lower{scroll-padding-block:10px}}
     @media(max-width:850px){.modal-suggestions-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:620px){.video-modal{width:calc(100vw - 20px);max-height:90vh;max-height:90dvh}.modal-panel{height:90vh;height:90dvh;max-height:90vh;max-height:90dvh;padding:10px;border-radius:14px}.modal-header{margin-bottom:8px}.modal-stage{border-radius:8px}.modal-lower{padding:16px 12px;gap:16px}.modal-info{display:flex;gap:12px;padding:0}.modal-info-header{align-items:flex-start;flex-direction:column;gap:9px}.modal-info-copy h2{font-size:21px}.modal-info-copy p{display:block;-webkit-line-clamp:unset;overflow:visible;font-size:13px;line-height:1.9}.modal-subscribe{align-self:flex-start;min-height:38px;padding:8px 14px;font-size:12px}.modal-books{padding:12px}.modal-book-list{grid-template-columns:1fr}.modal-book-card{align-items:flex-start;flex-direction:column;gap:8px}.modal-book-action{align-self:flex-start}.modal-suggestions-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;padding:0;scroll-snap-type:none}.modal-suggestion{flex:initial;min-height:0;padding:6px;gap:6px}.modal-suggestion-thumb{width:100%;flex:0 0 auto}.modal-suggestion-title{font-size:11px}}
+    @media(max-width:620px){.modal-books{padding:9px}.modal-book-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.modal-book-list[data-count="1"]{grid-template-columns:minmax(0,1fr)}.modal-book-card{display:flex;align-items:flex-start;flex-direction:column;gap:4px;padding:6px}.modal-book-type{font-size:8px}.modal-book-title{display:-webkit-box;font-size:10px;line-height:1.45;white-space:normal;-webkit-box-orient:vertical;-webkit-line-clamp:2}.modal-book-action{align-self:flex-start;padding:4px 7px;font-size:9px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
   </style>
 </head>
@@ -249,11 +252,18 @@
         } catch (_) { return ''; }
       }
       function safeAffiliateUrl(value) {
-        return safeUrl(value, ['amzn.to','amazon.com','www.amazon.com','amazon.ca','www.amazon.ca']);
+        try {
+          const url = new URL(value);
+          const host = url.hostname.toLowerCase();
+          const amazonHost = host === 'amzn.to' || /(^|\.)amazon\.(com|ca|co\.uk|de|fr|it|es|co\.jp|in|com\.au|com\.br|com\.mx|nl|se|pl)$/.test(host);
+          if (url.protocol !== 'https:' || !amazonHost) return '';
+          url.searchParams.set('tag', 'sard360-20');
+          return url.href;
+        } catch (_) { return ''; }
       }
       function booksFor(item) {
         const raw = Array.isArray(item?.khizana_books) ? item.khizana_books : item?.khizana_book ? [item.khizana_book] : [];
-        return raw.slice(0, 2).map(book => ({title:String(book?.title || '').trim(),url:safeAffiliateUrl(book?.url || '')})).filter(book => book.title && book.url);
+        return raw.slice(0, 2).map(book => ({type:String(book?.type || 'مرجع مختار').trim(),title:String(book?.title || '').trim(),url:safeAffiliateUrl(book?.url || '')})).filter(book => book.title && book.url);
       }
       function videoIdFromUrl(value) {
         try {
@@ -363,7 +373,8 @@
       }
       function renderBooks(item) {
         const books = booksFor(item);
-        BOOK_LIST.innerHTML = books.map(book => `<div class="modal-book-card"><span class="modal-book-title">${escapeHtml(book.title)}</span><a class="modal-book-action" href="${escapeHtml(book.url)}" target="_blank" rel="noopener noreferrer sponsored">اقتَنِ النسخة <span aria-hidden="true">↗</span></a></div>`).join('');
+        BOOK_LIST.dataset.count = String(books.length);
+        BOOK_LIST.innerHTML = books.map(book => `<div class="modal-book-card"><span class="modal-book-type">${escapeHtml(book.type)}</span><span class="modal-book-title">${escapeHtml(book.title)}</span><a class="modal-book-action" href="${escapeHtml(book.url)}" target="_blank" rel="sponsored nofollow noopener">اقتَنِ النسخة <span aria-hidden="true">↗</span></a></div>`).join('');
         BOOKS_SECTION.hidden = books.length === 0;
       }
       function openVideo(videoId, title, description, trigger) {
