@@ -68,6 +68,7 @@
     .video-body p{margin:0 0 14px;color:#aab2be;font-size:12px;line-height:1.85;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
     .card-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;margin-top:auto;padding:10px 0 0;border:0;border-top:1px solid rgba(255,255,255,.08);background:transparent;color:#d8bf73;text-align:right;font:700 12px var(--font-head);cursor:pointer}
     .card-bottom:hover,.card-bottom:focus-visible{color:#f1d776}
+    .video-grid[hidden],.loading-grid[hidden],.status[hidden]{display:none!important}
     .loading-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:18px}
     .skeleton{height:270px;border-radius:16px;background:linear-gradient(100deg,#14171d 20%,#20232a 38%,#14171d 60%);background-size:200% 100%;animation:shimmer 1.4s linear infinite;border:1px solid rgba(255,255,255,.04)}
     .status{padding:22px;border:1px solid var(--border);border-radius:14px;background:var(--panel-bg);color:#b9c0ca;text-align:center}
@@ -75,20 +76,25 @@
     .page-footer a{color:#d1b75f;text-decoration:none}
     .footer-pillars{display:flex;flex-wrap:wrap;gap:12px}
     .page-footer a:hover,.page-footer a:focus-visible{color:#f1d776}
-    .video-modal{width:min(960px,calc(100% - 24px));max-width:none;max-height:calc(100dvh - 24px);margin:auto;padding:0;border:0;overflow:visible;background:transparent;color:var(--text)}
-    .video-modal::backdrop{background:rgba(0,0,0,.84);backdrop-filter:blur(7px)}
-    .modal-panel{position:relative;padding:18px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
+    .video-modal{width:min(1120px,calc(100% - 32px));max-width:none;max-height:calc(100dvh - 28px);margin:auto;padding:0;border:0;overflow:visible;background:transparent;color:var(--text)}
+    .video-modal::backdrop{background:rgba(0,0,0,.85);backdrop-filter:blur(12px)}
+    .modal-panel{position:relative;max-height:calc(100dvh - 28px);overflow-y:auto;padding:20px;border:1px solid rgba(212,175,55,.48);border-radius:18px;background:linear-gradient(145deg,#15171a,#0c0e11);box-shadow:0 24px 90px rgba(0,0,0,.7)}
     .modal-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
-    .modal-header h2{margin:0;color:#f4eddf;font-family:var(--font-head);font-size:20px;line-height:1.35}
+    .modal-kicker{color:var(--accent-gold);font-family:var(--font-head);font-size:12px;font-weight:800}
     .modal-close{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border:1px solid rgba(212,175,55,.45);border-radius:50%;background:#101216;color:#f1d776;font-size:24px;line-height:1;cursor:pointer}
     .modal-close:hover,.modal-close:focus-visible{background:rgba(212,175,55,.14)}
     .modal-stage{width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#050608}
     .modal-stage iframe{display:block;width:100%;height:100%;border:0}
-    .modal-note{margin:12px 2px 0;color:var(--muted);font-size:11px}
+    .modal-info{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:16px;padding:16px 4px 2px}
+    .modal-info-copy{flex:1;min-width:0}
+    .modal-info-copy h2{margin:0 0 5px;color:#f4eddf;font-family:var(--font-head);font-size:clamp(20px,2.6vw,29px);line-height:1.35}
+    .modal-info-copy p{margin:0;color:#b9c0ca;font-size:13px;line-height:1.75}
+    .modal-subscribe{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;gap:8px;min-height:44px;padding:11px 19px;border:0;border-radius:999px;background:linear-gradient(135deg,#e5c76d,#c49a35);box-shadow:0 8px 22px rgba(212,175,55,.2);color:#15120b;text-decoration:none;font:800 14px var(--font-head);white-space:nowrap;transition:filter .2s ease,transform .2s ease}
+    .modal-subscribe:hover,.modal-subscribe:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
     @keyframes shimmer{to{background-position:-200% 0}}
     @keyframes card-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
     @media(max-width:980px){.featured-card{grid-template-columns:1fr}.featured-media{aspect-ratio:16/9}.video-grid,.loading-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:620px){.page-shell{width:min(100% - 28px,1320px);padding-top:14px}.topline{align-items:flex-start;flex-direction:column}.top-links{justify-content:flex-start;gap:6px}.top-links a{padding:6px 9px;font-size:11px}.brand-name{font-size:16px}.hero{padding:37px 0 18px}.hero p{font-size:13px}.section-heading{align-items:flex-start;flex-direction:column;margin-top:23px}.section-heading .quiet-button{align-self:flex-start}.video-grid,.loading-grid{grid-template-columns:1fr;gap:13px}.video-body h3{font-size:17px}.featured-card{border-radius:16px}.feature-copy{padding:20px}.feature-copy h2{font-size:25px}.skeleton{height:250px}.modal-panel{padding:12px;border-radius:14px}.modal-header h2{font-size:17px}.modal-stage{border-radius:8px}.modal-note{font-size:10px}}
+    @media(max-width:620px){.page-shell{width:min(100% - 28px,1320px);padding-top:14px}.topline{align-items:flex-start;flex-direction:column}.top-links{justify-content:flex-start;gap:6px}.top-links a{padding:6px 9px;font-size:11px}.brand-name{font-size:16px}.hero{padding:37px 0 18px}.hero p{font-size:13px}.section-heading{align-items:flex-start;flex-direction:column;margin-top:23px}.section-heading .quiet-button{align-self:flex-start}.video-grid,.loading-grid{grid-template-columns:1fr;gap:13px}.video-body h3{font-size:17px}.featured-card{border-radius:16px}.feature-copy{padding:20px}.feature-copy h2{font-size:25px}.skeleton{height:250px}.modal-panel{padding:12px;border-radius:14px}.modal-stage{border-radius:8px}.modal-info{align-items:stretch;flex-direction:column;gap:13px;margin-top:10px;padding:10px 2px 0}.modal-info-copy h2{font-size:20px}.modal-info-copy p{font-size:12px}.modal-subscribe{align-self:flex-start}.modal-kicker{font-size:11px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
   </style>
 </head>
@@ -154,11 +160,17 @@
   <dialog class="video-modal" id="video-modal" aria-labelledby="video-modal-title">
     <div class="modal-panel" dir="rtl">
       <div class="modal-header">
-        <h2 id="video-modal-title">مشاهدة من سينما سرد</h2>
+        <span class="modal-kicker">سينما سرد · مشاهدة على مهل</span>
         <button class="modal-close" id="close-video" type="button" aria-label="إغلاق مشغّل الفيديو">×</button>
       </div>
       <div class="modal-stage" id="modal-stage"></div>
-      <p class="modal-note">يُعرض الفيلم من قناة سرد 360 داخل هذه الصفحة.</p>
+      <section class="modal-info" aria-live="polite">
+        <div class="modal-info-copy">
+          <h2 id="video-modal-title">مشاهدة من سينما سرد</h2>
+          <p id="video-modal-description">وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.</p>
+        </div>
+        <a class="modal-subscribe" href="https://www.youtube.com/@sard360?sub_confirmation=1" target="_blank" rel="noopener noreferrer">اشترك في القناة <span aria-hidden="true">↗</span></a>
+      </section>
     </div>
   </dialog>
 
@@ -237,7 +249,7 @@
         }
         const id = videoIdFromUrl(item.youtube_url);
         FEATURED_DAILY.innerHTML = `<article class="featured-card">
-          <button class="featured-media video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" aria-label="مشاهدة ${escapeHtml(item.title)} داخل الصفحة">
+          <button class="featured-media video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" aria-label="مشاهدة ${escapeHtml(item.title)} داخل الصفحة">
             ${imageMarkup(item)}
             <span class="media-shade"></span><span class="duration-badge">${formatDuration(item.duration_seconds)}</span>
           </button>
@@ -246,7 +258,7 @@
             <h2>${escapeHtml(item.title)}</h2>
             <p>${escapeHtml(item.description)}</p>
             <div class="feature-meta"><span class="chip">${formatDuration(item.duration_seconds)} · مشاهدة طويلة</span><span class="chip">من قناة سرد 360</span></div>
-            <button class="watch-button video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}">شاهد الفيلم <span aria-hidden="true">▶</span></button>
+            <button class="watch-button video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}">شاهد الفيلم <span aria-hidden="true">▶</span></button>
           </div>
         </article>`;
         FEATURED_DAILY.setAttribute('aria-busy','false');
@@ -267,11 +279,11 @@
         GRID.innerHTML = rest.map((item, index) => {
           const id = videoIdFromUrl(item.youtube_url);
           return `<article class="video-card" style="animation-delay:${Math.min(index,8)*45}ms">
-            <button class="video-thumb video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" aria-label="شاهد ${escapeHtml(item.title)} داخل الصفحة">
+            <button class="video-thumb video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" aria-label="شاهد ${escapeHtml(item.title)} داخل الصفحة">
               ${imageMarkup(item)}<span class="duration-badge">${formatDuration(item.duration_seconds)}</span><span class="thumbnail-fallback" aria-hidden="true"></span>
             </button>
             <div class="video-body"><span class="video-category">${escapeHtml(item.category)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p>
-              <button class="card-bottom video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}"><span>شاهد الفيلم داخل سرد</span><span aria-hidden="true">▶</span></button>
+              <button class="card-bottom video-open" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}"><span>شاهد الفيلم داخل سرد</span><span aria-hidden="true">▶</span></button>
             </div>
           </article>`;
         }).join('');
@@ -279,10 +291,11 @@
         GRID.setAttribute('aria-busy','false');
         COUNT.textContent = `${new Intl.NumberFormat('ar').format(list.length)} أفلام طويلة · يعرض الشبكة البقية بعد ترشيح اليوم`;
       }
-      function openVideo(videoId, title, trigger) {
+      function openVideo(videoId, title, description, trigger) {
         if (!/^[A-Za-z0-9_-]{11}$/.test(videoId || '') || MODAL.open) return;
         lastTrigger = trigger;
-        document.getElementById('video-modal-title').textContent = title ? `مشاهدة: ${title}` : 'مشاهدة من سينما سرد';
+        document.getElementById('video-modal-title').textContent = title || 'مشاهدة من سينما سرد';
+        document.getElementById('video-modal-description').textContent = description || 'وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.';
         const frame = document.createElement('iframe');
         frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
         frame.title = title ? `مشاهدة ${title}` : 'فيديو من قناة سرد 360';
@@ -300,7 +313,7 @@
 
       document.addEventListener('click', event => {
         const trigger = event.target.closest('[data-video-id]');
-        if (trigger) openVideo(trigger.dataset.videoId, trigger.dataset.videoTitle, trigger);
+        if (trigger) openVideo(trigger.dataset.videoId, trigger.dataset.videoTitle, trigger.dataset.videoDescription, trigger);
       });
       document.addEventListener('error', event => {
         const image = event.target;
