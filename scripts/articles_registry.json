@@ -1224,8 +1224,10 @@
       "title": null
     },
     "modified": "2026-04-14T06:11:19",
-    "last_attempt": "2026-10-06T23:07:09+00:00",
-    "last_error": "ValueError: Only 1/2 books passed all checks; candidate failures: The Assassins: A Radical Sect in Islam: No resolvable ISBN-10 edition found for The Assassins: A Radical Sect in Islam — Bernard Lewis | The Ismailis: Their History and Doctrines: No resolvable ISBN-10 edition found for The Ismailis: Their History and Doctrines — Farhad Daftary | The Nizari Ismaili State: A Historical Study: Open Library could not confirm title/author: The Nizari Ismaili State: A Historical Study — Marshall G. S. Hodgson | Th"
+    "last_attempt": "2026-10-07T00:16:26+00:00",
+    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: The Assassins: A Radical Sect in Islam — ISBN 0374949735: Amazon product title mismatch ('Race and color in Islam') | The Ismailis: Their History and Doctrines: Open Library could not confirm title/author: The Ismailis: Their History and Doctrines — Farhad Daftary",
+    "partial_book_isbns": [],
+    "partial_books": []
   },
   "4391": {
     "title": "«أثر الفراشة»: كيف تعيد رفرفة جناح حشرة في البرازيل صياغة أقدار العالم وتخلق إعصاراً في تكساس؟",
@@ -1241,8 +1243,10 @@
       "title": null
     },
     "modified": "2026-04-24T17:59:52",
-    "last_attempt": "2026-10-06T23:43:03+00:00",
-    "last_error": "ValueError: Only 1/2 books passed all checks; candidate failures: The Essence of Chaos: amazon.com product page/title unavailable (HTTP 404) | The Black Swan: The Impact of the Highly Improbable: amazon.com product page/title unavailable (HTTP 404) | Sync: How Order Emerges from Chaos in the Universe, Nature, and Daily Life: Open Library could not confirm title/author: Sync: How Order Emerges from Chaos in the Universe, Nature, and Daily Life — Steven Strogatz | Chaos: A Very Short Introduction: amazon.com "
+    "last_attempt": "2026-10-07T00:17:43+00:00",
+    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: Chaos: Making a New Science — ISBN 0140092501: amazon.com product page/title unavailable (HTTP 200) | The Essence of Chaos — ISBN 0203271165: amazon.com product page/title unavailable (HTTP 200)",
+    "partial_book_isbns": [],
+    "partial_books": []
   },
   "4397": {
     "title": "أنفاس الأندلس الأخيرة: ملحمة الموريسكيّين الذين أخفوا إسلامهم لقرون رغم بطش محاكم التّفتيش",
@@ -1258,7 +1262,9 @@
       "title": null
     },
     "modified": "2026-04-15T23:35:00",
-    "last_attempt": "2026-10-06T23:43:51+00:00",
-    "last_error": "ValueError: Only 1/2 books passed all checks; candidate failures: The Moriscos of Spain: Their Origin and Survival: Open Library could not confirm title/author: The Moriscos of Spain: Their Origin and Survival — L. P. Harvey | The Last Christians of Al-Andalus: The End of Muslim Rule in Iberia: Open Library could not confirm title/author: The Last Christians of Al-Andalus: The End of Muslim Rule in Iberia — Mercedes García-Arenal and Gerard Wiegers | The Last Crusade: Spain 1213–1714: Open Library could not"
+    "last_attempt": "2026-10-07T00:18:37+00:00",
+    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: The Moriscos of Spain: Their Conversion and Expulsion — ISBN 0543959716: amazon.com product page/title unavailable (HTTP 200) | The Last Crusaders: The Hundred-Year Battle for the Center of the World: Open Library could not confirm title/author: The Last Crusaders: The Hundred-Year Battle for the Center of the World — Barnaby R. (Barnaby Rich?)",
+    "partial_book_isbns": [],
+    "partial_books": []
   }
 }

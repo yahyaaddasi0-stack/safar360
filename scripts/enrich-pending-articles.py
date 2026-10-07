@@ -603,9 +603,13 @@ def main() -> int:
     ap.add_argument("--pause", type=float, default=1.5, help="Seconds to sleep between articles")
     ap.add_argument("--retry-failed", action="store_true", help="Retry entries previously marked pending with last_error")
     ap.add_argument("--quick", action="store_true", help="Use one candidate edition and one Amazon attempt per marketplace; skip unresolved books immediately")
+    ap.add_argument("--post-ids", default="", help="Comma-separated WordPress post IDs to process exclusively (maximum four)")
     args = ap.parse_args()
     if args.pause < 1 or args.pause > 10:
         ap.error("--pause must be from 1 to 10 seconds")
+    requested_ids = [part.strip() for part in args.post_ids.split(",") if part.strip()]
+    if len(requested_ids) > 4 or len(set(requested_ids)) != len(requested_ids):
+        ap.error("--post-ids accepts at most four unique IDs")
     s = api_session()
     registry = json.loads(REGISTRY_PATH.read_text(encoding="utf-8")) if REGISTRY_PATH.exists() else {}
     posts = fetch_published(s)
@@ -622,6 +626,12 @@ def main() -> int:
         if item.get("last_error") and not args.retry_failed:
             continue
         pending.append(post)
+    if requested_ids:
+        pending_by_id = {str(post["id"]): post for post in pending}
+        missing_ids = [pid for pid in requested_ids if pid not in pending_by_id]
+        if missing_ids:
+            ap.error("requested IDs are not currently pending: " + ",".join(missing_ids))
+        pending = [pending_by_id[pid] for pid in requested_ids]
     if args.limit:
         pending = pending[:args.limit]
     print("RUN_START", json.dumps({"published_posts": len(posts), "already_treated": len(posts)-sum(1 for p in posts if not has_shelf((p.get('content') or {}).get('raw',''))), "pending_to_process": len(pending), "dry_run": args.dry_run}, ensure_ascii=False), flush=True)
