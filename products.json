@@ -13,7 +13,7 @@
       "title": "بوصلة السالك والرحّالة",
       "category": "مقتنيات وتذكارات تاريخية",
       "desc": "تختزل البوصلة معنى الاهتداء في قطعةٍ واحدة: أثرٌ من حكايات الملاّحين ورصد النجوم، يستقرّ على مائدة الباحث ويذكّره بأن لكل رحلة وجهةً وسؤالًا.",
-      "image_url": "assets/images/compass.jpg",
+      "image_url": "https://f.nooncdn.com/p/b934caf9ddaa5d6f940d2d926553ed31%7Cpzsku/Z1FAE4211C28265698FD2Z/45/1771061184/b6dc7328-a232-4734-b883-0227f21db847.jpg",
       "tag": "أثر الملاحة",
       "variants": [
         {
@@ -41,14 +41,16 @@
           "label": "بوصلة جيب بطابع عتيق — THOR INSTRUMENTS",
           "affiliate_url": "https://amzn.to/4hwF9CB"
         }
-      ]
+      ],
+      "image_source_url": "https://www.noon.com/uae-en/handcrafted-vintage-brass-sundial-compass-antique-nautical-sun-clock-with-leather-case-engraved-collectible-brass-compass-gift-for-men-christmas-holiday-collection-gift/Z1FAE4211C28265698FD2Z/p/",
+      "image_fit": "contain"
     },
     {
       "id": "master-kindle",
       "title": "كيندل بيبروايت: ملاذ القراءة الرقمي",
       "category": "أدوات المعرفة والمدارسة",
       "desc": "مكتبةٌ محمولة تحفظ للقراءة فسحتها في الرحلة واليوم المزدحم؛ اختر الطراز أو الحزمة التي تلائم طريقتك في مصاحبة الكتب، واترك للنص إيقاعه الهادئ.",
-      "image_url": "assets/images/ereader.jpg",
+      "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/69744350-4912-4f60-b3a3-c0394a625392.jpg;maxHeight=3000;maxWidth=2000?format=webp",
       "tag": "فسحةٌ للقراءة",
       "variants": [
         {
@@ -76,14 +78,16 @@
           "label": "Kindle Paperwhite 16GB Raspberry مع غطاء قماشي ومحوّل",
           "affiliate_url": "https://amzn.to/4eapR43"
         }
-      ]
+      ],
+      "image_source_url": "https://www.bestbuy.com/product/amazon-kindle-paperwhite-16-gb-2024-jade/J39HW66239",
+      "image_fit": "contain"
     },
     {
       "id": "master-lions-mane",
       "title": "صفاء الذهن: فطر عرف الأسد",
       "category": "صفاء الذهن ووقود الفكر",
       "desc": "خياراتٌ مرتبطة بفطر عرف الأسد كما تعرضها المتاجر، نضعها هنا موضوعًا للاطلاع لا وعدًا بتركيزٍ أو أثرٍ علاجي. اقرأ المكوّنات والمعلومات بعناية، واستشر مختصًا قبل استخدام أي مكمّل.",
-      "image_url": "assets/images/nootropics.jpg",
+      "image_url": "https://cdn.shopify.com/s/files/1/0539/3281/8619/files/Clarity8.jpg?v=1755207441",
       "tag": "اطّلاعٌ وتأنٍّ",
       "variants": [
         {
@@ -106,14 +110,16 @@
           "label": "مسحوق عرف الأسد العضوي، 500 g — BulkSupplements",
           "affiliate_url": "https://amzn.to/4z9WbMC"
         }
-      ]
+      ],
+      "image_source_url": "https://thefriendlypatch.com/products/clarity-lions-mane-reishi-mushroom-patches",
+      "image_fit": "contain"
     },
     {
       "id": "master-library-architecture",
       "title": "أرفف وخزائن الكتب: معمار الملاذ",
       "category": "عمارة البيت ومجالس القراءة",
       "desc": "تُعيد الرفوف ترتيب العلاقة بين البيت والكتاب: لكل مؤلّف موضع، ولكل مجلس قراءة ملامح. اختر هيئةً تلائم المساحة وتترك للمعرفة حضورها في تفاصيل المكان.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://i.ebayimg.com/images/g/FVsAAeSw24tqv2Eu/s-l1600.webp",
       "tag": "عمارة القراءة",
       "variants": [
         {
@@ -146,7 +152,9 @@
           "label": "مكتبة صناعية بثلاث طبقات — HCHQHS",
           "affiliate_url": "https://amzn.to/3Vp2oG5"
         }
-      ]
+      ],
+      "image_source_url": "https://www.ebay.com/itm/117442771593",
+      "image_fit": "contain"
     }
   ],
   "books": [
@@ -155,117 +163,150 @@
       "title": "الحشاشون: طائفة راديكالية في الإسلام — برنارد لويس",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "قراءة تاريخية كلاسيكية تتتبع جماعة النزاريين الإسماعيلية، تعاليمها وأثرها السياسي في زمن حسن الصباح، وتعود إلى قلعة ألموت وحكاية «الحشاشين». نافعة لفهم الروايات التي أحاطت بالجماعة، مع موازنتها بأبحاث أحدث؛ الطبعة المعروضة باللغة الإنجليزية.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://books.ay7aaga.com/wp-content/uploads/2024/08/%D8%A7%D9%84%D8%AD%D8%B4%D8%A7%D8%B4%D9%88%D9%86-scaled.jpg",
       "affiliate_url": "https://amzn.to/3VqI72U",
-      "tag": "دراسة تاريخية · بالإنجليزية"
+      "tag": "دراسة تاريخية · بالإنجليزية",
+      "image_source_url": "https://books.ay7aaga.com/product/%D9%83%D8%AA%D8%A7%D8%A8-%D8%A7%D9%84%D8%AD%D8%B4%D8%A7%D8%B4%D9%88%D9%86-%D9%81%D8%B1%D9%82%D8%A9-%D8%AB%D9%88%D8%B1%D9%8A%D8%A9-%D9%81%D9%8A-%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85/",
+      "image_fit": "contain"
     },
     {
       "id": "books-14",
       "title": "ألموت — فلاديمير بارتول (ترجمة مايكل بيغينز)",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "رواية كلاسيكية تعود إلى قلعة ألموت في القرن الحادي عشر، حيث يختبر حسن بن الصباح ولاء أتباعه ويحوّل الإيمان والوهم إلى أدوات سلطة. كتبها بارتول سنة 1938 في صيغة أدبية تستلهم التاريخ وتقرأ الاستبداد؛ إنها رواية لا مرجع توثيقي، والطبعة المعروضة باللغة الإنجليزية.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://covers.openlibrary.org/b/id/737566-L.jpg?default=false",
       "affiliate_url": "https://amzn.to/3VRSBIC",
-      "tag": "رواية ألموت · بالإنجليزية"
+      "tag": "رواية ألموت · بالإنجليزية",
+      "image_source_url": "https://openlibrary.org/works/OL3570480W",
+      "image_fit": "contain"
     },
     {
       "id": "books-01",
       "title": "مقدمة ابن خلدون — عبد الرحمن بن خلدون",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "بين صفحاتها تتأمل كيف تنهض الجماعات وتتبدل أحوالها؛ قراءةٌ كلاسيكية تفتح باباً هادئاً لفهم التاريخ وأسئلته في حاضرنا.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://www.al-ilmiyah.com/Covers/front_medium/978-2-7451-6646-3.jpg",
       "affiliate_url": "https://amzn.to/4efpPb8",
-      "tag": "قراءة في العمران"
+      "tag": "قراءة في العمران",
+      "image_source_url": "https://www.al-ilmiyah.com/details?id=978-2-7451-6646-3",
+      "image_fit": "contain",
+      "isbn": "9782745166463"
     },
     {
       "id": "books-02",
       "title": "البندول: رحلة التعافي من الوسواس القهري — محمد الشامي",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "يتناول محمد الشامي الوسواس القهري وأنواعه، مستحضراً إشارات من التراث وقصصاً من الحياة؛ قراءة هادئة في جانب من التجربة الإنسانية المعاصرة.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://cdn.salla.sa/WGdqR/aOhN0GX97YpcayR4CtA9LAEec8lgVBLbCw4OMURr.png",
       "affiliate_url": "https://amzn.to/4yxHl2N",
-      "tag": "الوعي النفسي"
+      "tag": "الوعي النفسي",
+      "image_source_url": "https://daralhadarah.net/ar/YyaDKp",
+      "image_fit": "contain"
     },
     {
       "id": "books-03",
       "title": "نهج البلاغة — علي بن أبي طالب",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "بين الخطب والحِكم والرسائل، يفتح هذا النص نافذةً على لغةٍ وأفكارٍ من الذاكرة العربية الإسلامية. قراءةٌ هادئة تمنح أسئلة الحاضر سياقًا أعمق، وتدعو إلى التأمل في أثر الكلمة عبر الزمن.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://binyanbooks.com/cdn/shop/products/nhj-lblg-ktb-slmy-lmm-ly-bn-by-tlb-777667.jpg?v=1764280192",
       "affiliate_url": "https://amzn.to/472e44a",
-      "tag": "ذاكرة الحضارة"
+      "tag": "ذاكرة الحضارة",
+      "image_source_url": "https://binyanbooks.com/products/%D9%86%D9%87%D8%AC-%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%BA%D8%A9",
+      "image_fit": "contain"
     },
     {
       "id": "books-04",
       "title": "ألعاب الجوع — سوزان كولينز (النسخة العربية)",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "تأخذنا رواية سوزان كولينز إلى بانيم، حيث تتيح الحكاية التأمل في السلطة والمجتمع وما يبقى من إنسانية الناس في زمن القسوة؛ قراءة روائية تفتح نافذة على أسئلة الحاضر، لا كتابًا مرجعيًا في تاريخ الحضارات.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "assets/images/covers/hunger-games-arabic-9789953878935.jpg",
       "affiliate_url": "https://amzn.to/4AQzFKk",
-      "tag": "تأمل في المجتمع"
+      "tag": "تأمل في المجتمع",
+      "image_source_url": "https://www.abebooks.com/9789953878935/Hunger-Games-Arabic-Edition-Collins-9953878935/plp",
+      "image_fit": "contain",
+      "isbn": "9789953878935"
     },
     {
       "id": "books-05",
       "title": "قوة عقلك الباطن — جوزيف ميرفي",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "في رفٍّ يبحث عن مفاتيح فهم الإنسان، يفتح هذا الكتاب باباً إلى تأمل الذات كما يقدّمها جوزيف ميرفي. إنها قراءة في التنمية الذاتية، لا مرجع لتاريخ الحضارات.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://ak-asset.jarir.com/akeneo-prod/asset/m1images/1/6/169834.jpg",
       "affiliate_url": "https://amzn.to/3VOv7UM",
-      "tag": "قراءة في الذات"
+      "tag": "قراءة في الذات",
+      "image_source_url": "https://www.jarir.com/bh-en/jarir-publication-169834.html",
+      "image_fit": "contain"
     },
     {
       "id": "books-07",
       "title": "لأنك الله — علي بن جابر الفيفي",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "لفهم الحضارات والحاضر، تظلّ المعاني الإيمانية جزءًا من أسئلة الإنسان الكبرى. يفتح علي بن جابر الفيفي هنا باب التأمل في بعض أسماء الله الحسنى، في وقفة هادئة لا تزعم تفسير التاريخ.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://cdn.salla.sa/WGdqR/fo4zGr75E8Xj7LW9xyZbDVwgn1BemxWE8uLqTXIK.jpg",
       "affiliate_url": "https://amzn.to/4yAaudF",
-      "tag": "المعنى والإيمان"
+      "tag": "المعنى والإيمان",
+      "image_source_url": "https://daralhadarah.net/ar/ymRoEa",
+      "image_fit": "contain"
     },
     {
       "id": "books-08",
       "title": "فلسفة الرد — معتز أحمد السيد زكي",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "في صفحات «فلسفة الرد» لمعتز أحمد السيد زكي، تلتقي تجارب الحياة بتحدياتها اليومية. قراءة هادئة تفتح باب التأمل في طرائق استجابتنا لما يحيط بنا.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://covers.openlibrary.org/b/isbn/9798756384413-L.jpg?default=false",
       "affiliate_url": "https://amzn.to/4yzbkXS",
-      "tag": "قراءة الواقع"
+      "tag": "قراءة الواقع",
+      "image_source_url": "https://openlibrary.org/works/OL26405422W",
+      "image_fit": "contain",
+      "isbn": "9798756384413"
     },
     {
       "id": "books-09",
       "title": "الشعلة الزرقاء — جبران خليل جبران",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "في صفحات جبران، تظلّ أسئلة الإنسان صدىً يعبر الأزمنة؛ قراءة أدبية تهيّئ نافذةً هادئة للتأمل في الثقافة وما تحمله إلى حاضرنا.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=1200,height=1200,quality=90,metadata=none,format=auto/https://ak-asset.jarir.com/akeneo-prod/asset/m1images/4/0/407662.jpg",
       "affiliate_url": "https://amzn.to/4dlpW4J",
-      "tag": "ذاكرة الإنسان"
+      "tag": "ذاكرة الإنسان",
+      "image_source_url": "https://www.jarir.com/kw-ar/arabic-books-407662.html",
+      "image_fit": "contain",
+      "isbn": "9786144388617"
     },
     {
       "id": "books-10",
       "title": "اعرف وجهك الآخر — د. يوسف الحسني",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "بين ما نرثه من أفكار وما نراه في حاضرنا، يذكّرنا العنوان بأن فهم العالم يبدأ أحياناً بمراجعة نظرتنا إليه. كتابٌ للتأمل في الذات والحقيقة كما يوحي عنوانه، لا مرجعٌ موثّق لتاريخ الحضارات.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://www.alkirtas.com/104343/%D8%A7%D8%B9%D8%B1%D9%81-%D9%88%D8%AC%D9%87%D9%83-%D8%A7%D9%84%D8%A2%D8%AE%D8%B1-%D8%AF-%D9%8A%D9%88%D8%B3%D9%81-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%8A.jpg",
       "affiliate_url": "https://amzn.to/3THm9b9",
-      "tag": "أسئلة الذات والحقيقة"
+      "tag": "أسئلة الذات والحقيقة",
+      "image_source_url": "https://www.alkirtas.com/developpement-humain-livre-tunisie/71903-%D8%A7%D8%B9%D8%B1%D9%81-%D9%88%D8%AC%D9%87%D9%83-%D8%A7%D9%84%D8%A2%D8%AE%D8%B1-%D8%AF-%D9%8A%D9%88%D8%B3%D9%81-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%8A-9789776972537.html",
+      "image_fit": "contain",
+      "isbn": "9789776972537"
     },
     {
       "id": "books-11",
       "title": "نظرية الفستق — فهد عامر الأحمدي",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "في «نظرية الفستق»، تلتقي مقالات عن التفكير والسلوك بأسئلة الإنسان اليومية؛ قراءة تأملية تضيء جانباً من فهمنا للحاضر، من غير أن تدّعي تأريخ الحضارات أو الإحاطة بها.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://covers.openlibrary.org/b/isbn/9786035063791-L.jpg?default=false",
       "affiliate_url": "https://amzn.to/4hvvn3x",
-      "tag": "الفكر والسلوك"
+      "tag": "الفكر والسلوك",
+      "image_source_url": "https://openlibrary.org/works/OL27054923W",
+      "image_fit": "contain",
+      "isbn": "9786035063791"
     },
     {
       "id": "books-12",
       "title": "قواعد العشق الأربعون — أليف شافاك",
       "category": "أمهات الكتب ومكتبة سرد",
       "desc": "في رواية أليف شافاك، تتقاطع حكاية معاصرة مع سيرة جلال الدين الرومي وشمس التبريزي، لتفتح نافذة سردية على أثر التصوف والشعر في الذاكرة الإنسانية. قراءة تقترب من الماضي عبر الحكاية، وتترك للقارئ مساحة للتأمل في الحاضر.",
-      "image_url": "assets/images/rare-books.jpg",
+      "image_url": "https://maktabetalarab.com/cdn/shop/products/40044_1024x.jpg?v=1685299334",
       "affiliate_url": "https://amzn.to/4zjOG60",
-      "tag": "ذاكرة الحضارات"
+      "tag": "ذاكرة الحضارات",
+      "image_source_url": "https://maktabetalarab.com/products/%D9%82%D9%88%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%B9%D8%B4%D9%82-%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%B9%D9%88%D9%86",
+      "image_fit": "contain",
+      "isbn": "9789953892573"
     }
   ]
 }

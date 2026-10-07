@@ -66,7 +66,9 @@
     .product-image-wrap { position: relative; height: 220px; overflow: hidden; background: #202126; }
     .product-image-wrap::after { position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, rgba(18, 21, 27, .36)); content: ""; pointer-events: none; }
     .product-image { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
-    .product-card:hover .product-image { transform: scale(1.045); }
+    .product-image--contain { object-fit: contain; padding: 10px; }
+    .product-image-wrap--contained::after { display: none; }
+    .product-card:hover .product-image:not(.product-image--contain) { transform: scale(1.045); }
     .category-tag { position: absolute; z-index: 1; top: 14px; right: 14px; border: 1px solid rgba(212, 175, 55, .5); border-radius: 999px; padding: 7px 10px; background: rgba(10, 12, 14, .82); color: #ecd98d; font-size: 10px; backdrop-filter: blur(8px); }
     .daily-badge { position: absolute; z-index: 1; top: 14px; left: 14px; max-width: 58%; border: 1px solid rgba(212, 175, 55, .62); border-radius: 999px; padding: 7px 10px; background: rgba(10, 12, 14, .88); color: #f3d979; font-size: 10px; font-weight: 700; text-align: center; backdrop-filter: blur(8px); }
     .card-content { padding: 19px 19px 18px; }
@@ -186,8 +188,8 @@
 
     (() => {
       const ALL_CATEGORY = 'كل الاختيارات';
-      const STORAGE_KEY = 'sard360-khizana-catalog-v3';
-      const dataUrl = new URL('./products.json?v=master-items-1', window.location.href);
+      const STORAGE_KEY = 'sard360-khizana-catalog-v4-real-covers';
+      const dataUrl = new URL('./products.json?v=verified-covers-20261008', window.location.href);
       const filtersEl = document.getElementById('category-filters');
       const gridEl = document.getElementById('product-grid');
       const countEl = document.getElementById('product-count');
@@ -228,6 +230,7 @@
           category: String(item.category || 'أدوات المعرفة'),
           desc: String(item.desc ?? item.description ?? ''),
           image_url: String(item.image_url ?? item.image ?? ''),
+          imageFit: item.image_fit === 'contain' ? 'contain' : 'cover',
           affiliate_url: String(item.affiliate_url ?? item.affiliateUrl ?? ''),
           tag: String(item.tag ?? item.eyebrow ?? 'اختيار تحريري'),
           variants: Array.isArray(item.variants) ? item.variants.map((variant, index) => ({
@@ -346,6 +349,8 @@
 
         gridEl.innerHTML = visible.map((product, index) => {
           const imageUrl = product.image_url ? new URL(product.image_url, dataUrl).href : '';
+          const imageClass = product.imageFit === 'contain' ? 'product-image product-image--contain' : 'product-image';
+          const imageWrapClass = product.imageFit === 'contain' ? ' product-image-wrap--contained' : '';
           const initialUrl = product.variants.length ? product.variants[0].affiliate_url : product.affiliate_url;
           const affiliateUrl = initialUrl ? injectAffiliateParameters(initialUrl) : '';
           const hasLink = Boolean(affiliateUrl);
@@ -361,8 +366,8 @@
           const style = animate ? ` style="--stagger:${Math.min(index * 45, 360)}ms"` : '';
           return `
             <article class="product-card${isDaily ? ' is-daily' : ''}${animate ? ' is-renewing' : ''}" data-product-id="${escapeHtml(product.id)}"${style}>
-              <div class="product-image-wrap">
-                ${imageUrl ? `<img class="product-image" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(product.title)}" loading="lazy">` : ''}
+              <div class="product-image-wrap${imageWrapClass}">
+                ${imageUrl ? `<img class="${imageClass}" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(product.title)}" loading="lazy">` : ''}
                 <span class="category-tag">${escapeHtml(product.category)}</span>
                 ${isDaily ? '<span class="daily-badge">اختيار اليوم · <span lang="fr" dir="ltr">Sélection du jour</span></span>' : ''}
               </div>
