@@ -99,151 +99,521 @@
     "title": "8 شخصيّات تاريخيّة غيّرت مجرى العالم من الظّلّ ولم تذكرها المناهج",
     "slug": "8-hidden-architects-the-shadows-that-shaped-our-world",
     "link": "https://sard360.com/2026/05/13/8-hidden-architects-the-shadows-that-shaped-our-world/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0965477886",
+      "0804713766"
+    ],
+    "book_titles": [
+      "روزاليند فرانكلين: سيرة عالمة كشفت أسرار الحمض النووي",
+      "قراصنة ساحل جنوب الصين: 1790–1810"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-13T17:01:28"
+    "modified": "2026-10-07T01:49:52",
+    "last_attempt": "2026-10-06T22:49:56+00:00",
+    "books": [
+      {
+        "verified_title": "Rosalind Franklin - The Dark Lady Of Dna",
+        "author": "Brenda Maddox",
+        "isbn": "0965477886",
+        "publisher": "Harper-collins Publishers",
+        "year": 2002,
+        "amazon_url": "https://www.amazon.com/dp/0965477886?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0965477886"
+      },
+      {
+        "verified_title": "Pirates of the South China coast, 1790-1810",
+        "author": "Dian H. Murray",
+        "isbn": "0804713766",
+        "publisher": "Stanford University Press",
+        "year": 1987,
+        "amazon_url": "https://www.amazon.com/dp/0804713766?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0804713766"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4829": {
     "title": "8 تجارب نفسيّة صادمة كشفت الجانب المظلم للطّبيعة البشريّة",
     "slug": "8-shocking-psychological-experiments-human-nature",
     "link": "https://sard360.com/2026/05/13/8-shocking-psychological-experiments-human-nature/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "006131983X",
+      "0201001756"
+    ],
+    "book_titles": [
+      "الطّاعة للسّلطة: نظرة تجريبيّة",
+      "طبيعة التحيّز"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-13T18:57:51"
+    "modified": "2026-10-07T01:50:42",
+    "last_attempt": "2026-10-06T22:50:46+00:00",
+    "books": [
+      {
+        "verified_title": "Obedience to Authority",
+        "author": "Stanley Milgram",
+        "isbn": "006131983X",
+        "publisher": "Pinter & Martin",
+        "year": 1974,
+        "amazon_url": "https://www.amazon.com/dp/006131983X?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/006131983X"
+      },
+      {
+        "verified_title": "The nature of prejudice.",
+        "author": "Gordon W. Allport",
+        "isbn": "0201001756",
+        "publisher": "Addison-Wesley Pub. Co.",
+        "year": 1954,
+        "amazon_url": "https://www.amazon.com/dp/0201001756?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0201001756"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4798": {
     "title": "8 أفلام عالميّة تلاعبت بالعقل وحطّمت مفهوم الواقع",
     "slug": "beyond-the-screen-8-cinematic-masterpieces-that-shattered-the-matrix-of-reality",
     "link": "https://sard360.com/2026/05/12/beyond-the-screen-8-cinematic-masterpieces-that-shattered-the-matrix-of-reality/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0520076966",
+      "1973319403"
+    ],
+    "book_titles": [
+      "الطريقة التي تروي بها هوليوود: السرد والسياق في السينما المعاصرة",
+      "الطريقة التي تروي بها هوليوود: السرد والسياق في السينما المعاصرة"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-12T20:14:28"
+    "modified": "2026-10-07T02:52:35",
+    "last_attempt": "2026-10-06T23:52:40+00:00",
+    "books": [
+      {
+        "verified_title": "How movies work",
+        "verified_author": "Bruce F. Kawin",
+        "title_ar": "الطريقة التي تروي بها هوليوود: السرد والسياق في السينما المعاصرة",
+        "author": "David Bordwell",
+        "author_ar": "ديفيد بوردويل",
+        "summary_ar": "قراءة منهجية لأساليب السرد والبنية في السينما الحديثة، تشرح كيفية بنية المشهد، التحرير، والزوايا السردية التي تساهم في تأثيرات التلاعب بالإدراك عند الجمهور.",
+        "kind_ar": "دراسة سينمائية/منهج",
+        "isbn": "0520076966",
+        "publisher": "Collier Macmillan",
+        "year": 1987,
+        "amazon_url": "https://www.amazon.com/dp/0520076966?tag=sard360-20",
+        "amazon_title": "How Movies Work",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0520076966"
+      },
+      {
+        "verified_title": "How to Find Work in the Movies",
+        "verified_author": "Vince Onken",
+        "title_ar": "الطريقة التي تروي بها هوليوود: السرد والسياق في السينما المعاصرة",
+        "author": "David Bordwell",
+        "author_ar": "ديفيد بوردويل",
+        "summary_ar": "قراءة منهجية لأساليب السرد والبنية في السينما الحديثة، تشرح كيفية بنية المشهد، التحرير، والزوايا السردية التي تساهم في تأثيرات التلاعب بالإدراك عند الجمهور.",
+        "kind_ar": "دراسة سينمائية/منهج",
+        "isbn": "1973319403",
+        "publisher": "Independently Published",
+        "year": 2017,
+        "amazon_url": "https://www.amazon.com/dp/1973319403?tag=sard360-20",
+        "amazon_title": "How to Find Work in the Movies: Zen and the Art of Creating a Career in Film",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/1973319403"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4682": {
     "title": "حرب الإيمو العظمى: القصّة الكاملة لأغرب هزيمة عسكريّة في تاريخ أستراليا",
     "slug": "great-emu-war-australia-military-defeat-against-birds-1932",
     "link": "https://sard360.com/2026/05/12/great-emu-war-australia-military-defeat-against-birds-1932/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0522849873",
+      "0003135977"
+    ],
+    "book_titles": [
+      "طائر الإيمو: تاريخ وطني",
+      "طائر الإيمو: تاريخ وطني"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-12T01:57:24"
+    "modified": "2026-10-07T02:53:35",
+    "last_attempt": "2026-10-06T23:53:38+00:00",
+    "books": [
+      {
+        "verified_title": "The flight of the emu",
+        "verified_author": "Libby Robin",
+        "title_ar": "طائر الإيمو: تاريخ وطني",
+        "author": "Libby Robin",
+        "author_ar": "ليبي روبن",
+        "summary_ar": "النسخة الأصلية للكتاب الذي يتناول التاريخ الطبيعي والثقافي للإيمو في أستراليا، مفيدة لتوثيق الأحداث البيئية والاجتماعية المتعلقة بصراع المزارعين والطيور.",
+        "kind_ar": "مرجع تأريخي-بيئي",
+        "isbn": "0522849873",
+        "publisher": "Melbourne University Publishing",
+        "year": 2001,
+        "amazon_url": "https://www.amazon.com/dp/0522849873?tag=sard360-20",
+        "amazon_title": "The Flight of the Emu: A Hundred Years of Australian Ornithology 1901-2001",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0522849873"
+      },
+      {
+        "verified_title": "Edward the Emu",
+        "verified_author": "Sheena Knowles, Rod Clement",
+        "title_ar": "طائر الإيمو: تاريخ وطني",
+        "author": "Libby Robin",
+        "author_ar": "ليبي روبن",
+        "summary_ar": "النسخة الأصلية للكتاب الذي يتناول التاريخ الطبيعي والثقافي للإيمو في أستراليا، مفيدة لتوثيق الأحداث البيئية والاجتماعية المتعلقة بصراع المزارعين والطيور.",
+        "kind_ar": "مرجع تأريخي-بيئي",
+        "isbn": "0003135977",
+        "publisher": "Collins Educational",
+        "year": 1988,
+        "amazon_url": "https://www.amazon.com/dp/0003135977?tag=sard360-20",
+        "amazon_title": "Edward the Emu (Independent Phase 1)",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0003135977"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4720": {
     "title": "موسيقى البلوز: من أنين حقول القطن إلى عرش الموسيقى العالميّة",
     "slug": "history-of-blues-music-from-cotton-fields-to-modern-art",
     "link": "https://sard360.com/2026/05/11/history-of-blues-music-from-cotton-fields-to-modern-art/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0393337502",
+      "1558598294"
+    ],
+    "book_titles": [
+      "تاريخ البلوز: من الحقول إلى المدينة",
+      "لا شيء سوى البلوز: الموسيقى والموسيقيون"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-11T17:27:31"
+    "modified": "2026-10-07T01:53:13",
+    "last_attempt": "2026-10-06T22:53:17+00:00",
+    "books": [
+      {
+        "verified_title": "Delta blues",
+        "author": "Ted Gioia",
+        "isbn": "0393337502",
+        "publisher": "W.W. Norton",
+        "year": 2008,
+        "amazon_url": "https://www.amazon.com/dp/0393337502?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0393337502"
+      },
+      {
+        "verified_title": "Nothing But the Blues",
+        "author": "Lawrence Cohn",
+        "isbn": "1558598294",
+        "publisher": "Abbeville Press",
+        "year": 1994,
+        "amazon_url": "https://www.amazon.com/dp/1558598294?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/1558598294"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4760": {
     "title": "جيش التيراكوتا: لغز الـ8000 جندي طيني وهوس الخلود لدى إمبراطور الصين",
     "slug": "terracotta-army-emperor-qin-immortality-secrets",
     "link": "https://sard360.com/2026/05/10/terracotta-army-emperor-qin-immortality-secrets/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "7101003044",
+      "1909771112"
+    ],
+    "book_titles": [
+      "سِجِلّاتُ المُؤَرِّخِ الكَبِير (شيجّي)",
+      "الإمبراطور الأوّل للصين"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-10T16:27:48"
+    "modified": "2026-10-07T01:53:51",
+    "last_attempt": "2026-10-06T22:53:54+00:00",
+    "books": [
+      {
+        "verified_title": "Records of the Grand Historian",
+        "author": "Sima Qian",
+        "isbn": "7101003044",
+        "publisher": "Zhonghua Book Company",
+        "year": 2011,
+        "amazon_url": "https://www.amazon.com/dp/7101003044?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/7101003044"
+      },
+      {
+        "verified_title": "The First Emperor of China",
+        "author": "Jonathan Clements",
+        "isbn": "1909771112",
+        "publisher": "Sutton",
+        "year": 2006,
+        "amazon_url": "https://www.amazon.com/dp/1909771112?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/1909771112"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4748": {
     "title": "أين ذهبت كنوز بيت الحكمة؟ قصّة المخطوطات التي نجت من دمار المغول",
     "slug": "manuscripts-house-of-wisdom-fate",
     "link": "https://sard360.com/2026/05/10/manuscripts-house-of-wisdom-fate/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0748606874",
+      "0880298782"
+    ],
+    "book_titles": [
+      "تاريخ مختصر للدولة/الحركة الإسماعيلية",
+      "تاريخ العلوم والحضارة في الإسلام"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-10T03:24:53"
+    "modified": "2026-10-07T02:54:51",
+    "last_attempt": "2026-10-06T23:54:55+00:00",
+    "books": [
+      {
+        "verified_title": "A short history of the Ismailis",
+        "verified_author": "Farhad Daftary",
+        "title_ar": "تاريخ مختصر للدولة/الحركة الإسماعيلية",
+        "author": "Farhad Daftary",
+        "author_ar": "فرهاد دفتري",
+        "summary_ar": "دراسة معاصرة لتيارات الإسماعيلية وتاريخ قلعة ألموت والمؤسسات العلمية المرتبطة بها؛ يتناول أيضاً سياقات حفظ ونقل المخطوطات في معاقل الطوائف وبنياتهم المعرفية.",
+        "kind_ar": "تاريخ علمي ونقدي للحشاشين ومراغة",
+        "isbn": "0748606874",
+        "publisher": "Edinburgh University Press",
+        "year": 1998,
+        "amazon_url": "https://www.amazon.com/dp/0748606874?tag=sard360-20",
+        "amazon_title": "A Short History of the Ismailis: Traditions of a Muslim Community",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0748606874"
+      },
+      {
+        "verified_title": "Science and civilization in Islam",
+        "verified_author": "Seyyed Hossein Nasr",
+        "title_ar": "تاريخ العلوم والحضارة في الإسلام",
+        "author": "Seyyed Hossein Nasr et al. (ed.)",
+        "author_ar": "سيد حسين نصر (محرّر)",
+        "summary_ar": "مجموعات مقالات تأسيسيّة حول تطوّر العلوم في العالم الإسلامي، تشمل مناقشات عن بيت الحكمة، نصير الدين الطوسي، ومرصد مراغة ومسارات المخطوطات.",
+        "kind_ar": "موسوعة علمية",
+        "isbn": "0880298782",
+        "publisher": "Kazi Publications",
+        "year": 1968,
+        "amazon_url": "https://www.amazon.com/dp/0880298782?tag=sard360-20",
+        "amazon_title": "Science and civilization in Islam",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0880298782"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4717": {
     "title": "شعب الإنويت: أسرار التكيّف البيولوجي والجيني في تجمّد القطب الشمالي",
     "slug": "inuit-biological-adaptation-arctic-survival",
     "link": "https://sard360.com/2026/05/10/inuit-biological-adaptation-arctic-survival/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0714125687",
+      "0773530088"
+    ],
+    "book_titles": [
+      "الملابس القطبية",
+      "الملابس القطبية"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "matched",
       "id": "amundsen-last-viking",
       "title": "آخر الفايكنغ: روالد أموندسن وسباق القطب الجنوبي"
     },
-    "modified": "2026-05-10T03:02:35"
+    "modified": "2026-10-07T02:55:40",
+    "last_attempt": "2026-10-06T23:55:44+00:00",
+    "books": [
+      {
+        "verified_title": "Arctic Clothing",
+        "verified_author": "J. King",
+        "title_ar": "الملابس القطبية",
+        "author": "Michael F. C. Burch",
+        "author_ar": "مايكل ف. س. بورش",
+        "summary_ar": "تحليل تفصيلي لتقنيات صناعة الملابس في مناطق القطب الشمالي، مواد الجلود والفراء، تصميم الطبقات الحرارية، وأثر الملابس التقليدية على البقاء والهوية الثقافية.",
+        "kind_ar": "تقنية ثقافية/أنثروبولوجيا مادية",
+        "isbn": "0714125687",
+        "publisher": "British Museum Press",
+        "year": 2005,
+        "amazon_url": "https://www.amazon.com/dp/0714125687?tag=sard360-20",
+        "amazon_title": "Arctic Clothing",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0714125687"
+      },
+      {
+        "verified_title": "Arctic Clothing of North America - Alaska, Canada, Greenland",
+        "verified_author": "Alan J. C. King",
+        "title_ar": "الملابس القطبية",
+        "author": "Michael F. C. Burch",
+        "author_ar": "مايكل ف. س. بورش",
+        "summary_ar": "تحليل تفصيلي لتقنيات صناعة الملابس في مناطق القطب الشمالي، مواد الجلود والفراء، تصميم الطبقات الحرارية، وأثر الملابس التقليدية على البقاء والهوية الثقافية.",
+        "kind_ar": "تقنية ثقافية/أنثروبولوجيا مادية",
+        "isbn": "0773530088",
+        "publisher": "McGill-Queen's University Press",
+        "year": 2005,
+        "amazon_url": "https://www.amazon.com/dp/0773530088?tag=sard360-20",
+        "amazon_title": "Arctic Clothing",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0773530088"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4683": {
     "title": "جمهورية القراصنة: القصّة الحقيقيّة لأوّل ديمقراطيّة في الكاريبي",
     "slug": "republic-of-pirates-nassau-caribbean-history",
     "link": "https://sard360.com/2026/05/09/republic-of-pirates-nassau-caribbean-history/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "1435159985",
+      "1558217665"
+    ],
+    "book_titles": [
+      "جمهورية القراصنة: القصة الحقيقية والمفاجِئة لقراصنة الكاريبي والرجل الذي قضى عليهم",
+      "التاريخ العام للقراصنة"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-09T21:54:41"
+    "modified": "2026-10-07T02:56:43",
+    "last_attempt": "2026-10-06T23:56:47+00:00",
+    "books": [
+      {
+        "verified_title": "The republic of pirates",
+        "verified_author": "Colin Woodard",
+        "title_ar": "جمهورية القراصنة: القصة الحقيقية والمفاجِئة لقراصنة الكاريبي والرجل الذي قضى عليهم",
+        "author": "Colin Woodard",
+        "author_ar": "كولين وودارد",
+        "summary_ar": "دراسة صحفية وتاريخية معاصرة تروى صعود جمهورية القراصنة في ناساو وتقدم سرداً مستنداً إلى مزيج من الوثائق الأولية والثانویة حول شخصيات مثل هورنيغولد وتيتش وعمليات العفو الملكي، مع تقييم لآليات الحوكمة والاقتصاد داخل مجتمع القراصنة.",
+        "kind_ar": "تاريخ شعبي / تاريخ حديث",
+        "isbn": "1435159985",
+        "publisher": "Harvest Books",
+        "year": 2007,
+        "amazon_url": "https://www.amazon.com/dp/1435159985?tag=sard360-20",
+        "amazon_title": "The Republic of Pirates: Being the True and Surprising Story of the Caribbean Pirates and the Man Who Brought Them Down",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/1435159985"
+      },
+      {
+        "verified_title": "A general history of the robberies & murders of the most notorious pirates",
+        "verified_author": "Captain Charles Johnson",
+        "title_ar": "التاريخ العام للقراصنة",
+        "author": "Captain Charles Johnson",
+        "author_ar": "الكابتن تشارلز جونسون",
+        "summary_ar": "عمل مطبوع من أوائل القرن الثامن عشر يجمع قصصا وسير قراصنة معاصرين لتلك الفترة، ويقدّم مواد وصفية عن شخصيات وأحداث أساسية مرتبطة بعصر القراصنة وناساو، مستخدماً مصادر معاصرة وأحياناً روايات شفوية.",
+        "kind_ar": "مصدر أولي/أواخر القرن الثامن عشر (سرد معاصر وتجميعي)",
+        "isbn": "1558217665",
+        "publisher": "University of South Carolina Press",
+        "year": 1724,
+        "amazon_url": "https://www.amazon.com/dp/1558217665?tag=sard360-20",
+        "amazon_title": "A General History of the Robberies and Murders of the Most Notorious Pirates",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/1558217665"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4718": {
     "title": "\"المقامات الشرقيّة\": كيف تؤثّر تردّدات السيكا والنهاوند على الأعضاء الداخليّة للإنسان؟",
     "slug": "the-geometry-of-souls",
     "link": "https://sard360.com/2026/05/09/the-geometry-of-souls/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0198818831",
+      "0195140850"
+    ],
+    "book_titles": [
+      "دليل أكسفورد لعلم نفس الموسيقى",
+      "الموسيقى والفكر والشعور: فهم سيكولوجيا الموسيقى"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-09T18:35:14"
+    "modified": "2026-10-07T01:57:20",
+    "last_attempt": "2026-10-06T22:57:23+00:00",
+    "books": [
+      {
+        "verified_title": "Oxford Handbook of Music Psychology",
+        "author": "Edited by Susan Hallam, Ian Cross, Michael Thaut",
+        "isbn": "0198818831",
+        "publisher": "Oxford University Press",
+        "year": 2016,
+        "amazon_url": "https://www.amazon.com/dp/0198818831?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0198818831"
+      },
+      {
+        "verified_title": "Music, Thought, and Feeling",
+        "author": "William Forde Thompson",
+        "isbn": "0195140850",
+        "publisher": "Oxford University Press",
+        "year": 2005,
+        "amazon_url": "https://www.amazon.com/dp/0195140850?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0195140850"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4684": {
     "title": "متاهة الزمن والنسيان: ملحمة \"مائة عام من العزلة\" بين سحر التأسيس ووحشيّة التاريخ",
@@ -270,16 +640,61 @@
     "title": "الاجتياح المغولي: الأثر النفسي والثقافي لسقوط بغداد على العقل العربي",
     "slug": "mongol-siege-baghdad-1258-cultural-psychological-impact",
     "link": "https://sard360.com/2026/05/07/mongol-siege-baghdad-1258-cultural-psychological-impact/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "9953520844",
+      "1844154769"
+    ],
+    "book_titles": [
+      "البداية والنهاية، الجزء الثالث عشر",
+      "فن الحرب لدى المغول (اختيارية)"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-05-07T15:53:34"
+    "modified": "2026-10-07T02:58:06",
+    "last_attempt": "2026-10-06T23:58:09+00:00",
+    "books": [
+      {
+        "verified_title": "Bidaya wa-al-Nihaya  البداية والنهاية",
+        "verified_author": "Ibn Kathir",
+        "title_ar": "البداية والنهاية، الجزء الثالث عشر",
+        "author": "Ibn Kathir",
+        "author_ar": "ابن كثير، عماد الدين أبو الفداء",
+        "summary_ar": "تأريخ إسلامي واسع النطاق يتضمن أقساماً عن نهاية الخلافة العباسية وسقوط بغداد، والآثار الدينية والاجتماعية للأحداث من منظور مؤلفه. يُستشهد به غالباً كمصدر تقليدي لتفاصيل الحوادث وتفسيراتها الدينية والتاريخية.",
+        "kind_ar": "مصدر تاريخي/سيرة عالمية",
+        "isbn": "9953520844",
+        "publisher": "دار ابن كثير",
+        "year": 2015,
+        "amazon_url": "https://www.amazon.com/dp/9953520844?tag=sard360-20",
+        "amazon_title": "Bidaya wa-al-Nihaya (20 vol in 11 books) البداية والنهاية",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com",
+        "openlibrary_record": "https://openlibrary.org/isbn/9953520844"
+      },
+      {
+        "verified_title": "MONGOL ART OF WAR: CHINGGIS KHAN AND THE MONGOL MILITARY SYSTEM.",
+        "verified_author": "Timothy Michael May",
+        "title_ar": "فن الحرب لدى المغول (اختيارية)",
+        "author": "Timothy May",
+        "author_ar": "تيموثي ماي",
+        "summary_ar": "دراسة حديثة لأساليب وحملات المغول العسكرية في القرون الوسطى، تشرح تكتيكات الحصار والعمليات التي مكنتهم من اجتياح مدن مثل بغداد، مع تحليل لأثرها الاستراتيجي.",
+        "kind_ar": "دراسة عسكرية/تاريخية",
+        "isbn": "1844154769",
+        "publisher": "Westholme",
+        "year": 2007,
+        "amazon_url": "https://www.amazon.com/dp/1844154769?tag=sard360-20",
+        "amazon_title": "Mongol Art of War",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/1844154769"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4666": {
     "title": "هندسة الصوت والماء في \"البتراء\": تكنولوجيا نبطية سبقت عصرها بألفي عام",
@@ -294,7 +709,11 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-05-07T14:58:21"
+    "modified": "2026-05-07T14:58:21",
+    "last_attempt": "2026-10-07T00:10:21+00:00",
+    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: Petra: An Archaeological Guide — ISBN 8466212221: amazon.com product page/title unavailable (HTTP 200) | Nabataean Hydrology and Water Management: Studies in the Archaeology and History of the North Arabian Desert: Open Library could not confirm title/author: Nabataean Hydrology and Water Management: Studies in the Archaeology and History of the North Arabian Desert — H. Kennedy & S. R. Harding",
+    "partial_book_isbns": [],
+    "partial_books": []
   },
   "4645": {
     "title": "قلعة ألموت: ماذا وجد علماء الآثار في معقل الحشاشين المنيع بعد تدميره؟",
@@ -384,16 +803,45 @@
     "title": "تجربة \"عربة الترام\" الأخلاقيّة: لو كان الذكاء الاصطناعي يقود سيّارتك، من سيقرّر أن يدهس؟",
     "slug": "digital-conscience",
     "link": "https://sard360.com/2026/04/26/digital-conscience/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0521622352",
+      "0935005137"
+    ],
+    "book_titles": [
+      "تأسيس ميتافيزيقا الأخلاق",
+      "طرق الأخلاق"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-04-26T15:41:16"
+    "modified": "2026-10-07T01:59:44",
+    "last_attempt": "2026-10-06T22:59:48+00:00",
+    "books": [
+      {
+        "verified_title": "Groundwork of the metaphysics of morals",
+        "author": "Immanuel Kant",
+        "isbn": "0521622352",
+        "publisher": "Cambridge University Press",
+        "year": 1964,
+        "amazon_url": "https://www.amazon.com/dp/0521622352?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0521622352"
+      },
+      {
+        "verified_title": "Methods of Ethics",
+        "author": "Henry Sidgwick",
+        "isbn": "0935005137",
+        "publisher": "Adamant Media Corporation",
+        "year": 1874,
+        "amazon_url": "https://www.amazon.com/dp/0935005137?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0935005137"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4560": {
     "title": "الرواقيّة في التراث الإسلامي: كيف سبق \"الكندي\" الفلاسفة المعاصرين في \"علاج الحزن\"؟",
@@ -408,7 +856,11 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-04-26T08:04:25"
+    "modified": "2026-04-26T08:04:25",
+    "last_attempt": "2026-10-07T00:10:38+00:00",
+    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: The Philosophy of Cognitive-Behavioural Therapy: Stoic Philosophy as Rational and Cognitive Psychotherapy: Open Library could not confirm title/author: The Philosophy of Cognitive-Behavioural Therapy: Stoic Philosophy as Rational and Cognitive Psychotherapy — Donald Robertson | Risālat fī al‑ḥīlah li‑dafʿ al‑aḥzān (in: Rasāʾil al‑Kindī al‑Falsafiyya): Open Library could not confirm title/author: Risālat fī al‑ḥīlah li‑dafʿ al‑aḥzān (in: Rasāʾ",
+    "partial_book_isbns": [],
+    "partial_books": []
   },
   "4598": {
     "title": " صرخة الأندلس ورعد المدافع: كيف صاغ خير الدين بربروس أمجاد المتوسط",
@@ -465,82 +917,279 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-04-25T16:36:27"
+    "modified": "2026-04-25T16:36:27",
+    "last_attempt": "2026-10-07T00:10:59+00:00",
+    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: The Road to Ubar: Finding the Atlantis of the Sands — ISBN 0285634569: amazon.com product page/title unavailable (HTTP 200) | The Arabian Empty Quarter: A Historical and Archaeological Study: Open Library could not confirm title/author: The Arabian Empty Quarter: A Historical and Archaeological Study — Published works by Juris Zarins (selected excavation reports)",
+    "partial_book_isbns": [],
+    "partial_books": []
   },
   "4390": {
     "title": "المادّة المظلمة: الشّبح الكونيّ الأعظم الّذي ينسج خيوط الكون ولا تدركه الأبصار",
     "slug": "dark-matter",
     "link": "https://sard360.com/2026/04/24/dark-matter/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0618982442",
+      "1107653924"
+    ],
+    "book_titles": [
+      "كون الأربعة بالمئة: المادّة المظلمة والطاقة المظلمة وسباق اكتشاف بقية الواقع",
+      "جسيمات المادّة المظلمة: ملاحظات ونماذج وتجارب بحث"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-04-24T18:00:36"
+    "modified": "2026-10-07T02:02:42",
+    "last_attempt": "2026-10-06T23:02:46+00:00",
+    "books": [
+      {
+        "verified_title": "The 4-Percent Universe: Dark Matter, Dark Energy, and the Race to Discover the Rest of Reality",
+        "author": "Richard Panek",
+        "isbn": "0618982442",
+        "publisher": "Houghton Mifflin Harcourt",
+        "year": 2011,
+        "amazon_url": "https://www.amazon.com/dp/0618982442?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0618982442"
+      },
+      {
+        "verified_title": "Particle Dark Matter",
+        "author": "Gianfranco Bertone (editor)",
+        "isbn": "1107653924",
+        "publisher": "Cambridge University Press",
+        "year": 2010,
+        "amazon_url": "https://www.amazon.com/dp/1107653924?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/1107653924"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4529": {
     "title": "محمود درويش: شاعرُ المنفى الذي تمرّد على قصيدته وحاول كتابة تاريخ طروادة",
     "slug": "mahmoud-darwish-troy",
     "link": "https://sard360.com/2026/04/24/mahmoud-darwish-troy/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0520087682",
+      "184467410X"
+    ],
+    "book_titles": [
+      "ذاكرة للنسيان",
+      "جدارية"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-04-24T18:00:27"
+    "modified": "2026-10-07T03:03:44",
+    "last_attempt": "2026-10-07T00:03:48+00:00",
+    "books": [
+      {
+        "verified_title": "Memory for Forgetfulness",
+        "verified_author": "Mahmoud Darwish",
+        "title_ar": "ذاكرة للنسيان",
+        "author": "Mahmoud Darwish",
+        "author_ar": "محمود درويش",
+        "summary_ar": "يضمّ هذا النصّ تأمّلات درويش عن الحرب، المنفى والهوية كتبت خلال حصارِ بيروت (1982). يُعدّ مرجعاً أساسياً لفهم بُعده الوجوديّ وتحوّلاته الموضوعيّة بين النداء السياسيّ والهمّ الإنسانيّ.",
+        "kind_ar": "يوميات/نصّ تأمليّ",
+        "isbn": "0520087682",
+        "publisher": "University of California Press",
+        "year": 1995,
+        "amazon_url": "https://www.amazon.com/dp/0520087682?tag=sard360-20",
+        "amazon_title": "Memory for Forgetfulness – August, Beirut,1982 (Paper)",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0520087682"
+      },
+      {
+        "verified_title": "Mural",
+        "verified_author": "Mahmoud Darwish",
+        "title_ar": "جدارية",
+        "author": "Mahmoud Darwish",
+        "author_ar": "محمود درويش",
+        "summary_ar": "ديوان طويل كتبه درويش بعد تجربته القريبة من الموت، يناقش الوجود والموت والخلود بلغةِ استثنائيةٍ تجمع بين الملحمية والفلسفة. ضروري لفهم محور \"الجداريّة\" في المقال.",
+        "kind_ar": "ديوان/قصيدة طويلة",
+        "isbn": "184467410X",
+        "publisher": "Verso",
+        "year": 2009,
+        "amazon_url": "https://www.amazon.com/dp/184467410X?tag=sard360-20",
+        "amazon_title": "Mural",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/184467410X"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4392": {
     "title": "تجربة الشّقّ المزدوج: اللّغز الكمّيّ المُرعب الذي يثبت أن الكون يتغيّر حين نراقبه",
     "slug": "double-slit-experiment",
     "link": "https://sard360.com/2026/04/24/double-slit-experiment/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0465025013",
+      "0792336321"
+    ],
+    "book_titles": [
+      "محاضرات فاينمان في الفيزياء: المجلد الثالث (ميكانيكا الكم)",
+      "نظرية الكم: المفاهيم والطرائق"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-04-24T18:00:19"
+    "modified": "2026-10-07T02:03:56",
+    "last_attempt": "2026-10-06T23:04:00+00:00",
+    "books": [
+      {
+        "verified_title": "Feynman Lectures on Physics, Vol. III : The New Millennium Edition",
+        "author": "Richard P. Feynman, Robert B. Leighton, Matthew Sands",
+        "isbn": "0465025013",
+        "publisher": "Basic Books",
+        "year": 2011,
+        "amazon_url": "https://www.amazon.com/dp/0465025013?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0465025013"
+      },
+      {
+        "verified_title": "Quantum theory",
+        "author": "Asher Peres",
+        "isbn": "0792336321",
+        "publisher": "Springer",
+        "year": 1993,
+        "amazon_url": "https://www.amazon.com/dp/0792336321?tag=sard360-20",
+        "openlibrary_record": "https://openlibrary.org/isbn/0792336321"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4393": {
     "title": "متلازمة المحتال: لعنة العبقرية الخفية ولماذا يعتقد الأذكياء والناجحون أنّهم مجرّد مخادعين؟",
     "slug": "imposter-syndrome",
     "link": "https://sard360.com/2026/04/21/imposter-syndrome/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0307452719",
+      "0931948770"
+    ],
+    "book_titles": [
+      "الأفكار السرية للنساء الناجحات: لماذا يعاني القادرون من متلازمة المحتال وكيف يزدهرون رغمها",
+      "متلازمة المحتال: دراسة كلانس وإيمس (1978)"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-04-24T18:00:06"
+    "modified": "2026-10-07T03:04:55",
+    "last_attempt": "2026-10-07T00:04:59+00:00",
+    "books": [
+      {
+        "verified_title": "The secret thoughts of successful women",
+        "verified_author": "Valerie Young, Ed.D.",
+        "title_ar": "الأفكار السرية للنساء الناجحات: لماذا يعاني القادرون من متلازمة المحتال وكيف يزدهرون رغمها",
+        "author": "Valerie Young",
+        "author_ar": "فاليري يونغ",
+        "summary_ar": "كتاب شعبي-علمي يشرح أنماط متلازمة المحتال (خمسة أنماط)، ويقدّم استراتيجيات عملية لإعادة تفسير النجاحات، وتوثيق الإنجازات، وتغيير العادات المعرفية التي تغذي الخوف من الانكشاف.",
+        "kind_ar": "سلوكي/شعبي علمي",
+        "isbn": "0307452719",
+        "publisher": "Crown Business",
+        "year": 2011,
+        "amazon_url": "https://www.amazon.com/dp/0307452719?tag=sard360-20",
+        "amazon_title": "The Secret Thoughts of Successful Women: Why Capable People Suffer from the Impostor Syndrome and How to Thrive in Spite of It",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0307452719"
+      },
+      {
+        "verified_title": "The impostor phenomenon",
+        "verified_author": "Pauline Rose Clance",
+        "title_ar": "متلازمة المحتال: دراسة كلانس وإيمس (1978)",
+        "author": "Pauline R. Clance & Suzanne A. Imes",
+        "author_ar": "بولين كلانس وسوزان إيمس",
+        "summary_ar": "الورقة الأصلية التي قدّمت مصطلح \"Impostor Phenomenon\" وصنّفت الظاهرة عبر دراسة نسائية لأشخاص ذوي إنجازات عالية؛ مرجع أساسيّ تاريخيّ لظهور المصطلح.",
+        "kind_ar": "ورقة بحثية أصلية",
+        "isbn": "0931948770",
+        "publisher": "Peachtree Publishers",
+        "year": 1985,
+        "amazon_url": "https://www.amazon.com/dp/0931948770?tag=sard360-20",
+        "amazon_title": "The Imposter Phenomenon: Overcoming the Fear That Haunts Your Success",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0931948770"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4415": {
     "title": "مملكة الأنباط: أسياد الصحراء الذين احتكروا طريق البخور وتحدّوا غطرسة الإمبراطورية الرومانية",
     "slug": "nabataean-kingdom",
     "link": "https://sard360.com/2026/04/16/nabataean-kingdom/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0199221626",
+      "0674992016"
+    ],
+    "book_titles": [
+      "الكتابات النبطية: دراسة نقوشية",
+      "الجغرافيا (جغرافيا سترابو)"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
       "title": null
     },
-    "modified": "2026-04-24T17:59:33"
+    "modified": "2026-10-07T03:07:43",
+    "last_attempt": "2026-10-07T00:07:47+00:00",
+    "books": [
+      {
+        "verified_title": "The Nabataean tomb inscriptions of Mada'in Salah",
+        "verified_author": "John F. Healey",
+        "title_ar": "الكتابات النبطية: دراسة نقوشية",
+        "author": "John F. Healey",
+        "author_ar": "جون ف. هيلِي",
+        "summary_ar": "دراسة متخصّصة بنصوص ونقوش الأنباط والكتابة النبطية الآرامية وعلاقتها بتطوّر الخط العربي، مع تطبيقات تاريخية على مؤسسات النبط وادارتهم للمياه والتجارة.",
+        "kind_ar": "علم نقوش/لغات",
+        "isbn": "0199221626",
+        "publisher": "Oxford University Press",
+        "year": 1993,
+        "amazon_url": "https://www.amazon.com/dp/0199221626?tag=sard360-20",
+        "amazon_title": "The Nabataean Tomb Inscriptions of Mada'in Salih: 1",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0199221626"
+      },
+      {
+        "verified_title": "Geography",
+        "verified_author": "Strabo, François Lasserre",
+        "title_ar": "الجغرافيا (جغرافيا سترابو)",
+        "author": "Strabo",
+        "author_ar": "سترابو",
+        "summary_ar": "عمل جغرافيّ يوناني قديم يتضمن وصف الحملات الرومانية والمناطق العربية، ويستخدمه الباحثون كمصدرٍ نصيّ عند دراسة علاقة روما بالأنباط وطرق التجارة.",
+        "kind_ar": "مصادر كلاسيكية/جغرافيا وتاريخ",
+        "isbn": "0674992016",
+        "publisher": "NiL éditions",
+        "year": 1480,
+        "amazon_url": "https://www.amazon.com/dp/0674992016?tag=sard360-20",
+        "amazon_title": "Geography, Volume III: Books 6-7: 182",
+        "amazon_http": 200,
+        "amazon_validation_marketplace": "amazon.com.au",
+        "openlibrary_record": "https://openlibrary.org/isbn/0674992016"
+      }
+    ],
+    "article_http": 200,
+    "list_exhaustive": false
   },
   "4407": {
     "title": "ملحمة الجليد والدّم: كيف وثّق السفير العباسي \"ابن فضلان\" طقوس الفايكنج المرعبة في قلب روسيا",
@@ -555,7 +1204,11 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-04-24T18:17:23"
+    "modified": "2026-04-24T18:17:23",
+    "last_attempt": "2026-10-07T00:11:21+00:00",
+    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: Ibn Fadlan and the Land of Darkness: Arab Travellers in the Far North: Open Library could not confirm title/author: Ibn Fadlan and the Land of Darkness: Arab Travellers in the Far North — Alfred T. Wood | The 13th Warrior — ISBN 0692306269: amazon.com product page/title unavailable (HTTP 200)",
+    "partial_book_isbns": [],
+    "partial_books": []
   },
   "4406": {
     "title": "شيخُ الجبلِ وعقيدةُ الحشّاشين: كيف صاغ \"حسن الصبّاح\" أوّل فرقة اغتيالات سياسيّة في التّاريخ بالفلسفة والحَشِيش؟",
@@ -570,7 +1223,9 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-04-14T06:11:19"
+    "modified": "2026-04-14T06:11:19",
+    "last_attempt": "2026-10-06T23:07:09+00:00",
+    "last_error": "ValueError: Only 1/2 books passed all checks; candidate failures: The Assassins: A Radical Sect in Islam: No resolvable ISBN-10 edition found for The Assassins: A Radical Sect in Islam — Bernard Lewis | The Ismailis: Their History and Doctrines: No resolvable ISBN-10 edition found for The Ismailis: Their History and Doctrines — Farhad Daftary | The Nizari Ismaili State: A Historical Study: Open Library could not confirm title/author: The Nizari Ismaili State: A Historical Study — Marshall G. S. Hodgson | Th"
   },
   "4391": {
     "title": "«أثر الفراشة»: كيف تعيد رفرفة جناح حشرة في البرازيل صياغة أقدار العالم وتخلق إعصاراً في تكساس؟",
@@ -585,7 +1240,9 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-04-24T17:59:52"
+    "modified": "2026-04-24T17:59:52",
+    "last_attempt": "2026-10-06T23:43:03+00:00",
+    "last_error": "ValueError: Only 1/2 books passed all checks; candidate failures: The Essence of Chaos: amazon.com product page/title unavailable (HTTP 404) | The Black Swan: The Impact of the Highly Improbable: amazon.com product page/title unavailable (HTTP 404) | Sync: How Order Emerges from Chaos in the Universe, Nature, and Daily Life: Open Library could not confirm title/author: Sync: How Order Emerges from Chaos in the Universe, Nature, and Daily Life — Steven Strogatz | Chaos: A Very Short Introduction: amazon.com "
   },
   "4397": {
     "title": "أنفاس الأندلس الأخيرة: ملحمة الموريسكيّين الذين أخفوا إسلامهم لقرون رغم بطش محاكم التّفتيش",
@@ -600,6 +1257,8 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-04-15T23:35:00"
+    "modified": "2026-04-15T23:35:00",
+    "last_attempt": "2026-10-06T23:43:51+00:00",
+    "last_error": "ValueError: Only 1/2 books passed all checks; candidate failures: The Moriscos of Spain: Their Origin and Survival: Open Library could not confirm title/author: The Moriscos of Spain: Their Origin and Survival — L. P. Harvey | The Last Christians of Al-Andalus: The End of Muslim Rule in Iberia: Open Library could not confirm title/author: The Last Christians of Al-Andalus: The End of Muslim Rule in Iberia — Mercedes García-Arenal and Gerard Wiegers | The Last Crusade: Spain 1213–1714: Open Library could not"
   }
 }
