@@ -276,6 +276,43 @@
           return /^[A-Za-z0-9_-]{11}$/.test(id) ? id : '';
         } catch (_) { return ''; }
       }
+      function writeVideoSchema(catalogueItems) {
+        const canonical = 'https://sard360.com/cinema/';
+        const graph = catalogueItems.map(item => {
+          const id = videoIdFromUrl(item.youtube_url);
+          if (!id) return null;
+          const duration = Math.max(0, Math.floor(Number(item.duration_seconds) || 0));
+          const hours = Math.floor(duration / 3600);
+          const minutes = Math.floor((duration % 3600) / 60);
+          const seconds = duration % 60;
+          const isoDuration = `PT${hours ? `${hours}H` : ''}${minutes ? `${minutes}M` : ''}${seconds || (!hours && !minutes) ? `${seconds}S` : ''}`;
+          const thumbnail = safeUrl(item.thumbnail, ['i.ytimg.com']) || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+          return {
+            '@type': 'VideoObject',
+            '@id': `${canonical}#video-${id}`,
+            name: item.title,
+            description: item.description,
+            thumbnailUrl: [thumbnail],
+            embedUrl: `https://www.youtube-nocookie.com/embed/${id}`,
+            contentUrl: item.youtube_url,
+            duration: isoDuration,
+            genre: item.category,
+            inLanguage: 'ar',
+            creator: { '@type': 'Organization', name: 'سرد 360', url: 'https://sard360.com/' },
+            publisher: { '@type': 'Organization', name: 'سرد 360', url: 'https://sard360.com/' }
+          };
+        }).filter(Boolean);
+        if (!graph.length) return;
+        let script = document.getElementById('sard360-cinema-jsonld');
+        if (!script) {
+          script = document.createElement('script');
+          script.id = 'sard360-cinema-jsonld';
+          script.type = 'application/ld+json';
+          document.head.appendChild(script);
+        }
+        script.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })
+          .replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026');
+      }
       function imageMarkup(item, extraClass='') {
         const id = videoIdFromUrl(item.youtube_url);
         const primary = safeUrl(item.thumbnail, ['i.ytimg.com']) || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
@@ -472,6 +509,7 @@
           }
           items = (Array.isArray(catalogue.items) ? catalogue.items : []).filter(validateItem);
           if (!items.length) throw new Error('Catalogue contains no eligible long-form videos.');
+          writeVideoSchema(items);
           const day = Math.floor(Date.now() / 86400000);
           featuredId = items[day % items.length].id;
           renderFilters();

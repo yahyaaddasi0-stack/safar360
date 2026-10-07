@@ -463,7 +463,31 @@ def insertion_index(raw: str) -> int:
     raise ValueError("No safe second H3/H2 insertion anchor; refusing to modify article")
 
 
-def make_updated(raw: str, fragment: str, pid: str, books: list[dict]) -> str:
+def book_jsonld_script(books: list[dict], pid: str, permalink: str) -> str:
+    sid = re.sub(r"[^0-9]", "", pid)
+    shelf_id = SHELF_PREFIX + sid
+    graph = []
+    for index, book in enumerate(books, 1):
+        node = {
+            "@type": "Book",
+            "@id": f"{permalink}#khizana-book-{sid}-{index}",
+            "name": book.get("verified_title") or book.get("title") or book.get("title_ar"),
+            "url": f"{permalink}#{shelf_id}",
+            "author": {"@type": "Person", "name": book.get("verified_author") or book.get("author", "")},
+            "isbn": book["isbn"],
+            "image": cover_src(book["isbn"]),
+            "description": book.get("summary_ar", ""),
+            "offers": {"@type": "Offer", "url": amazon_url(book["isbn"])},
+        }
+        if book.get("title_ar"):
+            node["alternateName"] = book["title_ar"]
+        graph.append(node)
+    payload = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, separators=(",", ":"))
+    payload = payload.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+    return f'<script type="application/ld+json" id="sard360-article-books-{sid}">{payload}</script>'
+
+
+def make_updated(raw: str, fragment: str, pid: str, books: list[dict], permalink: str) -> str:
     if has_shelf(raw):
         raise ValueError("WordPress content already contains a Micro-Khizana shelf")
     idx = insertion_index(raw)
@@ -479,6 +503,15 @@ def make_updated(raw: str, fragment: str, pid: str, books: list[dict]) -> str:
         q = dict(__import__("urllib.parse", fromlist=["parse_qsl"]).parse_qsl(u.query))
         if u.hostname != "www.amazon.com" or q.get("tag") != AMAZON_TAG or target != "_blank" or set(rel.split()) != {"sponsored", "nofollow", "noopener"}:
             raise ValueError("An affiliate URL or safe-link attribute failed DOM-source validation")
+    schema = book_jsonld_script(books, pid, permalink)
+    schema_id = f'sard360-article-books-{re.sub(r"[^0-9]", "", pid)}'
+    existing = re.compile(rf'<script\b(?=[^>]*\bid="{re.escape(schema_id)}")[^>]*>.*?</script>', re.I | re.S)
+    if existing.search(updated):
+        updated = existing.sub(lambda _: schema, updated, count=1)
+    else:
+        updated = updated.rstrip() + f"\n\n<!-- wp:html -->\n{schema}\n<!-- /wp:html -->\n"
+    if schema_id not in updated or len(json.loads(re.search(r"<script[^>]*>({.*?})</script>", schema, re.S).group(1))["@graph"]) != len(books):
+        raise ValueError("Book JSON-LD validation failed")
     return updated
 
 
@@ -552,7 +585,7 @@ def process_one(s: requests.Session, browser_page, registry: dict, post: dict, d
         if len(verified) < 2:
             raise ValueError("Fewer than two fully verified book products")
         fragment = build_fragment(pid, title, verified)
-        updated = make_updated(raw, fragment, pid, verified)
+        updated = make_updated(raw, fragment, pid, verified, permalink)
         if dry_run:
             print("DRY_RUN_READY", json.dumps({"id": pid, "link": permalink, "book_count": len(verified), "books": [b["verified_title"] for b in verified]}, ensure_ascii=False), flush=True)
             return True
@@ -568,18 +601,19 @@ def process_one(s: requests.Session, browser_page, registry: dict, post: dict, d
             print("SKIP_RACE_ALREADY_TREATED", pid, flush=True)
             return True
         # Recompute insertion against fresh content and refuse if it materially changed.
-        updated = make_updated(fresh_raw, fragment, pid, verified)
+        updated = make_updated(fresh_raw, fragment, pid, verified, fresh.get("link", permalink))
         result = s.post(f"{WP_BASE}/posts/{pid}", json={"content": updated}, timeout=90)
         result.raise_for_status()
         saved = result.json()
         saved_raw = (saved.get("content") or {}).get("raw", "")
-        if saved.get("id") != int(pid) or (saved_raw and not has_shelf(saved_raw)):
+        schema_id = f'sard360-article-books-{re.sub(r"[^0-9]", "", pid)}'
+        if saved.get("id") != int(pid) or (saved_raw and (not has_shelf(saved_raw) or schema_id not in saved_raw)):
             raise RuntimeError("WordPress response did not confirm the new shelf")
         # The exact returned permalink is authoritative.
         link_check = requests.get(saved.get("link", permalink), headers={"User-Agent": "Mozilla/5.0"}, timeout=45, allow_redirects=True)
         if link_check.status_code != 200:
             raise RuntimeError(f"Updated article permalink did not return HTTP 200: {link_check.status_code}")
-        save_result(registry, pid, "treated", title=title, slug=saved.get("slug", ""), link=saved.get("link", permalink), books_isbn=[b["isbn"] for b in verified], book_titles=[b["title_ar"] for b in verified], book_count=len(verified), books=[{k: b.get(k) for k in ("verified_title", "verified_author", "title_ar", "author", "author_ar", "summary_ar", "kind_ar", "isbn", "publisher", "year", "amazon_url", "amazon_title", "amazon_http", "amazon_validation_marketplace", "openlibrary_record")} for b in verified], cinema_video=registry.get(pid, {}).get("cinema_video", {"status": "unmatched", "id": None, "title": None}), modified=saved.get("modified"), article_http=link_check.status_code, list_exhaustive=bool(picks.get("is_book_list")))
+        save_result(registry, pid, "treated", title=title, slug=saved.get("slug", ""), link=saved.get("link", permalink), books_isbn=[b["isbn"] for b in verified], book_titles=[b["title_ar"] for b in verified], book_count=len(verified), books=[{k: b.get(k) for k in ("verified_title", "verified_author", "title_ar", "author", "author_ar", "summary_ar", "kind_ar", "isbn", "publisher", "year", "amazon_url", "amazon_title", "amazon_http", "amazon_validation_marketplace", "openlibrary_record")} for b in verified], cinema_video=registry.get(pid, {}).get("cinema_video", {"status": "unmatched", "id": None, "title": None}), modified=saved.get("modified"), article_http=link_check.status_code, schema_org_status="published", schema_book_nodes=len(verified), list_exhaustive=bool(picks.get("is_book_list")))
         print("ARTICLE_UPDATED", json.dumps({"id": pid, "link": saved.get("link"), "book_count": len(verified), "http": link_check.status_code}, ensure_ascii=False), flush=True)
         return True
     except Exception as e:

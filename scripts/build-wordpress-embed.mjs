@@ -111,6 +111,34 @@ const safeCatalogJson = JSON.stringify(catalogue)
   .replace(/</g, '\\u003c')
   .replace(/>/g, '\\u003e')
   .replace(/&/g, '\\u0026');
+const videoGraph = catalogue.items.map(item => {
+  const match = String(item.youtube_url || '').match(/[?&]v=([A-Za-z0-9_-]{11})/);
+  if (!match) return null;
+  const videoId = match[1];
+  const duration = Math.max(0, Math.floor(Number(item.duration_seconds) || 0));
+  const hours = Math.floor(duration / 3600);
+  const minutes = Math.floor((duration % 3600) / 60);
+  const seconds = duration % 60;
+  const isoDuration = `PT${hours ? `${hours}H` : ''}${minutes ? `${minutes}M` : ''}${seconds || (!hours && !minutes) ? `${seconds}S` : ''}`;
+  return {
+    '@type': 'VideoObject',
+    '@id': `https://sard360.com/cinema/#video-${videoId}`,
+    name: item.title,
+    description: item.description,
+    thumbnailUrl: [item.thumbnail || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`],
+    embedUrl: `https://www.youtube-nocookie.com/embed/${videoId}`,
+    contentUrl: item.youtube_url,
+    duration: isoDuration,
+    genre: item.category,
+    inLanguage: 'ar',
+    creator: { '@type': 'Organization', name: 'سرد 360', url: 'https://sard360.com/' },
+    publisher: { '@type': 'Organization', name: 'سرد 360', url: 'https://sard360.com/' }
+  };
+}).filter(Boolean);
+const safeVideoSchemaJson = JSON.stringify({ '@context': 'https://schema.org', '@graph': videoGraph })
+  .replace(/</g, '\\u003c')
+  .replace(/>/g, '\\u003e')
+  .replace(/&/g, '\\u0026');
 
 const wordpressShellCss = `
 html:has(#sard360-cinema-root),body:has(#sard360-cinema-root){margin:0!important;padding:0!important;min-height:100vh!important;background:#0a0c0e!important;overflow-x:hidden!important}
@@ -133,6 +161,7 @@ ${wordpressShellCss}
 <style>
 ${scopedCss}
 </style>
+<script type="application/ld+json" id="sard360-cinema-jsonld">${safeVideoSchemaJson}</script>
 <div id="sard360-cinema-root" lang="ar" dir="rtl">
 ${bodyMarkup}
   <script type="application/json" id="sard360-cinema-inline-data">${safeCatalogJson}</script>

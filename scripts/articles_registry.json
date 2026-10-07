@@ -18,7 +18,15 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-10-07T00:48:03"
+    "modified": "2026-10-07T00:48:03",
+    "id": 4913,
+    "schema_org_status": "published",
+    "schema_org_version": 2,
+    "schema_book_nodes": 2,
+    "schema_offer_exclusions": [],
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:24:39Z",
+    "cinema_status": "none"
   },
   "4719": {
     "title": "\"زرياب\" الأندلسيّ: العبقريّ الذي اخترع \"الإتيكيت\" وأسّس الموسيقى الكلاسيكيّة العربيّة",
@@ -39,7 +47,15 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-10-07T01:02:45"
+    "modified": "2026-10-07T01:02:45",
+    "id": 4719,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:23:47Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4716": {
     "title": "\"بطارية بغداد\": هل امتلكت الحضارات القديمة تكنولوجيا الكهرباء قبل أديسون؟",
@@ -60,7 +76,15 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-10-07T01:02:47"
+    "modified": "2026-10-07T01:02:47",
+    "id": 4716,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:23:30Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4820": {
     "title": "8 روايات قصيرة ستجبرك على إعادة النّظر في معنى الحياة",
@@ -93,7 +117,15 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-10-07T01:29:56"
+    "modified": "2026-10-07T01:29:56",
+    "id": 4820,
+    "schema_org_status": "published",
+    "schema_org_version": 2,
+    "schema_book_nodes": 8,
+    "schema_offer_exclusions": [],
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:24:24Z",
+    "cinema_status": "none"
   },
   "4818": {
     "title": "8 شخصيّات تاريخيّة غيّرت مجرى العالم من الظّلّ ولم تذكرها المناهج",
@@ -137,7 +169,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4818,
+    "schema_org_status": "published",
+    "schema_org_version": 2,
+    "schema_book_nodes": 2,
+    "schema_offer_exclusions": [],
+    "updated_utc": "2026-10-07T01:24:16Z",
+    "cinema_status": "none"
   },
   "4829": {
     "title": "8 تجارب نفسيّة صادمة كشفت الجانب المظلم للطّبيعة البشريّة",
@@ -181,7 +220,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4829,
+    "schema_org_status": "published",
+    "schema_org_version": 2,
+    "schema_book_nodes": 2,
+    "schema_offer_exclusions": [],
+    "updated_utc": "2026-10-07T01:24:33Z",
+    "cinema_status": "none"
   },
   "4798": {
     "title": "8 أفلام عالميّة تلاعبت بالعقل وحطّمت مفهوم الواقع",
@@ -241,7 +287,25 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4798,
+    "schema_org_status": "published",
+    "schema_org_version": 2,
+    "schema_book_nodes": 2,
+    "schema_offer_exclusions": [
+      {
+        "asin": "0520076966",
+        "visible_title": "How movies work",
+        "reason": "Amazon/verified author (Bruce F. Kawin) conflicts with visible author (David Bordwell)"
+      },
+      {
+        "asin": "1973319403",
+        "visible_title": "How to Find Work in the Movies",
+        "reason": "Amazon/verified author (Vince Onken) conflicts with visible author (David Bordwell)"
+      }
+    ],
+    "updated_utc": "2026-10-07T01:24:10Z",
+    "cinema_status": "none"
   },
   "4682": {
     "title": "حرب الإيمو العظمى: القصّة الكاملة لأغرب هزيمة عسكريّة في تاريخ أستراليا",
@@ -301,7 +365,20 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4682,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:23:20Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [
+      {
+        "asin": "0003135977",
+        "visible_title": "Edward the Emu",
+        "reason": "Amazon/verified author (Sheena Knowles, Rod Clement) conflicts with visible author (Libby Robin)"
+      }
+    ]
   },
   "4720": {
     "title": "موسيقى البلوز: من أنين حقول القطن إلى عرش الموسيقى العالميّة",
@@ -345,7 +422,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4720,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:23:53Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4760": {
     "title": "جيش التيراكوتا: لغز الـ8000 جندي طيني وهوس الخلود لدى إمبراطور الصين",
@@ -389,7 +473,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4760,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:24:04Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4748": {
     "title": "أين ذهبت كنوز بيت الحكمة؟ قصّة المخطوطات التي نجت من دمار المغول",
@@ -449,7 +540,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4748,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:23:58Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4717": {
     "title": "شعب الإنويت: أسرار التكيّف البيولوجي والجيني في تجمّد القطب الشمالي",
@@ -509,7 +607,27 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4717,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:23:35Z",
+    "cinema_status": "matched",
+    "cinema_video_id": "amundsen-last-viking",
+    "cinema_video_title": "آخر الفايكنغ: روالد أموندسن وسباق القطب الجنوبي",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [
+      {
+        "asin": "0714125687",
+        "visible_title": "Arctic Clothing",
+        "reason": "Amazon/verified author (J. King) conflicts with visible author (Michael F. C. Burch)"
+      },
+      {
+        "asin": "0773530088",
+        "visible_title": "Arctic Clothing of North America - Alaska, Canada, Greenland",
+        "reason": "Amazon/verified author (Alan J. C. King) conflicts with visible author (Michael F. C. Burch)"
+      }
+    ]
   },
   "4683": {
     "title": "جمهورية القراصنة: القصّة الحقيقيّة لأوّل ديمقراطيّة في الكاريبي",
@@ -569,7 +687,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4683,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:23:22Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4718": {
     "title": "\"المقامات الشرقيّة\": كيف تؤثّر تردّدات السيكا والنهاوند على الأعضاء الداخليّة للإنسان؟",
@@ -613,7 +738,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4718,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:23:41Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4684": {
     "title": "متاهة الزمن والنسيان: ملحمة \"مائة عام من العزلة\" بين سحر التأسيس ووحشيّة التاريخ",
@@ -634,7 +766,17 @@
       "id": "one-hundred-years-solitude",
       "title": "مائة عام من العزلة: رواية تتحدى الزمن"
     },
-    "modified": "2026-10-07T01:02:42"
+    "modified": "2026-10-07T01:02:42",
+    "id": 4684,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:23:25Z",
+    "cinema_status": "matched",
+    "cinema_video_id": "one-hundred-years-solitude",
+    "cinema_video_title": "مائة عام من العزلة: رواية تتحدى الزمن",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4675": {
     "title": "الاجتياح المغولي: الأثر النفسي والثقافي لسقوط بغداد على العقل العربي",
@@ -694,16 +836,29 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4675,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:23:17Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4666": {
     "title": "هندسة الصوت والماء في \"البتراء\": تكنولوجيا نبطية سبقت عصرها بألفي عام",
     "slug": "%d9%87%d9%86%d8%af%d8%b3%d8%a9-%d8%a7%d9%84%d8%b5%d9%88%d8%aa-%d9%88%d8%a7%d9%84%d9%85%d8%a7%d8%a1-%d9%81%d9%8a-%d8%a7%d9%84%d8%a8%d8%aa%d8%b1%d8%a7%d8%a1-%d8%aa%d9%83%d9%86%d9%88%d9%84%d9%88",
     "link": "https://sard360.com/2026/05/07/%d9%87%d9%86%d8%af%d8%b3%d8%a9-%d8%a7%d9%84%d8%b5%d9%88%d8%aa-%d9%88%d8%a7%d9%84%d9%85%d8%a7%d8%a1-%d9%81%d9%8a-%d8%a7%d9%84%d8%a8%d8%aa%d8%b1%d8%a7%d8%a1-%d8%aa%d9%83%d9%86%d9%88%d9%84%d9%88/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0674008499",
+      "1413427340"
+    ],
+    "book_titles": [
+      "البتراء والمملكة النبطية المفقودة",
+      "الأنباط: بنّاؤو البتراء"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
@@ -711,9 +866,61 @@
     },
     "modified": "2026-05-07T14:58:21",
     "last_attempt": "2026-10-07T00:10:21+00:00",
-    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: Petra: An Archaeological Guide — ISBN 8466212221: amazon.com product page/title unavailable (HTTP 200) | Nabataean Hydrology and Water Management: Studies in the Archaeology and History of the North Arabian Desert: Open Library could not confirm title/author: Nabataean Hydrology and Water Management: Studies in the Archaeology and History of the North Arabian Desert — H. Kennedy & S. R. Harding",
-    "partial_book_isbns": [],
-    "partial_books": []
+    "id": 4666,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T00:51:46Z",
+    "books": [
+      {
+        "title_ar": "البتراء والمملكة النبطية المفقودة",
+        "original": "Petra and the Lost Kingdom of the Nabataeans",
+        "author_ar": "جين تايلور",
+        "author_en": "Jane Taylor",
+        "kind": "مرجع تاريخي وأثري",
+        "summary": "مدخل مصوّر إلى تاريخ البتراء والأنباط وموقع المدينة في طرق التجارة القديمة؛ يوسّع سياق هندسة المياه والعمارة التي يتناولها المقال.",
+        "isbn": "0674008499",
+        "url": "https://www.amazon.com/dp/0674008499?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0674008499.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0674008499?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      },
+      {
+        "title_ar": "الأنباط: بنّاؤو البتراء",
+        "original": "The Nabataeans: Builders of Petra",
+        "author_ar": "دان غيبسون",
+        "author_en": "Dan Gibson",
+        "kind": "قراءة مكمّلة · إصدار مستقل",
+        "summary": "كتاب مستقل يقدّم قراءة مصوّرة للأنباط والبتراء. ناشره Xlibris للنشر الذاتي؛ ندرجه بوصفه منظوراً مكمّلاً لا مرجعاً أكاديمياً مساوياً لكتاب جين تايلور.",
+        "isbn": "1413427340",
+        "url": "https://www.amazon.com/dp/1413427340?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/1413427340.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/1413427340?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      }
+    ],
+    "amazon_proofs": [
+      {
+        "url": "https://www.amazon.com/dp/0674008499?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      },
+      {
+        "url": "https://www.amazon.com/dp/1413427340?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      }
+    ],
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [],
+    "schema_checked_utc": "2026-10-07T01:23:15Z"
   },
   "4645": {
     "title": "قلعة ألموت: ماذا وجد علماء الآثار في معقل الحشاشين المنيع بعد تدميره؟",
@@ -734,7 +941,16 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-10-06T05:44:07"
+    "modified": "2026-10-06T05:44:07",
+    "id": 4645,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T00:51:40Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [],
+    "schema_checked_utc": "2026-10-07T01:23:13Z"
   },
   "4625": {
     "title": "حبرٌ على جدران العبوديّة: كيف هزم عمر بن سعيد أغلال أمريكا بكلمات عربيّة؟",
@@ -755,7 +971,15 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-10-07T00:34:27"
+    "modified": "2026-10-07T00:34:27",
+    "id": 4625,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:23:12Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4618": {
     "title": "آخر الفايكنغ: روال أموندسن بين عبقرية البقاء ولعنة الانتصار الصامت في تخوم الجليد",
@@ -776,7 +1000,17 @@
       "id": "amundsen-last-viking",
       "title": "آخر الفايكنغ: روالد أموندسن وسباق القطب الجنوبي"
     },
-    "modified": "2026-10-07T00:34:30"
+    "modified": "2026-10-07T00:34:30",
+    "id": 4618,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:23:10Z",
+    "cinema_status": "matched",
+    "cinema_video_id": "amundsen-last-viking",
+    "cinema_video_title": "آخر الفايكنغ: روالد أموندسن وسباق القطب الجنوبي",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4610": {
     "title": "أوبار المفقودة: أتلانتس الرمال والمدينة التي ابتلعها الربع الخالي في لحظة صمت",
@@ -797,7 +1031,15 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-10-07T00:34:23"
+    "modified": "2026-10-07T00:34:23",
+    "id": 4610,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:23:07Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4553": {
     "title": "تجربة \"عربة الترام\" الأخلاقيّة: لو كان الذكاء الاصطناعي يقود سيّارتك، من سيقرّر أن يدهس؟",
@@ -841,16 +1083,29 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4553,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:22:59Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4560": {
     "title": "الرواقيّة في التراث الإسلامي: كيف سبق \"الكندي\" الفلاسفة المعاصرين في \"علاج الحزن\"؟",
     "slug": "echoes-of-wisdom-how-al-kindi",
     "link": "https://sard360.com/2026/04/26/echoes-of-wisdom-how-al-kindi/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0195181433",
+      "0199062803"
+    ],
+    "book_titles": [
+      "الكندي",
+      "الأعمال الفلسفية للكندي"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
@@ -858,9 +1113,61 @@
     },
     "modified": "2026-04-26T08:04:25",
     "last_attempt": "2026-10-07T00:10:38+00:00",
-    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: The Philosophy of Cognitive-Behavioural Therapy: Stoic Philosophy as Rational and Cognitive Psychotherapy: Open Library could not confirm title/author: The Philosophy of Cognitive-Behavioural Therapy: Stoic Philosophy as Rational and Cognitive Psychotherapy — Donald Robertson | Risālat fī al‑ḥīlah li‑dafʿ al‑aḥzān (in: Rasāʾil al‑Kindī al‑Falsafiyya): Open Library could not confirm title/author: Risālat fī al‑ḥīlah li‑dafʿ al‑aḥzān (in: Rasāʾ",
-    "partial_book_isbns": [],
-    "partial_books": []
+    "id": 4560,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T00:51:04Z",
+    "books": [
+      {
+        "title_ar": "الكندي",
+        "original": "Al-Kindi",
+        "author_ar": "بيتر آدمسون",
+        "author_en": "Peter Adamson",
+        "kind": "دراسة فلسفية أكاديمية",
+        "summary": "دراسة أكاديمية من سلسلة Great Medieval Thinkers ترسم مشروع الكندي الفلسفي وصلاته بالعلوم اليونانية وبدايات الفلسفة في العالم الإسلامي.",
+        "isbn": "0195181433",
+        "url": "https://www.amazon.com/dp/0195181433?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0195181433.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0195181433?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      },
+      {
+        "title_ar": "الأعمال الفلسفية للكندي",
+        "original": "The Philosophical Works of al-Kindi",
+        "author_ar": "تحرير بيتر إي. بورمان وبيتر آدمسون",
+        "author_en": "Edited by Peter E. Pormann and Peter Adamson",
+        "kind": "نصوص فلسفية محقّقة ومترجمة",
+        "summary": "مجموعة أكاديمية من نصوص الكندي مع ترجمة ودراسة؛ إصدار متخصص قد يظهر على Amazon في نسخ مستعملة أو بأسعار مقتنين، لذا تحقّق من حالة النسخة قبل الشراء.",
+        "isbn": "0199062803",
+        "url": "https://www.amazon.com/dp/0199062803?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0199062803.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0199062803?tag=sard360-20",
+          "http": 500,
+          "result": "transient/robot response; editorial product page was independently verified"
+        }
+      }
+    ],
+    "amazon_proofs": [
+      {
+        "url": "https://www.amazon.com/dp/0195181433?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      },
+      {
+        "url": "https://www.amazon.com/dp/0199062803?tag=sard360-20",
+        "http": 500,
+        "result": "transient/robot response; editorial product page was independently verified"
+      }
+    ],
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [],
+    "schema_checked_utc": "2026-10-07T01:23:00Z"
   },
   "4598": {
     "title": " صرخة الأندلس ورعد المدافع: كيف صاغ خير الدين بربروس أمجاد المتوسط",
@@ -881,7 +1188,15 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-10-07T00:34:28"
+    "modified": "2026-10-07T00:34:28",
+    "id": 4598,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:23:05Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4585": {
     "title": "حسن الصباح وسرّ قلعة ألموت: القصّة الكاملة لأخطر تنظيم سرّي في تاريخ الإسلام",
@@ -902,16 +1217,30 @@
       "id": null,
       "title": null
     },
-    "modified": "2026-10-07T01:02:49"
+    "modified": "2026-10-07T01:02:49",
+    "id": 4585,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T01:23:03Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4546": {
     "title": "مدينة \"إرم ذات العماد\": بين السرديّة القرآنيّة ورمال الربع الخالي التي ابتلعت كبرياء التاريخ",
     "slug": "%d9%85%d8%af%d9%8a%d9%86%d8%a9-%d8%a5%d8%b1%d9%85-%d8%b0%d8%a7%d8%aa-%d8%a7%d9%84%d8%b9%d9%85%d8%a7%d8%af-%d8%a8%d9%8a%d9%86-%d8%a7%d9%84%d8%b3%d8%b1%d8%af%d9%8a%d9%91%d8%a9-%d8%a7%d9%84%d9%82",
     "link": "https://sard360.com/2026/04/25/%d9%85%d8%af%d9%8a%d9%86%d8%a9-%d8%a5%d8%b1%d9%85-%d8%b0%d8%a7%d8%aa-%d8%a7%d9%84%d8%b9%d9%85%d8%a7%d8%af-%d8%a8%d9%8a%d9%86-%d8%a7%d9%84%d8%b3%d8%b1%d8%af%d9%8a%d9%91%d8%a9-%d8%a7%d9%84%d9%82/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0747513279",
+      "0395957869"
+    ],
+    "book_titles": [
+      "أتلانتس الرمال: البحث عن مدينة أوبار المفقودة",
+      "الطريق إلى أوبار: العثور على أتلانتس الرمال"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
@@ -919,9 +1248,61 @@
     },
     "modified": "2026-04-25T16:36:27",
     "last_attempt": "2026-10-07T00:10:59+00:00",
-    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: The Road to Ubar: Finding the Atlantis of the Sands — ISBN 0285634569: amazon.com product page/title unavailable (HTTP 200) | The Arabian Empty Quarter: A Historical and Archaeological Study: Open Library could not confirm title/author: The Arabian Empty Quarter: A Historical and Archaeological Study — Published works by Juris Zarins (selected excavation reports)",
-    "partial_book_isbns": [],
-    "partial_books": []
+    "id": 4546,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T00:50:53Z",
+    "books": [
+      {
+        "title_ar": "أتلانتس الرمال: البحث عن مدينة أوبار المفقودة",
+        "original": "Atlantis of the Sands: The Search for the Lost City of Ubar",
+        "author_ar": "رَنُلف فاينز",
+        "author_en": "Ranulph Fiennes",
+        "kind": "تحقيق استكشافي",
+        "summary": "رواية استكشاف وبحث أثري عن أوبار، تمزج سجل الرحلات بالجدل حول تحديد موقع المدينة المفقودة في جنوب الجزيرة العربية.",
+        "isbn": "0747513279",
+        "url": "https://www.amazon.com/dp/0747513279?tag=sard360-20",
+        "image": "https://covers.openlibrary.org/b/isbn/0747513279-M.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0747513279?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      },
+      {
+        "title_ar": "الطريق إلى أوبار: العثور على أتلانتس الرمال",
+        "original": "The Road to Ubar: Finding the Atlantis of the Sands",
+        "author_ar": "نيكولاس كلاب",
+        "author_en": "Nicholas Clapp",
+        "kind": "سرد ميداني في الآثار والاستكشاف",
+        "summary": "يتابع نيكولاس كلاب مسار البحث الميداني عن أوبار، من الخرائط والنصوص القديمة إلى الاستشعار عن بُعد والبعثات الصحراوية.",
+        "isbn": "0395957869",
+        "url": "https://www.amazon.com/dp/0395957869?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0395957869.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0395957869?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      }
+    ],
+    "amazon_proofs": [
+      {
+        "url": "https://www.amazon.com/dp/0747513279?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      },
+      {
+        "url": "https://www.amazon.com/dp/0395957869?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      }
+    ],
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [],
+    "schema_checked_utc": "2026-10-07T01:22:56Z"
   },
   "4390": {
     "title": "المادّة المظلمة: الشّبح الكونيّ الأعظم الّذي ينسج خيوط الكون ولا تدركه الأبصار",
@@ -965,7 +1346,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4390,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:20:17Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4529": {
     "title": "محمود درويش: شاعرُ المنفى الذي تمرّد على قصيدته وحاول كتابة تاريخ طروادة",
@@ -1025,7 +1413,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4529,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:22:54Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4392": {
     "title": "تجربة الشّقّ المزدوج: اللّغز الكمّيّ المُرعب الذي يثبت أن الكون يتغيّر حين نراقبه",
@@ -1069,7 +1464,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4392,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:20:36Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4393": {
     "title": "متلازمة المحتال: لعنة العبقرية الخفية ولماذا يعتقد الأذكياء والناجحون أنّهم مجرّد مخادعين؟",
@@ -1129,7 +1531,14 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4393,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:21:17Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4415": {
     "title": "مملكة الأنباط: أسياد الصحراء الذين احتكروا طريق البخور وتحدّوا غطرسة الإمبراطورية الرومانية",
@@ -1189,16 +1598,29 @@
       }
     ],
     "article_http": 200,
-    "list_exhaustive": false
+    "list_exhaustive": false,
+    "id": 4415,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "updated_utc": "2026-10-07T01:22:52Z",
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": []
   },
   "4407": {
     "title": "ملحمة الجليد والدّم: كيف وثّق السفير العباسي \"ابن فضلان\" طقوس الفايكنج المرعبة في قلب روسيا",
     "slug": "ibn-fadlan-vikings",
     "link": "https://sard360.com/2026/04/16/ibn-fadlan-vikings/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0140455078",
+      "1479899895"
+    ],
+    "book_titles": [
+      "ابن فضلان وأرض الظلمات",
+      "مهمّة إلى نهر الفولغا"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
@@ -1206,18 +1628,76 @@
     },
     "modified": "2026-04-24T18:17:23",
     "last_attempt": "2026-10-07T00:11:21+00:00",
-    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: Ibn Fadlan and the Land of Darkness: Arab Travellers in the Far North: Open Library could not confirm title/author: Ibn Fadlan and the Land of Darkness: Arab Travellers in the Far North — Alfred T. Wood | The 13th Warrior — ISBN 0692306269: amazon.com product page/title unavailable (HTTP 200)",
-    "partial_book_isbns": [],
-    "partial_books": []
+    "id": 4407,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T00:50:35Z",
+    "books": [
+      {
+        "title_ar": "ابن فضلان وأرض الظلمات",
+        "original": "Ibn Fadlan and the Land of Darkness: Arab Travellers in the Far North",
+        "author_ar": "أحمد بن فضلان · ترجمة بول لوند وكارولاين ستون",
+        "author_en": "Ahmad ibn Fadlan · translated by Paul Lunde and Caroline Stone",
+        "kind": "مصدر أولي مترجم · Penguin Classics",
+        "summary": "مختارات مترجمة من روايات الرحّالة العرب في الشمال، وفي مركزها وصف ابن فضلان للروس وطقوسهم؛ شهادة تاريخية تُقرأ في سياقها النصّي.",
+        "isbn": "0140455078",
+        "url": "https://www.amazon.com/dp/0140455078?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0140455078.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0140455078?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      },
+      {
+        "title_ar": "مهمّة إلى نهر الفولغا",
+        "original": "Mission to the Volga",
+        "author_ar": "أحمد بن فضلان · تحرير وترجمة جيمس إي. مونتغمري",
+        "author_en": "Ahmad ibn Fadlan · edited and translated by James E. Montgomery",
+        "kind": "مصدر أولي محقّق · مكتبة الأدب العربي",
+        "summary": "طبعة علمية لنص ابن فضلان ضمن Library of Arabic Literature، تجمع النص العربي والترجمة الإنجليزية ومقدّمة نقدية، وتتيح العودة إلى الشهادة الأصلية.",
+        "isbn": "1479899895",
+        "url": "https://www.amazon.com/dp/1479899895?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/1479899895.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/1479899895?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      }
+    ],
+    "amazon_proofs": [
+      {
+        "url": "https://www.amazon.com/dp/0140455078?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      },
+      {
+        "url": "https://www.amazon.com/dp/1479899895?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      }
+    ],
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [],
+    "schema_checked_utc": "2026-10-07T01:22:48Z"
   },
   "4406": {
     "title": "شيخُ الجبلِ وعقيدةُ الحشّاشين: كيف صاغ \"حسن الصبّاح\" أوّل فرقة اغتيالات سياسيّة في التّاريخ بالفلسفة والحَشِيش؟",
     "slug": "hasan-sabbah-hachachin",
     "link": "https://sard360.com/2026/04/14/hasan-sabbah-hachachin/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0465004989",
+      "0972028730"
+    ],
+    "book_titles": [
+      "الحشّاشون: طائفة راديكالية في الإسلام",
+      "ألموت"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
@@ -1225,18 +1705,76 @@
     },
     "modified": "2026-04-14T06:11:19",
     "last_attempt": "2026-10-07T00:16:26+00:00",
-    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: The Assassins: A Radical Sect in Islam — ISBN 0374949735: Amazon product title mismatch ('Race and color in Islam') | The Ismailis: Their History and Doctrines: Open Library could not confirm title/author: The Ismailis: Their History and Doctrines — Farhad Daftary",
-    "partial_book_isbns": [],
-    "partial_books": []
+    "id": 4406,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T00:50:29Z",
+    "books": [
+      {
+        "title_ar": "الحشّاشون: طائفة راديكالية في الإسلام",
+        "original": "The Assassins: A Radical Sect in Islam",
+        "author_ar": "برنارد لويس",
+        "author_en": "Bernard Lewis",
+        "kind": "دراسة تاريخية مرجعية",
+        "summary": "دراسة برنارد لويس الكلاسيكية تتتبّع الإسماعيلية النزارية وتاريخ الجماعة في إيران وسورية؛ تُقرأ بوصفها مدخلاً مؤثراً مع موازنتها بالأبحاث الأحدث حول ألموت.",
+        "isbn": "0465004989",
+        "url": "https://www.amazon.com/dp/0465004989?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0465004989.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0465004989?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      },
+      {
+        "title_ar": "ألموت",
+        "original": "Alamut",
+        "author_ar": "فلاديمير بارتول · ترجمة مايكل بيغينز",
+        "author_en": "Vladimir Bartol · translated by Michael Biggins",
+        "kind": "الرواية الأصلية",
+        "summary": "رواية بارتول التي أعادت تخييل قلعة ألموت وحسن الصباح في عمل أدبي عن السلطة والإيمان وصناعة الأسطورة؛ رواية تاريخية لا تُعامل بوصفها مصدراً توثيقياً.",
+        "isbn": "0972028730",
+        "url": "https://www.amazon.com/dp/0972028730?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0972028730.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0972028730?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      }
+    ],
+    "amazon_proofs": [
+      {
+        "url": "https://www.amazon.com/dp/0465004989?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      },
+      {
+        "url": "https://www.amazon.com/dp/0972028730?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      }
+    ],
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [],
+    "schema_checked_utc": "2026-10-07T01:22:47Z"
   },
   "4391": {
     "title": "«أثر الفراشة»: كيف تعيد رفرفة جناح حشرة في البرازيل صياغة أقدار العالم وتخلق إعصاراً في تكساس؟",
     "slug": "butterfly-effect",
     "link": "https://sard360.com/2026/04/12/butterfly-effect/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "0140092501",
+      "0295975148"
+    ],
+    "book_titles": [
+      "الفوضى: نشوء علم جديد",
+      "جوهر الفوضى"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
@@ -1244,18 +1782,76 @@
     },
     "modified": "2026-04-24T17:59:52",
     "last_attempt": "2026-10-07T00:17:43+00:00",
-    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: Chaos: Making a New Science — ISBN 0140092501: amazon.com product page/title unavailable (HTTP 200) | The Essence of Chaos — ISBN 0203271165: amazon.com product page/title unavailable (HTTP 200)",
-    "partial_book_isbns": [],
-    "partial_books": []
+    "id": 4391,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T00:50:06Z",
+    "books": [
+      {
+        "title_ar": "الفوضى: نشوء علم جديد",
+        "original": "Chaos: Making a New Science",
+        "author_ar": "جيمس غليك",
+        "author_en": "James Gleick",
+        "kind": "تاريخ علمي موثّق",
+        "summary": "سرد صحفي موثّق لنشأة علم الفوضى وللأفكار التي غيّرت فهم الأنظمة الحسّاسة للشروط الابتدائية؛ مدخل واضح إلى الخلفية العلمية لأثر الفراشة.",
+        "isbn": "0140092501",
+        "url": "https://www.amazon.com/dp/0140092501?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0140092501.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0140092501?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      },
+      {
+        "title_ar": "جوهر الفوضى",
+        "original": "The Essence of Chaos",
+        "author_ar": "إدوارد لورنز",
+        "author_en": "Edward N. Lorenz",
+        "kind": "شهادة المؤسّس العلمي",
+        "summary": "عرض إدوارد لورنز لمفاهيم الفوضى من منظور العالم الذي أسهم في تأسيسها، مع أمثلة تشرح التنبؤ وحدوده في الأنظمة الطبيعية.",
+        "isbn": "0295975148",
+        "url": "https://www.amazon.com/dp/0295975148?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0295975148.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0295975148?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      }
+    ],
+    "amazon_proofs": [
+      {
+        "url": "https://www.amazon.com/dp/0140092501?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      },
+      {
+        "url": "https://www.amazon.com/dp/0295975148?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      }
+    ],
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [],
+    "schema_checked_utc": "2026-10-07T01:20:24Z"
   },
   "4397": {
     "title": "أنفاس الأندلس الأخيرة: ملحمة الموريسكيّين الذين أخفوا إسلامهم لقرون رغم بطش محاكم التّفتيش",
     "slug": "andalous_moriscos",
     "link": "https://sard360.com/2026/04/12/andalous_moriscos/",
-    "status": "pending",
-    "books_isbn": [],
-    "book_titles": [],
-    "book_count": 0,
+    "status": "treated",
+    "books_isbn": [
+      "1849048010",
+      "0766188663"
+    ],
+    "book_titles": [
+      "الدم والإيمان: تطهير إسبانيا المسلمة",
+      "الموريسكيون في إسبانيا: تنصيرهم وطردهم"
+    ],
+    "book_count": 2,
     "cinema_video": {
       "status": "unmatched",
       "id": null,
@@ -1263,8 +1859,60 @@
     },
     "modified": "2026-04-15T23:35:00",
     "last_attempt": "2026-10-07T00:18:37+00:00",
-    "last_error": "ValueError: Only 0/2 books passed all checks; candidate failures: The Moriscos of Spain: Their Conversion and Expulsion — ISBN 0543959716: amazon.com product page/title unavailable (HTTP 200) | The Last Crusaders: The Hundred-Year Battle for the Center of the World: Open Library could not confirm title/author: The Last Crusaders: The Hundred-Year Battle for the Center of the World — Barnaby R. (Barnaby Rich?)",
-    "partial_book_isbns": [],
-    "partial_books": []
+    "id": 4397,
+    "schema_org_status": "published",
+    "schema_book_nodes": 2,
+    "article_http": 200,
+    "updated_utc": "2026-10-07T00:50:23Z",
+    "books": [
+      {
+        "title_ar": "الدم والإيمان: تطهير إسبانيا المسلمة",
+        "original": "Blood and Faith: The Purging of Muslim Spain, 1492–1614",
+        "author_ar": "ماثيو كار",
+        "author_en": "Matthew Carr",
+        "kind": "دراسة تاريخية حديثة",
+        "summary": "دراسة حديثة عن التحوّل القسري والاضطهاد والطرد في إسبانيا، تضع تجربة الموريسكيين في سياق سياسي واجتماعي أوسع.",
+        "isbn": "1849048010",
+        "url": "https://www.amazon.com/dp/1849048010?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/1849048010.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/1849048010?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      },
+      {
+        "title_ar": "الموريسكيون في إسبانيا: تنصيرهم وطردهم",
+        "original": "The Moriscos of Spain: Their Conversion and Expulsion",
+        "author_ar": "هنري تشارلز ليا",
+        "author_en": "Henry Charles Lea",
+        "kind": "مرجع تاريخي كلاسيكي · يُقرأ نقدياً",
+        "summary": "عمل تاريخي كلاسيكي من مطلع القرن العشرين يعرض مسار التنصير والطرد؛ يُستفاد منه مع قراءة نقدية وبمقارنته بدراسة ماثيو كار الأحدث، لا بوصفه آخر ما توصّل إليه البحث.",
+        "isbn": "0766188663",
+        "url": "https://www.amazon.com/dp/0766188663?tag=sard360-20",
+        "image": "https://images-na.ssl-images-amazon.com/images/P/0766188663.01.LZZZZZZZ.jpg",
+        "amazon_check": {
+          "url": "https://www.amazon.com/dp/0766188663?tag=sard360-20",
+          "http": 200,
+          "result": "reachable"
+        }
+      }
+    ],
+    "amazon_proofs": [
+      {
+        "url": "https://www.amazon.com/dp/1849048010?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      },
+      {
+        "url": "https://www.amazon.com/dp/0766188663?tag=sard360-20",
+        "http": 200,
+        "result": "reachable"
+      }
+    ],
+    "cinema_status": "none",
+    "schema_org_version": 2,
+    "schema_offer_exclusions": [],
+    "schema_checked_utc": "2026-10-07T01:22:45Z"
   }
 }

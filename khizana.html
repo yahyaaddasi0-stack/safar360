@@ -238,6 +238,61 @@
         };
       }
 
+      function writeCatalogSchema(data) {
+        const pageUrl = `${window.location.origin}${window.location.pathname}`;
+        const nodes = [];
+        const makeOffer = rawUrl => {
+          const url = rawUrl ? injectAffiliateParameters(rawUrl) : '';
+          return url ? { '@type': 'Offer', url } : null;
+        };
+        const bookItems = Array.isArray(data.books) ? data.books : [];
+        bookItems.forEach(item => {
+          const title = String(item.title || '').trim();
+          const author = title.split(/\s+[—–-]\s+/).pop().trim();
+          const offer = makeOffer(item.affiliate_url || item.affiliateUrl);
+          if (!title || !offer) return;
+          nodes.push({
+            '@type': 'Book',
+            '@id': `${pageUrl}#${encodeURIComponent(item.id || title)}`,
+            name: title,
+            url: `${pageUrl}#${encodeURIComponent(item.id || title)}`,
+            description: String(item.desc || item.description || ''),
+            inLanguage: /[\u0600-\u06FF]/.test(title) ? 'ar' : 'en',
+            author: author && author !== title ? { '@type': 'Person', name: author } : undefined,
+            offers: offer
+          });
+        });
+        const masterItems = Array.isArray(data.master_items) ? data.master_items : [];
+        masterItems.forEach(item => {
+          const title = String(item.title || '').trim();
+          const offers = Array.isArray(item.variants) && item.variants.length
+            ? item.variants.map(variant => makeOffer(variant.affiliate_url || variant.affiliateUrl)).filter(Boolean)
+            : [makeOffer(item.affiliate_url || item.affiliateUrl)].filter(Boolean);
+          if (!title || !offers.length) return;
+          const image = item.image_url || item.image;
+          nodes.push({
+            '@type': 'Product',
+            '@id': `${pageUrl}#${encodeURIComponent(item.id || title)}`,
+            name: title,
+            url: `${pageUrl}#${encodeURIComponent(item.id || title)}`,
+            description: String(item.desc || item.description || ''),
+            category: String(item.category || ''),
+            image: image ? new URL(image, dataUrl).href : undefined,
+            offers: offers.length === 1 ? offers[0] : offers
+          });
+        });
+        if (!nodes.length) return;
+        let script = document.getElementById('sard360-khizana-jsonld');
+        if (!script) {
+          script = document.createElement('script');
+          script.id = 'sard360-khizana-jsonld';
+          script.type = 'application/ld+json';
+          document.head.appendChild(script);
+        }
+        script.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': nodes })
+          .replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026');
+      }
+
       function showSkeletons(count = 6) {
         gridEl.setAttribute('aria-busy', 'true');
         gridEl.innerHTML = Array.from({ length: count }, () => `
@@ -353,6 +408,7 @@
         const hasMasterShape = data && Array.isArray(data.master_items) && Array.isArray(data.books);
         const catalogItems = hasMasterShape ? [...data.master_items, ...data.books] : data && Array.isArray(data.products) ? data.products : null;
         if (!catalogItems) throw new Error('Le JSON doit contenir master_items/books ou un tableau products.');
+        writeCatalogSchema(data);
         products = shuffle(catalogItems.map(normalizeProduct).filter(item => item.id && item.title));
         const dataCategories = Array.isArray(data.categories) ? data.categories.map(String) : [];
         categories = [ALL_CATEGORY, ...new Set([...dataCategories.filter(category => category !== ALL_CATEGORY), ...products.map(item => item.category)])];
