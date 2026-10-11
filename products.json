@@ -5,7 +5,11 @@
     "صفاء الذهن ووقود الفكر",
     "مقتنيات وتذكارات تاريخية",
     "أمهات الكتب ومكتبة سرد",
-    "عمارة البيت ومجالس القراءة"
+    "عمارة البيت ومجالس القراءة",
+    "أدوات الرصد والخرائط",
+    "أدوات الكتابة والرسائل",
+    "وقت وتأمل",
+    "مقتنيات المكتب"
   ],
   "master_items": [
     {
@@ -155,6 +159,137 @@
       ],
       "image_source_url": "https://www.ebay.com/itm/117442771593",
       "image_fit": "contain"
+    },
+    {
+      "id": "master-astrolabe",
+      "title": "الأسطرلاب النحاسي الزخرفي",
+      "category": "أدوات الرصد والخرائط",
+      "desc": "نسخة نحاسية للعرض تستعيد هيئة الأسطرلاب العربي ونقوشه؛ قطعة بصرية لركن القراءة، لا أداة فلكية أو أثر تاريخي أصلي. يذكر البائع خمس صفائح قابلة للفك.",
+      "image_url": "assets/images/khizana-items/astrolabe-arabic-decorative.jpg",
+      "image_fit": "contain",
+      "tag": "مرصدٌ للخيال",
+      "affiliate_url": "https://www.amazon.com/dp/B01ILXZW6Y?tag=sard360-20",
+      "asin": "B01ILXZW6Y",
+      "image_source_url": "https://www.amazon.com/dp/B01ILXZW6Y",
+      "source_urls": [
+        "https://www.amazon.com/dp/B01ILXZW6Y"
+      ],
+      "variants": []
+    },
+    {
+      "id": "master-leather-journal",
+      "title": "دفتر يوميات بغلاف جلدي",
+      "category": "أدوات الكتابة والرسائل",
+      "desc": "دفتر من 240 صفحة بحواف غير منتظمة، يصف المصنّع ورقه بأنه مصنوع من القطن والجوت وخالٍ من الأحماض؛ مساحة للخواطر والهوامش والتدوين البطيء. لا يذكر المصدر وزنًا للورق.",
+      "image_url": "assets/images/khizana-items/journal-nomadcrafts.jpg",
+      "image_fit": "contain",
+      "tag": "طقسُ الكتابة",
+      "affiliate_url": "https://www.amazon.com/dp/B085VQLDHK?tag=sard360-20",
+      "asin": "B085VQLDHK",
+      "image_source_url": "https://nomadcraftsco.com/products/vintage-leather-journal",
+      "source_urls": [
+        "https://nomadcraftsco.com/products/vintage-leather-journal",
+        "https://www.amazon.com/dp/B085VQLDHK"
+      ],
+      "variants": []
+    },
+    {
+      "id": "master-hourglass-black-sand",
+      "title": "ساعة رملية خشبية — رمل أسود، 60 دقيقة",
+      "category": "وقت وتأمل",
+      "desc": "ساعة رملية زخرفية برمل أسود وإطار خشبي بحسب بيانات القائمة، بمدة اسمية تبلغ 60 دقيقة؛ رفيقة لجلسة قراءة أو كتابة، وليست أداة توقيت دقيقة.",
+      "image_url": "assets/images/khizana-items/hourglass-bellaware-black-sand.jpg",
+      "image_fit": "contain",
+      "tag": "إيقاعُ الوقت",
+      "affiliate_url": "https://www.amazon.com/dp/B094V1VDQ4?tag=sard360-20",
+      "asin": "B094V1VDQ4",
+      "image_source_url": "https://www.amazon.com/dp/B094V1VDQ4",
+      "source_urls": [
+        "https://www.amazon.com/dp/B094V1VDQ4"
+      ],
+      "variants": []
+    },
+    {
+      "id": "master-pilot-falcon-pen",
+      "title": "قلم Pilot Metal Falcon بريشة ذهب 14 قيراطًا",
+      "category": "أدوات الكتابة والرسائل",
+      "desc": "قلم حبر أسود بجسم معدني مطلي وريشة Pilot مرنة من ذهب عيار 14 قيراطًا؛ أداة كتابة لمن يفضّل التمهّل في الرسائل والتدوين.",
+      "image_url": "assets/images/khizana-items/pilot-metal-falcon-black.jpg",
+      "image_fit": "contain",
+      "tag": "مدادٌ رفيع",
+      "affiliate_url": "https://www.amazon.com/dp/B002Y2LHCC?tag=sard360-20",
+      "asin": "B002Y2LHCC",
+      "image_source_url": "https://www.gouletpens.com/cdn/shop/products/Pilot-MetalFalcon-Black-OW-2_1500x.jpg?v=1755032036",
+      "source_urls": [
+        "https://www.gouletpens.com/products/pilot-metal-falcon-fountain-pen-black",
+        "https://www.amazon.com/dp/B002Y2LHCC"
+      ],
+      "variants": []
+    },
+    {
+      "id": "master-vintage-globe",
+      "title": "كرة Calif International — خريطة بطابع عتيق",
+      "category": "أدوات الرصد والخرائط",
+      "desc": "كرة مكتبية بقطر يقارب 8 بوصات وارتفاع كلي نحو 14 بوصة. يذكر البائع أن الكرة بلاستيكية، والجزء العلوي من الحامل ألومنيوم، والقاعدة السفلى خشبية؛ تحقّق من الخامات واللون لدى البائع قبل الطلب.",
+      "image_url": "assets/images/khizana-items/globe-calif-international-vintage.jpg",
+      "image_fit": "contain",
+      "tag": "أفقٌ مصغّر",
+      "affiliate_url": "https://www.amazon.com/dp/B0BM5VGDX9?tag=sard360-20",
+      "asin": "B0BM5VGDX9",
+      "image_source_url": "https://www.amazon.com/dp/B0BM5VGDX9",
+      "source_urls": [
+        "https://www.amazon.com/dp/B0BM5VGDX9"
+      ],
+      "variants": []
+    },
+    {
+      "id": "master-roorkee-magnifier",
+      "title": "عدسة Roorkee المكبّرة 5× بمقبض نحاسي اللون",
+      "category": "مقتنيات المكتب",
+      "desc": "عدسة بقطر يقارب 2.75 بوصة وتكبير 5×، مع مقبض بلون النحاس وفق قائمة البائع؛ قطعة نافعة لقراءة التفاصيل والخرائط، وليست مقتنى أثريًا.",
+      "image_url": "assets/images/khizana-items/magnifier-brass-handle-5x.jpg",
+      "image_fit": "contain",
+      "tag": "عينُ المحقّق",
+      "affiliate_url": "https://www.amazon.com/dp/B00U2DYRRM?tag=sard360-20",
+      "asin": "B00U2DYRRM",
+      "image_source_url": "https://www.amazon.com/dp/B00U2DYRRM",
+      "source_urls": [
+        "https://www.amazon.com/dp/B00U2DYRRM"
+      ],
+      "variants": []
+    },
+    {
+      "id": "master-sujun-candelabra",
+      "title": "شمعدان SUJUN بثلاثة أذرع — تشطيب نحاسي معتّق",
+      "category": "مقتنيات المكتب",
+      "desc": "شمعدان من الحديد بثلاثة أذرع وتشطيب بلون النحاس المعتّق؛ يمنح ركن القراءة ضوءًا دافئًا عند استخدامه مع الشموع المناسبة. التشطيب ليس نحاسًا صلبًا.",
+      "image_url": "assets/images/khizana-items/candelabra-antique-brass-finish.jpg",
+      "image_fit": "contain",
+      "tag": "ضوءُ المكتبة",
+      "affiliate_url": "https://www.amazon.com/dp/B0CN6P3WHP?tag=sard360-20",
+      "asin": "B0CN6P3WHP",
+      "image_source_url": "https://f.nooncdn.com/p/pzsku/ZF9EFDF974FFD8D753862Z/45/_/1776234510/d47b50c9-1b08-46ec-9af5-ce7fb354292f.jpg",
+      "source_urls": [
+        "https://f.nooncdn.com/p/pzsku/ZF9EFDF974FFD8D753862Z/45/_/1776234510/d47b50c9-1b08-46ec-9af5-ce7fb354292f.jpg",
+        "https://www.amazon.com/dp/B0CN6P3WHP"
+      ],
+      "variants": []
+    },
+    {
+      "id": "master-wax-seal-a",
+      "title": "ختم شمع TELOSMA — حرف A",
+      "category": "أدوات الكتابة والرسائل",
+      "desc": "ختم مفرد بحرف A برأس معدني ومقبض خشبي كما يرد وصف القائمة؛ يضفي لمسة شخصية على الرسائل. رابط المنتج لا يعدّ بوجود شمع أو حروف إضافية.",
+      "image_url": "assets/images/khizana-items/wax-seal-letter-a.jpg",
+      "image_fit": "contain",
+      "tag": "رسالةٌ مختومة",
+      "affiliate_url": "https://www.amazon.com/dp/B0758Z99X6?tag=sard360-20",
+      "asin": "B0758Z99X6",
+      "image_source_url": "https://www.amazon.com/dp/B0758Z99X6",
+      "source_urls": [
+        "https://www.amazon.com/dp/B0758Z99X6"
+      ],
+      "variants": []
     }
   ],
   "books": [
@@ -307,6 +442,44 @@
       "image_source_url": "https://maktabetalarab.com/products/%D9%82%D9%88%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%B9%D8%B4%D9%82-%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%B9%D9%88%D9%86",
       "image_fit": "contain",
       "isbn": "9789953892573"
+    },
+    {
+      "id": "books-15",
+      "title": "التأملات — ماركوس أوريليوس (طبعة فاخرة)",
+      "author": "Marcus Aurelius",
+      "category": "أمهات الكتب ومكتبة سرد",
+      "desc": "نصوص الإمبراطور الروماني التي دوّنها لنفسه عن الانضباط والواجب وتقلب الحياة، في طبعة فاخرة بغلاف مزخرف. هذه الطبعة باللغة الإنجليزية؛ راجع وصف البائع للتحقق من مادة التجليد قبل الشراء.",
+      "image_url": "assets/images/khizana-items/meditations-deluxe-9781640956988.jpg",
+      "image_fit": "contain",
+      "affiliate_url": "https://www.amazon.com/dp/1640956980?tag=sard360-20",
+      "tag": "حكمةٌ رواقية",
+      "isbn": "9781640956988",
+      "publisher": "Sound Wisdom",
+      "language": "en",
+      "image_source_url": "https://pictures.abebooks.com/isbn/9781640956988-us.jpg",
+      "source_urls": [
+        "https://pictures.abebooks.com/isbn/9781640956988-us.jpg",
+        "https://www.amazon.com/dp/1640956980"
+      ]
+    },
+    {
+      "id": "books-16",
+      "title": "دون كيشوت — ميغيل دي ثيربانتس (Penguin Clothbound)",
+      "author": "Miguel de Cervantes",
+      "category": "أمهات الكتب ومكتبة سرد",
+      "desc": "رواية ثيربانتس عن فارس لامانشا ومرافقه سانشو بانثا، في طبعة Penguin قماشية صدرت عام 2018 بترجمة John Rutherford. إصدار باللغة الإنجليزية يضم 1056 صفحة.",
+      "image_url": "assets/images/khizana-items/don-quixote-penguin-clothbound.jpg",
+      "image_fit": "contain",
+      "affiliate_url": "https://www.amazon.com/dp/0241347769?tag=sard360-20",
+      "tag": "ملحمةُ الحالمين",
+      "isbn": "9780241347768",
+      "publisher": "Penguin Classics",
+      "language": "en",
+      "image_source_url": "https://cdn.penguin.co.uk/dam-assets/books/9780241347768/9780241347768-jacket-large.jpg",
+      "source_urls": [
+        "https://cdn.penguin.co.uk/dam-assets/books/9780241347768/9780241347768-jacket-large.jpg",
+        "https://www.amazon.com/dp/0241347769"
+      ]
     }
   ]
 }

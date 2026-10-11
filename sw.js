@@ -1,4 +1,4 @@
-const CACHE_NAME = 'safar360-v7';
+const CACHE_NAME = 'safar360-v8';
 const ASSETS = [
   '/',
   '/index.html',
@@ -8,6 +8,18 @@ const ASSETS = [
   '/manifest.json',
   '/cinema.html',
   '/cinema.json',
+  '/khizana.html',
+  '/products.json',
+  '/assets/images/khizana-items/astrolabe-arabic-decorative.jpg',
+  '/assets/images/khizana-items/journal-nomadcrafts.jpg',
+  '/assets/images/khizana-items/meditations-deluxe-9781640956988.jpg',
+  '/assets/images/khizana-items/hourglass-bellaware-black-sand.jpg',
+  '/assets/images/khizana-items/pilot-metal-falcon-black.jpg',
+  '/assets/images/khizana-items/globe-calif-international-vintage.jpg',
+  '/assets/images/khizana-items/magnifier-brass-handle-5x.jpg',
+  '/assets/images/khizana-items/candelabra-antique-brass-finish.jpg',
+  '/assets/images/khizana-items/don-quixote-penguin-clothbound.jpg',
+  '/assets/images/khizana-items/wax-seal-letter-a.jpg',
   '/assets/images/sard360-logo.png'
 ];
 
