@@ -232,14 +232,6 @@
       const LOADING = document.getElementById('cinema-loading');
       const COUNT = document.getElementById('library-count');
       const ROTATE = document.getElementById('rotate-feature');
-      const MODAL = document.getElementById('video-modal');
-      const MODAL_STAGE = document.getElementById('modal-stage');
-      const MODAL_LOWER = document.querySelector('.modal-lower');
-      const CLOSE_MODAL = document.getElementById('close-video');
-      const BOOKS_SECTION = document.getElementById('modal-books');
-      const BOOK_LIST = document.getElementById('modal-book-list');
-      const RECOMMENDATIONS = document.getElementById('modal-recommendations');
-      const RECOMMENDATION_LIST = document.getElementById('modal-recommendations-list');
       let items = [];
       let activeCategory = 'الكل';
       let featuredId = null;
@@ -399,32 +391,45 @@
         COUNT.textContent = `${new Intl.NumberFormat('ar').format(list.length)} مواد مرئية · يظهر اختيار اليوم وتُعرض بقية المكتبة أسفله`;
       }
       function renderRecommendations(currentItem) {
+        const modal = document.getElementById('video-modal');
+        const recommendationList = modal?.querySelector('#modal-recommendations-list');
+        const recommendationsPanel = modal?.querySelector('#modal-recommendations');
+        if (!recommendationList || !recommendationsPanel) return;
         const sameCategory = currentItem ? items.filter(item => item.id !== currentItem.id && item.category === currentItem.category) : [];
         const otherCategories = items.filter(item => item.id !== currentItem?.id && item.category !== currentItem?.category);
         const recommendations = [...shuffle(sameCategory), ...shuffle(otherCategories)].slice(0, 3);
-        RECOMMENDATION_LIST.innerHTML = recommendations.map(item => {
+        recommendationList.innerHTML = recommendations.map(item => {
           const id = videoIdFromUrl(item.youtube_url);
           return `<button class="modal-suggestion" type="button" data-video-id="${id}" data-video-title="${escapeHtml(item.title)}" data-video-description="${escapeHtml(item.description)}" aria-label="شاهد ${escapeHtml(item.title)}">
             <span class="modal-suggestion-thumb">${imageMarkup(item, 'suggestion-poster')}<span class="duration-badge">${formatDuration(item.duration_seconds)}</span><span class="thumbnail-fallback" aria-hidden="true"></span></span>
             <span class="modal-suggestion-copy"><span class="modal-suggestion-category">${escapeHtml(item.category)}</span><span class="modal-suggestion-title">${escapeHtml(item.title)}</span></span>
           </button>`;
         }).join('');
-        RECOMMENDATIONS.hidden = recommendations.length === 0;
+        recommendationsPanel.hidden = recommendations.length === 0;
       }
       function renderBooks(item) {
+        const modal = document.getElementById('video-modal');
+        const bookList = modal?.querySelector('#modal-book-list');
+        const booksSection = modal?.querySelector('#modal-books');
+        if (!bookList || !booksSection) return;
         const books = booksFor(item);
-        BOOK_LIST.dataset.count = String(books.length);
-        BOOK_LIST.innerHTML = books.map(book => `<div class="modal-book-card"><span class="modal-book-type">${escapeHtml(book.type)}</span><span class="modal-book-title">${escapeHtml(book.title)}</span><a class="modal-book-action" href="${escapeHtml(book.url)}" target="_blank" rel="sponsored nofollow noopener">اقتَنِ النسخة <span aria-hidden="true">↗</span></a></div>`).join('');
-        BOOKS_SECTION.hidden = books.length === 0;
+        bookList.dataset.count = String(books.length);
+        bookList.innerHTML = books.map(book => `<div class="modal-book-card"><span class="modal-book-type">${escapeHtml(book.type)}</span><span class="modal-book-title">${escapeHtml(book.title)}</span><a class="modal-book-action" href="${escapeHtml(book.url)}" target="_blank" rel="sponsored nofollow noopener">اقتَنِ النسخة <span aria-hidden="true">↗</span></a></div>`).join('');
+        booksSection.hidden = books.length === 0;
       }
       function openVideo(videoId, title, description, trigger) {
         if (!/^[A-Za-z0-9_-]{11}$/.test(videoId || '')) return;
-        const wasOpen = MODAL.open;
+        // WordPress can replace a dialog node after the inline script is parsed.
+        // Resolve the live dialog and its children on every open/switch.
+        const modal = document.getElementById('video-modal');
+        const modalStage = modal?.querySelector('#modal-stage');
+        if (!modal?.isConnected || !modalStage) return;
+        const wasOpen = modal.open;
         if (!wasOpen) lastTrigger = trigger;
         const currentItem = items.find(item => videoIdFromUrl(item.youtube_url) === videoId);
-        document.getElementById('video-modal-title').textContent = currentItem?.title || title || 'مشاهدة من سينما سرد';
-        document.getElementById('video-modal-category').textContent = currentItem?.category || 'وثائقيات كبرى وتحقيقات مرئية';
-        document.getElementById('video-modal-description').textContent = currentItem?.description || description || 'وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.';
+        modal.querySelector('#video-modal-title').textContent = currentItem?.title || title || 'مشاهدة من سينما سرد';
+        modal.querySelector('#video-modal-category').textContent = currentItem?.category || 'وثائقيات كبرى وتحقيقات مرئية';
+        modal.querySelector('#video-modal-description').textContent = currentItem?.description || description || 'وثائقيات كبرى وتحقيقات مرئية من قناة سرد 360.';
         renderRecommendations(currentItem);
         renderBooks(currentItem);
         const frame = document.createElement('iframe');
@@ -434,21 +439,27 @@
         frame.allowFullscreen = true;
         frame.referrerPolicy = 'strict-origin-when-cross-origin';
         frame.loading = 'eager';
-        MODAL_STAGE.replaceChildren(frame);
+        modalStage.replaceChildren(frame);
         if (!wasOpen) {
-          MODAL.showModal();
-          CLOSE_MODAL.focus();
+          modal.showModal();
+          modal.querySelector('#close-video')?.focus();
         } else {
-          MODAL_LOWER.scrollTo({top:0,behavior:'smooth'});
-          document.getElementById('video-modal-title').focus({preventScroll:true});
+          modal.querySelector('.modal-lower')?.scrollTo({top:0,behavior:'smooth'});
+          modal.querySelector('#video-modal-title')?.focus({preventScroll:true});
         }
       }
       function closeVideo() {
-        if (MODAL.open) MODAL.close();
+        const modal = document.getElementById('video-modal');
+        if (modal?.open) modal.close();
       }
 
       document.addEventListener('click', event => {
-        const trigger = event.target.closest('[data-video-id]');
+        const target = event.target instanceof Element ? event.target : null;
+        if (!target) return;
+        if (target.closest('#close-video')) { closeVideo(); return; }
+        const modal = document.getElementById('video-modal');
+        if (modal && target === modal) { closeVideo(); return; }
+        const trigger = target.closest('[data-video-id]');
         if (trigger) openVideo(trigger.dataset.videoId, trigger.dataset.videoTitle, trigger.dataset.videoDescription, trigger);
       });
       document.addEventListener('error', event => {
@@ -484,17 +495,21 @@
         featuredId = list[(i + 1) % list.length].id;
         renderContent();
       });
-      CLOSE_MODAL.addEventListener('click', closeVideo);
-      MODAL.addEventListener('click', event => { if (event.target === MODAL) closeVideo(); });
-      MODAL.addEventListener('close', () => {
-        MODAL_STAGE.replaceChildren();
-        BOOKS_SECTION.hidden = true;
-        BOOK_LIST.replaceChildren();
-        RECOMMENDATIONS.hidden = true;
-        RECOMMENDATION_LIST.replaceChildren();
+      document.addEventListener('close', event => {
+        const modal = event.target;
+        if (!(modal instanceof HTMLDialogElement) || modal.id !== 'video-modal') return;
+        modal.querySelector('#modal-stage')?.replaceChildren();
+        const booksSection = modal.querySelector('#modal-books');
+        const bookList = modal.querySelector('#modal-book-list');
+        const recommendations = modal.querySelector('#modal-recommendations');
+        const recommendationList = modal.querySelector('#modal-recommendations-list');
+        if (booksSection) booksSection.hidden = true;
+        bookList?.replaceChildren();
+        if (recommendations) recommendations.hidden = true;
+        recommendationList?.replaceChildren();
         if (lastTrigger?.isConnected) lastTrigger.focus();
         lastTrigger = null;
-      });
+      }, true);
 
       async function init() {
         try {
