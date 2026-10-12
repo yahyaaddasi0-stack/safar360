@@ -133,7 +133,35 @@
     @media(min-width:1024px){.modal-panel{grid-template-columns:minmax(0,1.5fr) minmax(390px,1fr)!important}.modal-lower{padding:6px 8px!important;gap:6px!important}.modal-info{gap:6px!important}.modal-info-header{gap:4px!important}.modal-info-copy h2{font-size:clamp(20px,1.8vw,26px)!important;line-height:1.2!important}.modal-description{font-size:12px!important;line-height:1.5!important}.modal-books{padding:6px!important;gap:4px!important}.modal-books-heading{font-size:12px!important}.modal-book-list{gap:5px!important}.modal-book-card{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;grid-template-rows:auto auto!important;align-items:center!important;gap:3px 5px!important;padding:5px!important}.modal-book-type{grid-column:1/3!important;grid-row:1!important;max-width:100%!important;font-size:8px!important}.modal-book-title{grid-column:1!important;grid-row:2!important;display:-webkit-box!important;overflow:hidden!important;font-size:9px!important;line-height:1.3!important;white-space:normal!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important}.modal-book-action{grid-column:2!important;grid-row:2!important;padding:3px 6px!important;font-size:9px!important}.modal-suggestions{padding:5px 0 0!important}.modal-suggestions-heading{margin-bottom:4px!important}.modal-suggestions-heading h3{font-size:14px!important}.modal-suggestions-list{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:5px!important}.modal-suggestion{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:3px!important;padding:4px!important}.modal-suggestion-thumb{width:100%!important}.modal-suggestion-category{font-size:8px!important}.modal-suggestion-title{font-size:9px!important;line-height:1.25!important}}
     @media(min-width:1024px) and (max-width:1199px){.modal-lower{padding:3px 5px!important;gap:3px!important}.modal-info{gap:3px!important}.modal-info-header{gap:2px!important}.modal-info-copy h2{font-size:19px!important;line-height:1.1!important}.modal-description{display:block!important;overflow:visible!important;font-size:11px!important;line-height:1.35!important}.modal-subscribe{min-height:30px!important;padding:5px 9px!important;font-size:11px!important}.modal-books{padding:3px!important;gap:2px!important}.modal-book-list{gap:3px!important}.modal-book-card{gap:2px 3px!important;padding:3px!important}.modal-book-action{padding:2px 4px!important;font-size:8px!important}.modal-suggestions{padding:3px 0 0!important}.modal-suggestions-heading{margin-bottom:2px!important}.modal-suggestions-list{gap:3px!important}.modal-suggestion{gap:2px!important;padding:3px!important}.modal-suggestion-title{font-size:8px!important;line-height:1.15!important}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
-  </style>
+
+    /* Widescreen cinema modal: give the film, book reference, and recommendations room to breathe. */
+    @media(min-width:1024px){
+      .video-modal{width:min(1680px,calc(100vw - 32px),168vh);max-height:94vh;max-height:94dvh}
+      .modal-panel{height:94vh;height:94dvh;max-height:94vh;max-height:94dvh;grid-template-columns:minmax(0,1.4fr) minmax(500px,1fr)!important;grid-template-rows:auto minmax(0,1fr)!important;gap:18px!important;padding:18px!important}
+      .modal-lower{padding:12px 14px!important;gap:14px!important}
+      .modal-info{gap:12px!important}
+      .modal-info-header{gap:8px!important}
+      .modal-info-copy h2{font-size:clamp(23px,1.9vw,30px)!important;line-height:1.28!important}
+      .modal-description{font-size:14px!important;line-height:1.8!important}
+      .modal-subscribe{min-height:42px!important;padding:9px 16px!important;font-size:14px!important}
+      .modal-books{padding:12px!important;gap:8px!important}
+      .modal-books-heading{font-size:15px!important}
+      .modal-book-list{grid-template-columns:minmax(0,1fr)!important;gap:8px!important}
+      .modal-book-card{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;grid-template-rows:auto auto!important;gap:5px 9px!important;padding:9px 10px!important}
+      .modal-book-type{grid-column:1/-1!important;grid-row:1!important;padding:2px 8px!important;font-size:10px!important}
+      .modal-book-title{grid-column:1!important;grid-row:2!important;font-size:12px!important;line-height:1.5!important;-webkit-line-clamp:2!important}
+      .modal-book-action{grid-column:2!important;grid-row:2!important;padding:6px 11px!important;font-size:11px!important}
+      .modal-suggestions{padding:12px 0 0!important}
+      .modal-suggestions-heading{margin-bottom:9px!important}
+      .modal-suggestions-heading h3{font-size:17px!important}
+      .modal-suggestions-heading span{font-size:11px!important}
+      .modal-suggestions-list{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:9px!important}
+      .modal-suggestion{display:grid!important;grid-template-columns:minmax(135px,165px) minmax(0,1fr)!important;align-items:center!important;gap:12px!important;padding:8px!important}
+      .modal-suggestion-thumb{width:100%!important}
+      .modal-suggestion-category{font-size:10px!important}
+      .modal-suggestion-title{font-size:13px!important;line-height:1.45!important}
+    }
+</style>
 </head>
 <body>
   <main class="page-shell">
