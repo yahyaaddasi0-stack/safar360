@@ -1,5 +1,6 @@
 <!-- Sard360 Khizana: paste this complete fragment into an Elementor HTML widget. -->
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;600;700;800&display=swap');
     :root {
       color-scheme: dark;
       --bg-dark: #0a0c0e;
@@ -11,8 +12,8 @@
       --line: rgba(212, 175, 55, .2);
       --page-width: 1220px;
       --radius-lg: 18px;
-      --font-display: Georgia, "Times New Roman", serif;
-      --font-ui: Tahoma, Arial, "Noto Sans Arabic", sans-serif;
+      --font-display: "Tajawal", "Cairo", Arial, sans-serif;
+      --font-ui: "Cairo", "Tajawal", Arial, sans-serif;
     }
     *, *::before, *::after { box-sizing: border-box; }
     html { background: var(--bg-dark); scroll-behavior: smooth; }
@@ -34,14 +35,14 @@
     .guide-feature-cta { display: inline-flex; align-items: center; gap: 9px; color: #edcf70; font-size: 11px; font-weight: 700; }
     .guide-feature-image { display: block; width: 100%; height: 176px; border: 1px solid rgba(255,255,255,.08); border-radius: 14px; object-fit: cover; box-shadow: 0 12px 30px rgba(0,0,0,.27); }
     .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
-    .brand-logo { display: block; width: 48px; height: 48px; flex: 0 0 auto; object-fit: contain; }
-    .brand-name { font-size: 20px; font-weight: 700; }
+    .brand-logo { display: block; width: 56px; height: 56px; flex: 0 0 auto; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(212, 175, 55, .16)); }
+    .brand-name { font-family: var(--font-display); font-size: 21px; font-weight: 700; }
     .brand-name span { color: var(--accent-gold); }
     .edition { color: var(--text-muted); font-size: 11px; font-weight: 700; }
     .hero { display: grid; grid-template-columns: 1fr minmax(190px, 250px); align-items: end; gap: 30px; padding: 62px 0 42px; }
     .kicker { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; color: var(--accent-gold); font-size: 11px; font-weight: 700; }
     .kicker::before { width: 27px; height: 1px; background: var(--accent-gold); content: ""; }
-    h1 { margin: 0; font-family: var(--font-display); font-size: clamp(44px, 7vw, 82px); font-weight: 400; line-height: 1.12; }
+    h1 { margin: 0; font-family: var(--font-display); font-size: clamp(44px, 7vw, 82px); font-weight: 700; line-height: 1.22; }
     h1 em { background: linear-gradient(110deg, var(--accent-gold), #e7c75e 55%, var(--accent-blue)); background-clip: text; color: transparent; font-weight: 400; font-style: normal; }
     .intro { max-width: 650px; margin: 20px 0 0; color: #c0c1c4; font-size: 15px; line-height: 1.9; }
     .hero-note { padding: 18px 20px 4px 0; border-right: 1px solid var(--line); color: var(--text-muted); font-size: 16px; line-height: 1.9; }
@@ -140,11 +141,14 @@
       .product-card:hover, .product-card.is-daily { border-color: transparent; }
       .filter-button, .filter-button:hover, .filter-button[aria-pressed="true"] { border-color: transparent; }
     }
+    #khizana a, #khizana a:hover, #khizana a:focus { text-decoration: none !important; }
+    #khizana h1 { color: var(--text-main) !important; }
+    #khizana h1 em { color: var(--accent-gold) !important; }
   </style>
 <main class="khizana" id="khizana">
     <header class="topline">
-      <a class="brand" href="#khizana" aria-label="الخزانة من سرد360 — الرئيسية">
-        <img class="brand-logo" src="assets/images/sard360-logo.png" alt="شعار سرد360" width="48" height="48">
+      <a class="brand" href="https://sard360.com/" aria-label="سرد360 — الصفحة الرئيسية">
+        <img class="brand-logo" src="https://sard360.com/wp-content/uploads/2026/04/cropped-500-1.png" alt="شعار سرد360" width="56" height="56" decoding="async">
         <span class="brand-name">الخزانة <span>من</span> سرد360</span>
       </a>
       <span class="edition">ترشيحات الخزانة · من سرد360</span>
